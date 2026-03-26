@@ -1,0 +1,5 @@
+/* Tailwind is handled via CDN in index.html, but this file is linked. */
+body {
+    margin: 0;
+    padding: 0;
+}
