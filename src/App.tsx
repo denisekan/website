@@ -7,40 +7,13 @@ import ReferralsPage from './ReferralsPage';
 
 export type ViewType = 'home' | 'about' | 'dpc' | 'referrals';
 
-const Marquee = () => {
-    const text = "Opening April 9th, 2026. Pre-enrollment now open!";
-    const repeatedItems = Array(10).fill(text);
-    
-    return (
-        <a 
-            href="https://app.elationemr.com/book/palmandneedlemed" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="fixed top-32 w-full bg-[#c5a059] text-white py-2 z-40 overflow-hidden border-b border-white/10 shadow-md block hover:bg-[#5b6d64] transition-colors cursor-pointer"
-        >
-            <div className="animate-marquee whitespace-nowrap">
-                {repeatedItems.map((item, i) => (
-                    <span key={i} className="mx-8 text-xs font-bold uppercase tracking-[0.4em]">
-                        {item}
-                    </span>
-                ))}
-                {repeatedItems.map((item, i) => (
-                    <span key={`loop-${i}`} className="mx-8 text-xs font-bold uppercase tracking-[0.4em]">
-                        {item}
-                    </span>
-                ))}
-            </div>
-        </a>
-    );
-};
-
 const App = () => {
     const [view, setView] = useState<ViewType>('home');
 
     const LOGO_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Logo_2.png";
     const CARD1_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Card_1.jpg";
     const BUILDING_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Pic_2.jpg";
-    const NINA_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Headshot_1.jpg";
+    const NINA_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/drkan.jpg";
     const ADD2_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Additional_2.jpg";
 
     useEffect(() => {
@@ -64,7 +37,6 @@ const App = () => {
                     <div className="lg:col-span-4 space-y-8 animate-fade-in relative z-10">
                         <div className="space-y-4">
                             <div className="text-left">
-                                <p className="text-[#c5a059] uppercase tracking-[0.3em] font-bold text-xl mb-2">Opening April 9th, 2026</p>
                                 <h1 className="text-5xl md:text-7xl font-bold text-[#5b6d64] serif leading-tight">Denise Kan MD</h1>
                                 <p className="text-xl md:text-2xl tracking-[0.4em] uppercase text-[#c5a059] font-bold mt-2">Medical Clinic</p>
                             </div>
@@ -226,7 +198,6 @@ const App = () => {
     return (
         <div className="min-h-screen bg-white">
             <Navbar onNavigate={navigateTo} />
-            <Marquee />
             
             {renderContent()}
         </div>
