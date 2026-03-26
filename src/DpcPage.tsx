@@ -103,7 +103,7 @@ const DpcPage: React.FC<DpcPageProps> = ({ onNavigate }) => {
                                             'Chronic disease management',
                                             'Acute care (injuries, rashes, infections, UTIs, etc.)',
                                             'Sick visits',
-                                            'Basic procedures (joint injections, earwax removal, skin biopsies, OMM, etc.)',
+                                            'Basic procedures (joint injections, earwax removal, skin biopsies, etc.)',
                                             'In-office lab drawing',
                                             'Select medications offered at cost',
                                             'Coordination of care with specialists',
@@ -229,12 +229,6 @@ const DpcPage: React.FC<DpcPageProps> = ({ onNavigate }) => {
                                         <h3 className="text-xl font-bold text-[#5b6d64] serif">Do you take Flexible Spending Account (FSA)/Health Savings Account (HSA) cards?</h3>
                                         <p className="text-slate-600 text-sm leading-relaxed">
                                             Yes. You can use your HSA or FSA card for your membership and visit fees. We can then provide receipts if your plan requires any documentation.
-                                        </p>
-                                    </div>
-                                    <div className="space-y-4">
-                                        <h3 className="text-xl font-bold text-[#5b6d64] serif">Is OMM included in the DPC membership?</h3>
-                                        <p className="text-slate-600 text-sm leading-relaxed">
-                                            Yes. It can be included as part of your membership when it is medically appropriate for your care.
                                         </p>
                                     </div>
                                 </div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const ReferralsPage = () => {
     const LOGO_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Logo_2.png";
-    const OMM7_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/OMM_7.jpg";
+    const COLLAB_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Pic_2.jpg";
 
     const [formData, setFormData] = useState({
         patientFirstName: '',
@@ -67,7 +67,7 @@ Urgency: ${formData.urgency}
                             <div className="relative group">
                                 <div className="absolute -inset-4 bg-[#8da399] opacity-10 rounded-lg rotate-2 blur-lg"></div>
                                 <img 
-                                    src={OMM7_URL} 
+                                    src={COLLAB_URL} 
                                     alt="Clinician Collaboration" 
                                     className="relative z-10 w-full rounded-lg shadow-2xl border-8 border-white object-cover" 
                                     referrerPolicy="no-referrer"
@@ -78,7 +78,7 @@ Urgency: ${formData.urgency}
                         <div className="lg:col-span-8">
                             <div className="text-center lg:text-left mb-16 space-y-6">
                                 <p className="text-xl text-slate-700 leading-relaxed font-light">
-                                    Do you think your patient would benefit from OMM?
+                                    Do you have a patient who would benefit from our personalized primary care?
                                 </p>
                                 <p className="text-slate-500 uppercase tracking-widest text-xs font-bold">
                                     If so, please fill out the information below:
@@ -89,7 +89,7 @@ Urgency: ${formData.urgency}
                                 <div className="relative group max-w-sm">
                                     <div className="absolute -inset-4 bg-[#8da399] opacity-10 rounded-lg rotate-2 blur-lg"></div>
                                     <img 
-                                        src={OMM7_URL} 
+                                        src={COLLAB_URL} 
                                         alt="Clinician Collaboration" 
                                         className="relative z-10 w-full rounded-lg shadow-2xl border-8 border-white object-cover" 
                                         referrerPolicy="no-referrer"
@@ -166,7 +166,7 @@ Urgency: ${formData.urgency}
 
                             <div>
                                 <label className={labelClasses}>Reason for Referral (required)</label>
-                                <textarea required rows={4} value={formData.reason} onChange={e => setFormData({...formData, reason: e.target.value})} className={inputClasses} placeholder="Please describe the patient's condition and goals for OMM..." />
+                                <textarea required rows={4} value={formData.reason} onChange={e => setFormData({...formData, reason: e.target.value})} className={inputClasses} placeholder="Please describe the patient's condition and reason for referral..." />
                             </div>
 
                             <div>

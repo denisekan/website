@@ -3,10 +3,9 @@ import { Navbar } from './Navbar';
 import { SERVICES } from './constants';
 import AboutPage from './AboutPage';
 import DpcPage from './DpcPage';
-import OmmPage from './OmmPage';
 import ReferralsPage from './ReferralsPage';
 
-export type ViewType = 'home' | 'about' | 'dpc' | 'omm' | 'referrals';
+export type ViewType = 'home' | 'about' | 'dpc' | 'referrals';
 
 const Marquee = () => {
     const text = "Opening April 9th, 2026. Pre-enrollment now open!";
@@ -42,7 +41,6 @@ const App = () => {
     const CARD1_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Card_1.jpg";
     const BUILDING_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Pic_2.jpg";
     const NINA_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Headshot_1.jpg";
-    const OMM10_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/OMM_10.jpg";
     const ADD2_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Additional_2.jpg";
 
     useEffect(() => {
@@ -105,7 +103,7 @@ const App = () => {
                         {SERVICES.map((s, i) => (
                             <div 
                                 key={i} 
-                                onClick={() => navigateTo(i === 0 ? 'dpc' : 'omm')}
+                                onClick={() => navigateTo('dpc')}
                                 className="group p-10 bg-white rounded-lg border border-slate-100 transition-all hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden cursor-pointer"
                             >
                                 <h3 className="text-2xl font-bold text-[#5b6d64] serif mb-4">{s.title}</h3>
@@ -138,7 +136,7 @@ const App = () => {
                         <h2 className="text-4xl md:text-5xl font-bold text-[#5b6d64] serif leading-tight">Whole-Person Care Rooted in Balance</h2>
                         <div className="space-y-6 text-slate-600 leading-relaxed">
                             <p>Growing up between the United States and Japan gave Dr. Kan a unique perspective on healing. She believes that health is an active process of restoring balance across mind, body, and spirit.</p>
-                            <p>As a family medicine physician, she provides comprehensive primary care to patients of all ages, from newborns to seniors. As a DO, or osteopathic physician, Dr. Kan specializes in OMM.</p>
+                            <p>As a family medicine physician, she provides comprehensive primary care to patients of all ages, from newborns to seniors.</p>
                         </div>
                         <div className="pt-6">
                              <button onClick={() => navigateTo('about')} className="text-[#c5a059] font-bold text-xs uppercase tracking-[0.2em] hover:text-[#5b6d64] flex items-center group">
@@ -207,12 +205,7 @@ const App = () => {
                                 Schedule your appointment now
                             </a>
                             <div className="pt-8">
-                                <img 
-                                    src={OMM10_URL} 
-                                    alt="Osteopathic Treatment" 
-                                    className="w-full h-auto md:h-48 md:object-cover rounded shadow-md border border-slate-100"
-                                    referrerPolicy="no-referrer"
-                                />
+                                <p className="text-slate-500 text-sm italic">Personalized, unhurried healthcare designed around your needs.</p>
                             </div>
                         </div>
                     </div>
@@ -225,7 +218,6 @@ const App = () => {
         switch (view) {
             case 'about': return <AboutPage onNavigate={navigateTo} />;
             case 'dpc': return <DpcPage onNavigate={navigateTo} />;
-            case 'omm': return <OmmPage onNavigate={navigateTo} />;
             case 'referrals': return <ReferralsPage onNavigate={navigateTo} />;
             default: return <LandingPage />;
         }

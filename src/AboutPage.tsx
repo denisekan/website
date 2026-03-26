@@ -48,7 +48,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                             <h2 className="text-2xl font-bold text-[#5b6d64] serif">Mission Statement</h2>
                         </div>
                         <p className="text-slate-600 leading-relaxed text-lg">
-                            My mission is to provide thoughtful, personalized primary care that treats the whole person—not just symptoms. By integrating evidence-based medicine with osteopathic manipulative treatment, I partner with my patients to support healing, restore balance, and promote long-term health and wellbeing.
+                            My mission is to provide thoughtful, personalized primary care that treats the whole person—not just symptoms. I partner with my patients to support healing, restore balance, and promote long-term health and wellbeing.
                         </p>
                     </div>
                     <div className="space-y-6">
@@ -57,7 +57,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                             <h2 className="text-2xl font-bold text-[#5b6d64] serif">Vision</h2>
                         </div>
                         <p className="text-slate-600 leading-relaxed text-lg">
-                            My vision is to create a medical practice where care is unhurried, relationships matter, and patients feel truly heard. I aim to redefine primary care by blending modern medicine with hands-on therapies, empowering individuals to take an active role in their health and live fuller, healthier lives.
+                            My vision is to create a medical practice where care is unhurried, relationships matter, and patients feel truly heard. I aim to redefine primary care, empowering individuals to take an active role in their health and live fuller, healthier lives.
                         </p>
                     </div>
                 </div>
@@ -74,7 +74,6 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                             { title: 'Relationship-Centered Care', text: 'I believe strong doctor–patient relationships are the foundation of excellent healthcare. I view healthcare as a collaboration.' },
                             { title: 'Whole-Person Medicine', text: 'I treat the body as an interconnected system. Care plans address physical, emotional, and lifestyle factors—not just isolated symptoms.' },
                             { title: 'Time & Access', text: 'I value time, availability, and continuity. Longer visits and direct communication allow for deeper understanding and better outcomes.' },
-                            { title: 'Hands-On Healing', text: 'Osteopathic manipulative medicine is an integral tool I use to support the body’s natural ability to heal and maintain balance.' },
                             { title: 'Transparency & Integrity', text: 'I believe healthcare should be straightforward and honest. I am committed to clear pricing, ethical practice, and evidence-based care.' },
                             { title: 'Prevention & Sustainability', text: 'I focus on prevention, education, and long-term health—helping patients stay well, not just get well.' }
                         ].map((v, i) => (
@@ -113,7 +112,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                                 I completed my undergraduate education at Brown University in Neuroscience, earned my Doctor of Osteopathic Medicine degree from Marian University College of Osteopathic Medicine, and completed my Family Medicine residency at St. Joseph’s Medical Center in Stockton, CA.
                             </p>
                             <p>
-                                I have always been drawn to family medicine because of its emphasis on whole-person care, continuity, and cultural awareness. I believe health is influenced not only by physical symptoms, but also by lifestyle, environment, and personal values. Incorporating osteopathic manipulative medicine (OMM) into my practice allows me to offer integrative, patient-centered options for pain, stress-related conditions, and chronic illness.
+                                I have always been drawn to family medicine because of its emphasis on whole-person care, continuity, and cultural awareness. I believe health is influenced not only by physical symptoms, but also by lifestyle, environment, and personal values. My goal is to offer integrative, patient-centered options for chronic illness and long-term wellness.
                             </p>
                             <p>
                                 I chose to practice Direct Primary Care (DPC) because it allows me to practice medicine in alignment with my values. Over time, I found that the traditional insurance-based model increasingly limited the time I could spend with patients and added administrative burdens that took focus away from meaningful patient care. By removing the constraints of insurance-based care, the DPC model allows for longer visits, improved access, and a stronger patient–physician relationship. This enables me to focus on prevention, education, and individualized care rather than treating symptoms in isolation.
