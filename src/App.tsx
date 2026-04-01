@@ -13,7 +13,7 @@ const App = () => {
     const LOGO_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Logo_2.png";
     const CARD1_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Card_1.jpg";
     const BUILDING_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Pic_2.jpg";
-    const NINA_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/drkan.jpg";
+    const NINA_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_6.jpg";
     const ADD2_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Additional_2.jpg";
 
     useEffect(() => {
