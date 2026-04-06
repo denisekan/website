@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Navbar } from './Navbar';
 import { SERVICES } from './constants';
 import AboutPage from './AboutPage';
-import DpcPage from './DpcPage';
+import MdvipPage from './MdvipPage';
 import ReferralsPage from './ReferralsPage';
 
-export type ViewType = 'home' | 'about' | 'dpc' | 'referrals';
+export type ViewType = 'home' | 'about' | 'mdvip' | 'referrals';
 
 const App = () => {
     const [view, setView] = useState<ViewType>('home');
@@ -75,7 +75,7 @@ const App = () => {
                         {SERVICES.map((s, i) => (
                             <div 
                                 key={i} 
-                                onClick={() => navigateTo('dpc')}
+                                onClick={() => navigateTo('mdvip')}
                                 className="group p-10 bg-white rounded-lg border border-slate-100 transition-all hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden cursor-pointer"
                             >
                                 <h3 className="text-2xl font-bold text-[#5b6d64] serif mb-4">{s.title}</h3>
@@ -189,7 +189,7 @@ const App = () => {
     const renderContent = () => {
         switch (view) {
             case 'about': return <AboutPage onNavigate={navigateTo} />;
-            case 'dpc': return <DpcPage onNavigate={navigateTo} />;
+            case 'mdvip': return <MdvipPage onNavigate={navigateTo} />;
             case 'referrals': return <ReferralsPage onNavigate={navigateTo} />;
             default: return <LandingPage />;
         }

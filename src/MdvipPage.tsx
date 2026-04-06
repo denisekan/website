@@ -2,15 +2,15 @@ import React from 'react';
 
 import { ViewType } from './App';
 
-interface DpcPageProps {
+interface MdvipPageProps {
     onNavigate: (view: ViewType, hash?: string) => void;
 }
 
-const DpcPage: React.FC<DpcPageProps> = ({ onNavigate }) => {
+const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
     const LOGO_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Logo_2.png";
     const CARD2_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Card_2.jpg";
-    const DPC1_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/DPC_1.jpg";
-    const DPC2_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/DPC_2.jpg";
+    const MDVIP1_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/DPC_1.jpg";
+    const MDVIP2_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/DPC_2.jpg";
     const TOYS1_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Toys_1.jpg";
     const ADD1_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Additional_1.jpeg";
 
@@ -23,7 +23,7 @@ const DpcPage: React.FC<DpcPageProps> = ({ onNavigate }) => {
                     </div>
                     <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
                         <span className="text-[#c5a059] uppercase tracking-[0.4em] font-bold text-xs mb-6 block">Care Redefined</span>
-                        <h1 className="text-5xl md:text-7xl font-bold text-[#5b6d64] serif mb-8">Direct Primary Care</h1>
+                        <h1 className="text-5xl md:text-7xl font-bold text-[#5b6d64] serif mb-8">MDVIP</h1>
                     </div>
                 </section>
 
@@ -35,12 +35,12 @@ const DpcPage: React.FC<DpcPageProps> = ({ onNavigate }) => {
                                 <div className="absolute top-0 right-0 w-32 h-32 opacity-10 pointer-events-none transform translate-x-1/2 -translate-y-1/2">
                                     <img src={LOGO_URL} className="w-full h-full object-contain" alt="" />
                                 </div>
-                                <h2 className="text-3xl font-bold text-[#5b6d64] serif mb-8">What is Direct Primary Care (DPC)?</h2>
+                                <h2 className="text-3xl font-bold text-[#5b6d64] serif mb-8">What is MDVIP?</h2>
                                 <div className="space-y-6 max-w-3xl mx-auto">
-                                    <p className="text-xl font-medium text-[#8da399]">Direct Primary Care restores time, access, and connection to healthcare.</p>
-                                    <p className="text-slate-600 text-lg">Direct Primary Care is a healthcare model built around a direct relationship between you and your physician—without insurance in the middle.</p>
-                                    <p className="text-slate-600">Instead of billing your insurance for each visit, Direct Primary Care works through a simple monthly membership fee. This covers most primary care services and allows me to focus on what matters most: your health, your time, and our relationship.</p>
-                                    <p className="text-xl serif italic text-[#5b6d64] pt-4">"Direct Primary Care allows me to truly know my patients and care for them over time."</p>
+                                    <p className="text-xl font-medium text-[#8da399]">MDVIP restores time, access, and connection to healthcare.</p>
+                                    <p className="text-slate-600 text-lg">MDVIP is a healthcare model built around a direct relationship between you and your physician—without insurance in the middle.</p>
+                                    <p className="text-slate-600">Instead of billing your insurance for each visit, MDVIP works through a simple monthly membership fee. This covers most primary care services and allows me to focus on what matters most: your health, your time, and our relationship.</p>
+                                    <p className="text-xl serif italic text-[#5b6d64] pt-4">"MDVIP allows me to truly know my patients and care for them over time."</p>
                                 </div>
                             </div>
 
@@ -58,14 +58,14 @@ const DpcPage: React.FC<DpcPageProps> = ({ onNavigate }) => {
                                 <div className="lg:col-span-5 flex justify-center lg:justify-end">
                                     <div className="relative group max-w-[400px]">
                                         <div className="absolute -inset-3 bg-sage-light rounded-lg rotate-3 group-hover:rotate-0 transition-transform blur-lg opacity-40"></div>
-                                        <img src={DPC1_URL} className="relative z-10 w-full h-auto object-cover rounded shadow-xl border-4 border-white" alt="Clinic Consultation Room" />
+                                        <img src={MDVIP1_URL} className="relative z-10 w-full h-auto object-cover rounded shadow-xl border-4 border-white" alt="Clinic Consultation Room" />
                                     </div>
                                 </div>
                             </div>
 
                             <div className="space-y-12">
                                 <div className="text-center">
-                                    <h2 className="text-3xl font-bold text-[#5b6d64] serif">How DPC is Different</h2>
+                                    <h2 className="text-3xl font-bold text-[#5b6d64] serif">How MDVIP is Different</h2>
                                 </div>
                                 <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
                                     {[
@@ -91,7 +91,7 @@ const DpcPage: React.FC<DpcPageProps> = ({ onNavigate }) => {
                                     </div>
                                 </div>
                                 <div className="lg:col-span-8 order-1 lg:order-2 space-y-10">
-                                    <h2 className="text-4xl font-bold text-[#5b6d64] serif">What DPC Covers</h2>
+                                    <h2 className="text-4xl font-bold text-[#5b6d64] serif">What MDVIP Covers</h2>
                                     <ul className="space-y-6">
                                         {[
                                             'Same-day or next-day appointments (in-person and virtual visits) when needed',
@@ -120,7 +120,7 @@ const DpcPage: React.FC<DpcPageProps> = ({ onNavigate }) => {
 
                             <div className="space-y-16">
                                 <div className="text-center max-w-3xl mx-auto space-y-4">
-                                    <h2 className="text-4xl font-bold text-[#5b6d64] serif">Direct Primary Care vs. Traditional Insurance-Based Care</h2>
+                                    <h2 className="text-4xl font-bold text-[#5b6d64] serif">MDVIP vs. Traditional Insurance-Based Care</h2>
                                     <p className="text-slate-500">A side-by-side look at the membership experience.</p>
                                 </div>
                                 
@@ -130,7 +130,7 @@ const DpcPage: React.FC<DpcPageProps> = ({ onNavigate }) => {
                                             <thead>
                                                 <tr className="bg-slate-900 text-white text-[10px] uppercase tracking-[0.2em]">
                                                     <th className="p-6 text-left border-r border-slate-800">Feature</th>
-                                                    <th className="p-6 text-left border-r border-slate-800">DPC Membership</th>
+                                                    <th className="p-6 text-left border-r border-slate-800">MDVIP Membership</th>
                                                     <th className="p-6 text-left">Traditional Care</th>
                                                 </tr>
                                             </thead>
@@ -161,7 +161,7 @@ const DpcPage: React.FC<DpcPageProps> = ({ onNavigate }) => {
 
                             <div className="space-y-16 py-16 border-t border-slate-100">
                                 <div className="text-center max-w-3xl mx-auto space-y-4">
-                                    <h2 className="text-4xl font-bold text-[#5b6d64] serif">How Does DPC Save You Money?</h2>
+                                    <h2 className="text-4xl font-bold text-[#5b6d64] serif">How Does MDVIP Save You Money?</h2>
                                     <p className="text-slate-500">Investing in your health today can prevent significant costs tomorrow.</p>
                                 </div>
 
@@ -204,13 +204,13 @@ const DpcPage: React.FC<DpcPageProps> = ({ onNavigate }) => {
                                     <div className="space-y-4">
                                         <h3 className="text-xl font-bold text-[#5b6d64] serif">Do I Still Need Insurance?</h3>
                                         <p className="text-slate-600 text-sm leading-relaxed">
-                                            Direct Primary Care is not insurance, but it works well alongside it. I encourage patients to have health insurance, such as a PPO, high-deductible health plan, or catastrophic insurance plan for added peace of mind in the event of emergencies, hospitalizations, or specialty care. I do not recommend HMO plans with our membership, which can make referrals more difficult. This approach allows you to enjoy the benefits of direct, relationship-based primary care while still having insurance coverage for life’s unexpected events.
+                                            MDVIP is not insurance, but it works well alongside it. I encourage patients to have health insurance, such as a PPO, high-deductible health plan, or catastrophic insurance plan for added peace of mind in the event of emergencies, hospitalizations, or specialty care. I do not recommend HMO plans with our membership, which can make referrals more difficult. This approach allows you to enjoy the benefits of direct, relationship-based primary care while still having insurance coverage for life’s unexpected events.
                                         </p>
                                     </div>
                                     <div className="space-y-4">
-                                        <h3 className="text-xl font-bold text-[#5b6d64] serif">How is DPC different from concierge medicine?</h3>
+                                        <h3 className="text-xl font-bold text-[#5b6d64] serif">How is MDVIP different from concierge medicine?</h3>
                                         <p className="text-slate-600 text-sm leading-relaxed">
-                                            DPC is generally more affordable and insurance-free. DPC charges a simple monthly fee without billing insurance, while concierge medicine typically has higher fees to be a member, and still bills insurance.
+                                            MDVIP is generally more affordable and insurance-free. MDVIP charges a simple monthly fee without billing insurance, while concierge medicine typically has higher fees to be a member, and still bills insurance.
                                         </p>
                                     </div>
                                     <div className="space-y-4">
@@ -313,4 +313,4 @@ const DpcPage: React.FC<DpcPageProps> = ({ onNavigate }) => {
     );
 };
 
-export default DpcPage;
+export default MdvipPage;
