@@ -106,7 +106,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                         
                         <div className="space-y-6 text-slate-700 leading-relaxed text-lg font-light">
                             <p>
-                                I bring an integrative approach to primary care shaped by growing up in both the United States and Japan. Being immersed in two cultures from an early age influenced my interest in blending Western medicine with Eastern healing traditions and in caring for patients as whole individuals.
+                                I bring an integrative approach to primary care shaped by growing up in California. Being immersed in two cultures from an early age influenced my interest in blending Western medicine with Eastern healing traditions and in caring for patients as whole individuals.
                             </p>
                             <p>
                                 I completed my undergraduate education at Brown University in Neuroscience, earned my Doctor of Osteopathic Medicine degree from Marian University College of Osteopathic Medicine, and completed my Family Medicine residency at St. Joseph’s Medical Center in Stockton, CA.

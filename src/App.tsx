@@ -11,8 +11,8 @@ const App = () => {
     const [view, setView] = useState<ViewType>('home');
 
     const LOGO_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Logo_2.png";
-    const CARD1_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Card_1.jpg";
-    const BUILDING_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Pic_2.jpg";
+    const KAN2026_1_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_1.jpg";
+    const KAN2026_40_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_40.jpg";
     const NINA_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_6.jpg";
     const ADD2_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Additional_2.jpg";
 
@@ -54,7 +54,7 @@ const App = () => {
                     </div>
                     <div className="lg:col-span-8 relative animate-fade-in">
                         <div className="absolute -inset-8 bg-[#8da399] opacity-10 -rotate-2 blur-3xl"></div>
-                        <img src={BUILDING_URL} alt="Clinic Office" className="relative z-10 shadow-2xl object-cover aspect-[4/3] w-full" />
+                        <img src={KAN2026_40_URL} alt="Clinic Office" className="relative z-10 shadow-2xl object-cover aspect-[4/3] w-full" />
                     </div>
                 </div>
             </header>
@@ -63,7 +63,7 @@ const App = () => {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-20 space-y-8">
                         <div className="max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl border-[12px] border-white bg-white">
-                            <img src={CARD1_URL} className="w-full h-auto" alt="Clinic Services" />
+                            <img src={KAN2026_1_URL} className="w-full h-auto" alt="Clinic Services" />
                         </div>
                         <div className="space-y-4">
                             <span className="text-[#c5a059] uppercase tracking-[0.4em] font-bold text-xs">A Comprehensive Approach</span>
@@ -107,7 +107,7 @@ const App = () => {
                         </div>
                         <h2 className="text-4xl md:text-5xl font-bold text-[#5b6d64] serif leading-tight">Whole-Person Care Rooted in Balance</h2>
                         <div className="space-y-6 text-slate-600 leading-relaxed">
-                            <p>Growing up between the United States and Japan gave Dr. Kan a unique perspective on healing. She believes that health is an active process of restoring balance across mind, body, and spirit.</p>
+                            <p>Growing up in California gave Dr. Kan a unique perspective on healing. She believes that health is an active process of restoring balance across mind, body, and spirit.</p>
                             <p>As a family medicine physician, she provides comprehensive primary care to patients of all ages, from newborns to seniors.</p>
                         </div>
                         <div className="pt-6">
