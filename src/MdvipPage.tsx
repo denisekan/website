@@ -51,7 +51,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                             The MDVIP Annual Wellness Program includes an advanced exam each year, featuring comprehensive screenings and diagnostics that go beyond what's usually covered by insurance. For members who want to go further in identifying potential health risks early, we offer the option to add advanced screenings through partners like Grail and Prenuvo.
                                         </p>
                                         <p className="text-slate-600">
-                                            Doctors who operate in the MDVIP models typically see far fewer patients than traditional primary care doctors. That gives them more time to develop deeper doctor-patient relationships that can lead to better outcomes. They can also offer conveniences that most primary care doctors can’t, including same- and next-day appointments. They’re available after hours for urgent matters. And they have time to focus on prevention. That focus begins with the MDVIP Wellness Program, which patients pay for with their annual membership fee.
+                                            Doctors who partner with MDVIP typically see far fewer patients than traditional primary care doctors. That gives them more time to develop deeper doctor-patient relationships that can lead to better outcomes. They can also offer conveniences that most primary care doctors can’t, including same- and next-day appointments. They’re available after hours for urgent matters. And they have time to focus on prevention. That focus begins with the MDVIP Wellness Program, which patients pay for with their annual membership fee.
                                         </p>
                                     </div>
                                 </div>
@@ -71,7 +71,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                 </div>
                                 <div className="grid md:grid-cols-3 gap-8">
                                     {[
-                                        { title: 'Deeper Understanding', text: "A deeper understanding of your health, lifestyle, and goals by moving beyond symptom checklists to undercover the context behind your concerns, revealing patterns that are often missed in brief encounters, and fostering a richer, more empathetic grasp of each patient's unique story." },
+                                        { title: 'A Better Doctor-Patient Relationship', text: "A deeper understanding of your health, lifestyle, and goals by moving beyond symptom checklists to undercover the context behind your concerns, revealing patterns that are often missed in brief encounters, and fostering a richer, more empathetic grasp of each patient's unique story." },
                                         { 
                                             title: 'Comprehensive Consultations', 
                                             text: 'More in-depth and comprehensive consultations. Tailored to your age, history, and goals, these annual tests are designed to help detect subtle health changes before they become bigger issues. These tests may cover: Heart Health, Diabetes, Brain Health, Respiratory Health, Bone Health, Sleep Quality, Vision and Hearing, Nutrition and Fitness, Weight Management, Emotional Well-being, Sexual Health, Medication Management' 
@@ -237,7 +237,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                         <div className="space-y-2">
                             <p className="text-xs uppercase tracking-widest opacity-60 font-bold">Contact</p>
                             <div className="space-y-1">
-                                <a href="tel:650-643-3702" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-643-3702 <span className="text-xs font-normal opacity-60">(New Patients)</span></a>
+                                <a href="tel:650-643-3702" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-643-3702 <span className="text-xs font-normal opacity-60">(New Patients & Inquiries)</span></a>
                                 <a href="tel:650-727-1940" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-727-1940 <span className="text-xs font-normal opacity-60">(Current Patients)</span></a>
                             </div>
                             <a href="mailto:drkan@denisekanmd.com" className="text-lg font-bold block hover:opacity-80 transition-opacity">drkan@denisekanmd.com</a>

@@ -11,7 +11,7 @@ const App = () => {
     const [view, setView] = useState<ViewType>('home');
 
     const LOGO_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026.jpg";
-    const OFFICE33_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Office33.jpg";
+    const OFFICE33_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/office33.jpg";
     const OFFICE50_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/office50.jpg";
     const KAN2026_11_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_11.jpg";
     const KAN2026_22_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_22.jpg";
@@ -79,7 +79,6 @@ const App = () => {
                         </div>
                         <h2 className="text-4xl md:text-5xl font-bold text-[#5b6d64] serif leading-tight">A Higher Standard of Healthcare</h2>
                         <div className="space-y-6 text-slate-600 leading-relaxed">
-                            <p>I grew up here on the Peninsula and where my interest in medicine was sparked by my childhood love of science and discovery and my time as a volunteer at Peninsula Hospital.</p>
                             <p>Being in private practice allows me to focus on my patients by providing long visits, easy availability, and a warm and welcoming atmosphere.</p>
                         </div>
                         <div className="pt-6">
@@ -169,7 +168,7 @@ const App = () => {
         switch (view) {
             case 'about': return <AboutPage onNavigate={navigateTo} />;
             case 'mdvip': return <MdvipPage onNavigate={navigateTo} />;
-            case 'referrals': return <ReferralsPage onNavigate={navigateTo} />;
+            case 'referrals': return <ReferralsPage />;
             default: return <LandingPage />;
         }
     };

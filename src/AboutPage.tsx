@@ -52,13 +52,13 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                                 As a primary care physician, my passions are prevention and earlier detection, and being an Internal Medicine doctor gives me the tools to better help you manage any chronic and complex conditions. My medical interests include cardiovascular health, nutrition, and integrative health. I also have a particular interest in women’s health, including perimenopause and menopause care. My partnership with MDVIP means that I stay up to date on the latest advances in preventative medicine.
                             </p>
                             <p>
-                                My goal is to provide personalized care in a warm and welcoming atmosphere. In my MDVIP-affiliated practice, I have more time to delve deeply in discussions with you about your personal health history, and we can partner to tailor action plans according to your individual needs and goals.
+                                My goal is to provide personalized care in a warm and welcoming atmosphere. As a physician in private practice, I have more time to delve deeply in discussions with you about your personal health history, and we can partner to tailor action plans according to your individual needs and goals.
                             </p>
                             <p>
                                 We offer conveniences, like same- or next-day appointments with minimal waiting. Thanks to my affiliation with MDVIP, I offer services, including comprehensive, advanced health screenings and diagnostic tests, that go far beyond those found in concierge medicine practices.
                             </p>
                             <p>
-                                My practice serves patients across the Peninsula in Northern California, including Hillsborough, Foster City, San Mateo, Half Moon Bay, Belmont, San Carlos, Redwood City, Woodside, Atherton, Menlo Park, Palo Alto, and Portola Valley.
+                                My practice serves patients across the Peninsula of the San Francisco Bay Area, including Hillsborough, Foster City, San Mateo, Half Moon Bay, Belmont, San Carlos, Redwood City, Woodside, Atherton, Menlo Park, Palo Alto, and Portola Valley.
                             </p>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                     <div className="grid md:grid-cols-2 gap-8">
                         {[
                             { title: 'Time & Access', text: "I value spending time with my patients and making sure they have direct access to me. No phone trees- a person will always answer your call. And same or next-day appointments are available when you're sick." },
-                            { title: 'A Comprehensive Approach to Wellness', text: "Everything from your history, family background, and lifestyle plays a role in how we approach your health and wellness. I take every aspect into account and understand how to treat the whole person, not just a set of numbers." },
+                            { title: 'Seeing the Whole Person', text: "Everything from your history, family background, and lifestyle plays a role in how we approach your health and wellness. I take every aspect into account and understand how to treat you as an individual, not just a set of numbers." },
                             { title: 'High Quality Expertise', text: "I can connect you with the best specialists in our area, knowing who will be a good fit for you. The MDVIP Medical Centers of Excellence Program helps me connect you with the premier academic and research hospitals across the country and make sure the process goes smoothly." },
                             { title: 'Value & Transparent Pricing', text: "One predictable fee covers your personalized Annual Wellness Program and preventive services not typically reimbursed by insurance.\n\nYou can continue using your insurance for routine medical care, specialist visits, and hospitalization expenses." }
                         ].map((v, i) => (
@@ -107,7 +107,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                         
                         <div className="space-y-6 text-slate-700 leading-relaxed text-lg font-light">
                             <p>
-                                I grew up here on the Peninsula and where my interest in medicine was sparked by my childhood love of science and discovery and my time as a volunteer at Peninsula Hospital. Naturally, I've dedicated my professional life to expanding my knowledge and applying it to helping people get and stay healthy.
+                                I grew up here on the Peninsula where my interest in medicine was sparked by my childhood love of science and discovery and my time as a volunteer at Peninsula Hospital. Naturally, I've dedicated my professional life to expanding my knowledge and applying it to helping people get and stay healthy.
                             </p>
                             <p>
                                 I earned my undergraduate degree in Molecular and Cell Biology at the University of California at Berkeley, followed by doing research at UCSF's Cardiovascular Research Institute. I earned my Doctor of Medicine degree from Wayne State University and completed my Internal Medicine Residency in the Mount Carmel Health System. I am board-certified by the American Board of Internal Medicine and a member of the American College of Physicians and the American College of Lifestyle Medicine.
@@ -116,7 +116,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                                 Being in private practice allows me to focus on my patients by providing long visits, easy availability, and a warm and welcoming atmosphere. I truly value the meaningful relationships I am able to build with my patients and their families, and am honored to be their partner in health and wellness.
                             </p>
                             <p>
-                                Outside of the office, I can be found spending time with my daughter and our dogs, and taking them on local adventures.
+                                Outside of the office, I can be found with my nose in book, connecting with friends over a good meal, and taking my daughter and our dogs on local adventures.
                             </p>
                         </div>
 

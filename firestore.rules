@@ -1,0 +1,66 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    //
+    // Collection: referrals
+    // Document ID: auto-generated
+    // Fields:
+    //   - patientFirstName: string (required)
+    //   - patientLastName: string (required)
+    //   - patientDob: string (optional)
+    //   - patientPhone: string (required)
+    //   - patientEmail: string (optional)
+    //   - clinicianFirstName: string (required)
+    //   - clinicianLastName: string (required)
+    //   - clinicianPractice: string (optional)
+    //   - clinicianPhone: string (optional)
+    //   - clinicianFax: string (optional)
+    //   - reason: string (required)
+    //   - urgency: string (required, enum: ["Routine", "Urgent"])
+    //   - createdAt: timestamp (required)
+    //
+    // ===============================================================
+
+    // Helper Functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() &&
+        (get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin' ||
+          (request.auth.token.email == "drkan@denisekanmd.com" && request.auth.token.email_verified == true));
+    }
+
+    function isValidReferral(data) {
+      return data.keys().hasAll(['patientFirstName', 'patientLastName', 'patientPhone', 'clinicianFirstName', 'clinicianLastName', 'reason', 'urgency', 'createdAt']) &&
+             data.patientFirstName is string && data.patientFirstName.size() > 0 && data.patientFirstName.size() < 100 &&
+             data.patientLastName is string && data.patientLastName.size() > 0 && data.patientLastName.size() < 100 &&
+             data.patientPhone is string && data.patientPhone.size() > 0 && data.patientPhone.size() < 20 &&
+             data.clinicianFirstName is string && data.clinicianFirstName.size() > 0 && data.clinicianFirstName.size() < 100 &&
+             data.clinicianLastName is string && data.clinicianLastName.size() > 0 && data.clinicianLastName.size() < 100 &&
+             data.reason is string && data.reason.size() > 0 && data.reason.size() < 2000 &&
+             data.urgency in ['Routine', 'Urgent'] &&
+             data.createdAt == request.time;
+    }
+
+    match /referrals/{referralId} {
+      // Allow anyone to submit a referral (public form)
+      allow create: if isValidReferral(request.resource.data);
+      
+      // Only admin can read/list referrals
+      allow read, list: if isAdmin();
+      
+      // No one can update or delete referrals via the client
+      allow update, delete: if false;
+    }
+
+    match /users/{userId} {
+      allow read: if isAuthenticated() && request.auth.uid == userId;
+      allow write: if isAdmin();
+    }
+  }
+}

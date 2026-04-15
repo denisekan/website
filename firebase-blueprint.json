@@ -1,0 +1,31 @@
+{
+  "entities": {
+    "Referral": {
+      "title": "Referral",
+      "description": "A patient referral from another clinician.",
+      "type": "object",
+      "properties": {
+        "patientFirstName": { "type": "string", "description": "Patient's first name" },
+        "patientLastName": { "type": "string", "description": "Patient's last name" },
+        "patientDob": { "type": "string", "description": "Patient's date of birth" },
+        "patientPhone": { "type": "string", "description": "Patient's phone number" },
+        "patientEmail": { "type": "string", "description": "Patient's email address" },
+        "clinicianFirstName": { "type": "string", "description": "Referring clinician's first name" },
+        "clinicianLastName": { "type": "string", "description": "Referring clinician's last name" },
+        "clinicianPractice": { "type": "string", "description": "Referring clinician's practice name" },
+        "clinicianPhone": { "type": "string", "description": "Referring clinician's phone number" },
+        "clinicianFax": { "type": "string", "description": "Referring clinician's fax number" },
+        "reason": { "type": "string", "description": "Reason for referral" },
+        "urgency": { "type": "string", "enum": ["Routine", "Urgent"], "description": "Urgency of the referral" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Timestamp when the referral was created" }
+      },
+      "required": ["patientFirstName", "patientLastName", "patientPhone", "clinicianFirstName", "clinicianLastName", "reason", "urgency", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/referrals/{referralId}": {
+      "schema": "Referral",
+      "description": "Collection of patient referrals."
+    }
+  }
+}

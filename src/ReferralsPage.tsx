@@ -1,6 +1,38 @@
 import React, { useState } from 'react';
+import { db } from './firebase';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+
+enum OperationType {
+    CREATE = 'create',
+    UPDATE = 'update',
+    DELETE = 'delete',
+    LIST = 'list',
+    GET = 'get',
+    WRITE = 'write',
+}
+
+interface FirestoreErrorInfo {
+    error: string;
+    operationType: OperationType;
+    path: string | null;
+    authInfo: any;
+}
 
 const ReferralsPage = () => {
+    const handleFirestoreError = (error: unknown, operationType: OperationType, path: string | null) => {
+        const errInfo: FirestoreErrorInfo = {
+            error: error instanceof Error ? error.message : String(error),
+            authInfo: {
+                // Since we don't have auth required for submission yet, we'll just log the error
+                isAnonymous: true
+            },
+            operationType,
+            path
+        };
+        console.error('Firestore Error: ', JSON.stringify(errInfo));
+        throw new Error(JSON.stringify(errInfo));
+    };
+
     const LOGO_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026.jpg";
     const KAN2026_1_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_1.jpg";
     const KAN2026_6_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_6.jpg";
@@ -21,10 +53,20 @@ const ReferralsPage = () => {
         urgency: 'Routine'
     });
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        const subject = `New Patient Referral from ${formData.clinicianFirstName} ${formData.clinicianLastName}`;
-        const body = `
+        
+        try {
+            // 1. Save to Firestore
+            const path = 'referrals';
+            await addDoc(collection(db, path), {
+                ...formData,
+                createdAt: serverTimestamp()
+            });
+
+            // 2. Open Mailto
+            const subject = `New Patient Referral from ${formData.clinicianFirstName} ${formData.clinicianLastName}`;
+            const body = `
 REFERRAL FORM DETAILS
 
 PATIENT INFORMATION
@@ -42,8 +84,28 @@ Fax: ${formData.clinicianFax}
 REFERRAL DETAILS
 Reason for Referral: ${formData.reason}
 Urgency: ${formData.urgency}
-        `;
-        window.location.href = `mailto:drkan@denisekanmd.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            `;
+            window.location.href = `mailto:drkan@denisekanmd.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            // Reset form
+            setFormData({
+                patientFirstName: '',
+                patientLastName: '',
+                patientDob: '',
+                patientPhone: '',
+                patientEmail: '',
+                clinicianFirstName: '',
+                clinicianLastName: '',
+                clinicianPractice: '',
+                clinicianPhone: '',
+                clinicianFax: '',
+                reason: '',
+                urgency: 'Routine'
+            });
+            alert('Referral submitted and saved successfully.');
+        } catch (error) {
+            handleFirestoreError(error, OperationType.WRITE, 'referrals');
+        }
     };
 
     const inputClasses = "w-full bg-slate-50 p-4 rounded-sm text-sm border border-slate-200 outline-none focus:ring-2 focus:ring-[#8da399] transition-all";
@@ -167,7 +229,7 @@ Urgency: ${formData.urgency}
                             </div>
 
                             <div>
-                                <label className={labelClasses}>Reason for Referral (required)</label>
+                                <label className={labelClasses}>Reason for Referral</label>
                                 <textarea required rows={4} value={formData.reason} onChange={e => setFormData({...formData, reason: e.target.value})} className={inputClasses} placeholder="Please describe the patient's condition and reason for referral..." />
                             </div>
 
