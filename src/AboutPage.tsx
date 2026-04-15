@@ -68,14 +68,14 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             <section className="py-24 bg-slate-50">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
-                        <span className="text-[#c5a059] uppercase tracking-[0.4em] font-bold text-xs block mb-4">What We Stand For</span>
+                        <span className="text-[#c5a059] uppercase tracking-[0.4em] font-bold text-xs block mb-4">What I Stand For</span>
                         <h2 className="text-4xl font-bold text-[#5b6d64] serif">Core Values</h2>
                     </div>
                     <div className="grid md:grid-cols-2 gap-8">
                         {[
                             { title: 'Time & Access', text: "I value spending time with my patients and making sure they have direct access to me. No phone trees- a person will always answer your call. And same or next-day appointments are available when you're sick." },
                             { title: 'A Comprehensive Approach to Wellness', text: "Everything from your history, family background, and lifestyle plays a role in how we approach your health and wellness. I take every aspect into account and understand how to treat the whole person, not just a set of numbers." },
-                            { title: 'Specialist Referrals', text: "I can connect you with the best specialists in our area, knowing who will be a good fit for you. The MDVIP Medical Centers of Excellence Program helps me connect you with the premier academic and research hospitals across the country and make sure the process goes smoothly." },
+                            { title: 'High Quality Expertise', text: "I can connect you with the best specialists in our area, knowing who will be a good fit for you. The MDVIP Medical Centers of Excellence Program helps me connect you with the premier academic and research hospitals across the country and make sure the process goes smoothly." },
                             { title: 'Value & Transparent Pricing', text: "One predictable fee covers your personalized Annual Wellness Program and preventive services not typically reimbursed by insurance.\n\nYou can continue using your insurance for routine medical care, specialist visits, and hospitalization expenses." }
                         ].map((v, i) => (
                             <div key={i} className="bg-white p-8 rounded border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
@@ -107,10 +107,10 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                         
                         <div className="space-y-6 text-slate-700 leading-relaxed text-lg font-light">
                             <p>
-                                I grew up here on the Peninsula and where my interest in medicine was sparked by my love of science and my time as a volunteer at Peninsula Hospital in high school.
+                                I grew up here on the Peninsula and where my interest in medicine was sparked by my childhood love of science and discovery and my time as a volunteer at Peninsula Hospital. Naturally, I've dedicated my professional life to expanding my knowledge and applying it to helping people get and stay healthy.
                             </p>
                             <p>
-                                I earned my undergraduate degree in Molecular and Cell Biology at the University of California at Berkeley, followed by doing research at UCSF's Cardiovascular Research Institute. I earned my Doctor of Medicine degree from Wayne State University and completed my Internal Medicine Residency at the Mount Carmel Health System.
+                                I earned my undergraduate degree in Molecular and Cell Biology at the University of California at Berkeley, followed by doing research at UCSF's Cardiovascular Research Institute. I earned my Doctor of Medicine degree from Wayne State University and completed my Internal Medicine Residency in the Mount Carmel Health System. I am board-certified by the American Board of Internal Medicine and a member of the American College of Physicians and the American College of Lifestyle Medicine.
                             </p>
                             <p>
                                 Being in private practice allows me to focus on my patients by providing long visits, easy availability, and a warm and welcoming atmosphere. I truly value the meaningful relationships I am able to build with my patients and their families, and am honored to be their partner in health and wellness.

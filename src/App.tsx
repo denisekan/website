@@ -36,11 +36,11 @@ const App = () => {
     const LandingPage = () => (
         <>
             <header id="home" className="relative pt-80 pb-24 bg-sage-light overflow-hidden">
-                <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-12 gap-16 items-center">
-                    <div className="lg:col-span-4 space-y-8 animate-fade-in relative z-10">
+                <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-12 gap-24 items-center">
+                    <div className="lg:col-span-5 space-y-8 animate-fade-in relative z-10">
                         <div className="space-y-4">
                             <div className="text-left">
-                                <h1 className="text-4xl md:text-6xl font-bold text-[#5b6d64] serif leading-tight whitespace-nowrap"><span className="bg-[#c5a059]/30 px-2 -mx-2 rounded border border-[#c5a059]/20">Denise Kan, MD</span></h1>
+                                <h1 className="text-4xl md:text-6xl font-bold text-[#5b6d64] serif leading-tight whitespace-nowrap">Denise Kan, MD</h1>
                                 <p className="text-xl md:text-2xl tracking-[0.4em] uppercase text-[#c5a059] font-bold mt-2">Primary Care Physician</p>
                             </div>
                             <h2 className="text-2xl md:text-3xl font-bold text-[#5b6d64] serif leading-tight italic">
@@ -52,9 +52,9 @@ const App = () => {
                             <a href="#about" onClick={(e) => { e.preventDefault(); navigateTo('about'); }} className="bg-[#5b6d64] text-white px-10 py-5 rounded-sm font-bold text-xs uppercase tracking-[0.2em] hover:bg-[#c5a059] transition-all shadow-xl hover:-translate-y-1 text-center">About Dr. Kan</a>
                         </div>
                     </div>
-                    <div className="lg:col-span-8 relative animate-fade-in">
+                    <div className="lg:col-span-7 relative animate-fade-in lg:translate-x-12">
                         <div className="absolute -inset-8 bg-[#8da399] opacity-10 -rotate-2 blur-3xl"></div>
-                        <img src={KAN2026_40_URL} alt="Clinic Office" className="relative z-10 shadow-2xl object-cover aspect-[4/3] w-full" />
+                        <img src={KAN2026_40_URL} alt="Clinic Office" className="relative z-10 shadow-2xl object-cover object-[center_35%] aspect-[4/3] w-full" />
                     </div>
                 </div>
             </header>
@@ -79,7 +79,7 @@ const App = () => {
                         </div>
                         <h2 className="text-4xl md:text-5xl font-bold text-[#5b6d64] serif leading-tight">A Higher Standard of Healthcare</h2>
                         <div className="space-y-6 text-slate-600 leading-relaxed">
-                            <p>I grew up here on the Peninsula and where my interest in medicine began with studying biology in parallel with volunteering at Peninsula Hospital in high school.</p>
+                            <p>I grew up here on the Peninsula and where my interest in medicine was sparked by my childhood love of science and discovery and my time as a volunteer at Peninsula Hospital.</p>
                             <p>Being in private practice allows me to focus on my patients by providing long visits, easy availability, and a warm and welcoming atmosphere.</p>
                         </div>
                         <div className="pt-6">

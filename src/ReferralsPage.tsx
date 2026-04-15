@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const ReferralsPage = () => {
     const LOGO_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026.jpg";
     const KAN2026_1_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_1.jpg";
+    const KAN2026_6_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_6.jpg";
     const KAN2026_40_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_40.jpg";
 
     const [formData, setFormData] = useState({
@@ -107,11 +108,11 @@ Urgency: ${formData.urgency}
                             
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div>
-                                    <label className={labelClasses}>First Name (required)</label>
+                                    <label className={labelClasses}>First Name</label>
                                     <input required type="text" value={formData.patientFirstName} onChange={e => setFormData({...formData, patientFirstName: e.target.value})} className={inputClasses} />
                                 </div>
                                 <div>
-                                    <label className={labelClasses}>Last Name (required)</label>
+                                    <label className={labelClasses}>Last Name</label>
                                     <input required type="text" value={formData.patientLastName} onChange={e => setFormData({...formData, patientLastName: e.target.value})} className={inputClasses} />
                                 </div>
                             </div>
@@ -122,7 +123,7 @@ Urgency: ${formData.urgency}
                                     <input type="text" placeholder="MM/DD/YYYY" value={formData.patientDob} onChange={e => setFormData({...formData, patientDob: e.target.value})} className={inputClasses} />
                                 </div>
                                 <div>
-                                    <label className={labelClasses}>Phone (required)</label>
+                                    <label className={labelClasses}>Phone</label>
                                     <input required type="tel" value={formData.patientPhone} onChange={e => setFormData({...formData, patientPhone: e.target.value})} className={inputClasses} />
                                 </div>
                                 <div>
@@ -140,11 +141,11 @@ Urgency: ${formData.urgency}
 
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div>
-                                    <label className={labelClasses}>First Name (required)</label>
+                                    <label className={labelClasses}>First Name</label>
                                     <input required type="text" value={formData.clinicianFirstName} onChange={e => setFormData({...formData, clinicianFirstName: e.target.value})} className={inputClasses} />
                                 </div>
                                 <div>
-                                    <label className={labelClasses}>Last Name (required)</label>
+                                    <label className={labelClasses}>Last Name</label>
                                     <input required type="text" value={formData.clinicianLastName} onChange={e => setFormData({...formData, clinicianLastName: e.target.value})} className={inputClasses} />
                                 </div>
                             </div>
@@ -195,7 +196,7 @@ Urgency: ${formData.urgency}
                     <div className="grid md:grid-cols-3 gap-12 items-center text-center md:text-left">
                         <div className="space-y-4">
                             <div className="flex items-center justify-center md:justify-start space-x-4">
-                                <img src={KAN2026_1_URL} className="w-24 h-24 rounded shadow-lg border-2 border-white/20 object-cover" alt="Denise Kan, MD Logo" />
+                                <img src={KAN2026_6_URL} className="w-24 h-24 rounded shadow-lg border-2 border-white/20 object-cover" alt="Denise Kan, MD Logo" />
                                 <h3 className="text-xl font-bold serif">Denise Kan, MD</h3>
                             </div>
                         </div>
