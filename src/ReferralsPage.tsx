@@ -78,7 +78,7 @@ Urgency: ${formData.urgency}
                         <div className="lg:col-span-8">
                             <div className="text-center lg:text-left mb-16 space-y-6">
                                 <p className="text-xl text-slate-700 leading-relaxed font-light">
-                                    Do you have a patient who would benefit from our personalized primary care?
+                                    Do you have a patient who would benefit from personalized primary care?
                                 </p>
                                 <p className="text-slate-500 uppercase tracking-widest text-xs font-bold">
                                     If so, please fill out the information below:
@@ -194,8 +194,8 @@ Urgency: ${formData.urgency}
                     <div className="grid md:grid-cols-3 gap-12 items-center text-center md:text-left">
                         <div className="space-y-4">
                             <div className="flex items-center justify-center md:justify-start space-x-4">
-                                <img src="https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Logo_3.jpg" className="w-24 h-24 rounded shadow-lg border-2 border-white/20" alt="Denise Kan MD Logo" />
-                                <h3 className="text-xl font-bold serif">Denise Kan MD<br/>Medical Clinic</h3>
+                                <img src="https://raw.githubusercontent.com/denisekan/website-assets/main/Office33.jpg" className="w-24 h-24 rounded shadow-lg border-2 border-white/20 object-cover" alt="Denise Kan, MD Logo" />
+                                <h3 className="text-xl font-bold serif">Denise Kan, MD</h3>
                             </div>
                         </div>
                         <a href="mailto:drkan@denisekanmd.com" className="space-y-2 hover:opacity-80 transition-opacity block">

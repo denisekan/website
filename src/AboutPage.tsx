@@ -7,7 +7,7 @@ interface AboutPageProps {
 
 const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
     const LOGO_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026.jpg";
-    const LOGO_3_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Logo_3.jpg";
+    const LOGO_3_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_40.jpg";
     const NINA_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_6.jpg";
     const BIO_IMG_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/SMP03232.jpg";
     const ADD4_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Additional_4.jpg";
@@ -130,18 +130,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                                 >
                                     Schedule Appointment
                                 </a>
-                                <a 
-                                    href="https://calendly.com/nlippey-palmandneedlemed/30min"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="border-2 border-[#5b6d64] text-[#5b6d64] px-8 py-4 rounded-sm font-bold text-xs uppercase tracking-[0.2em] hover:bg-[#5b6d64] hover:text-white transition-all shadow-lg hover:-translate-y-1 text-center"
-                                >
-                                    Schedule Meet & Greet
-                                </a>
                             </div>
-                            <p className="text-xs text-slate-500 max-w-lg leading-relaxed text-center lg:text-left">
-                                A Meet and Greet appointment is a 30 minute, no obligation meeting with Dr. Kan to ensure that you understand how the practice works. It's a great place to ask any questions you might have. However, no medical advice will be dispensed during this meeting.
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -185,8 +174,8 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                     <div className="grid md:grid-cols-3 gap-12 items-center text-center md:text-left">
                         <div className="space-y-4">
                             <div className="flex items-center justify-center md:justify-start space-x-4">
-                                <img src={LOGO_3_URL} className="w-24 h-24 rounded shadow-lg border-2 border-white/20" alt="Denise Kan MD Logo" />
-                                <h3 className="text-xl font-bold serif">Denise Kan MD<br/>Medical Clinic</h3>
+                                <img src={LOGO_3_URL} className="w-24 h-24 rounded shadow-lg border-2 border-white/20 object-cover" alt="Denise Kan, MD Logo" />
+                                <h3 className="text-xl font-bold serif">Denise Kan, MD</h3>
                             </div>
                         </div>
                         <a href="mailto:drkan@denisekanmd.com" className="space-y-2 hover:opacity-80 transition-opacity block">

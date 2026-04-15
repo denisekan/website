@@ -9,9 +9,9 @@ interface MdvipPageProps {
 const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
     const LOGO_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026.jpg";
     const CARD2_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Card_2.jpg";
-    const MDVIP1_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/DPC_1.jpg";
+    const MDVIP1_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_21.jpg";
     const MDVIP2_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/DPC_2.jpg";
-    const TOYS1_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Toys_1.jpg";
+    const TOYS1_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_1.jpg";
     const ADD1_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Additional_1.jpeg";
 
     return (
@@ -22,7 +22,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                         <img src={LOGO_URL} className="w-full h-full object-contain scale-150 transform -translate-x-1/2" alt="" />
                     </div>
                     <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
-                        <span className="text-[#c5a059] uppercase tracking-[0.4em] font-bold text-xs mb-6 block">Care Redefined</span>
+                        <span className="text-[#c5a059] uppercase tracking-[0.4em] font-bold text-xs mb-6 block">A better approach to healthcare</span>
                         <h1 className="text-5xl md:text-7xl font-bold text-[#5b6d64] serif mb-8">MDVIP</h1>
                     </div>
                 </section>
@@ -38,8 +38,8 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                 </div>
                                 <h2 className="text-3xl font-bold text-[#5b6d64] serif mb-8">Care that puts you first</h2>
                                 <div className="space-y-6 max-w-3xl mx-auto">
-                                    <p className="text-xl font-medium text-[#8da399]">Whether you’re focused on maximizing your healthspan or managing a chronic condition, your MDVIP-affiliated doctor aims to deliver care aligned with your personal health goals.</p>
-                                    <p className="text-slate-600 text-lg">MDVIP makes wellness and prevention easier by providing your physician with innovative tools and technology. MDVIP supports your physician’s practice and seeks to eliminate barriers to a positive healthcare experience. Your doctor will determine whether and how to incorporate these tools at his/her discretion.</p>
+                                    <p className="text-xl font-medium text-[#8da399]">Whether you’re focused on maximizing your healthspan or managing a chronic condition, an MDVIP-affiliated doctor can deliver care aligned with your personal health goals.</p>
+                                    <p className="text-slate-600 text-lg">MDVIP makes wellness and prevention easier by providing your physician with innovative tools and technology. MDVIP supports your physician’s practice and seeks to eliminate barriers to a positive healthcare experience. This means deeper doctor-patient relationships, proactive prevention, and care that goes above and beyond.</p>
                                 </div>
                             </div>
 
@@ -68,7 +68,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                             <div className="space-y-12">
                                 <div className="text-center max-w-3xl mx-auto">
                                     <h2 className="text-3xl font-bold text-[#5b6d64] serif mb-6">Deep doctor-patient relationship</h2>
-                                    <p className="text-slate-600 text-lg">MDVIP-affiliated physicians typically care for 40% fewer patients relative to traditional practices, enabling unhurried and more personalized care. This model supports:</p>
+                                    <p className="text-slate-600 text-lg">MDVIP-affiliated physicians Care for fewer patients relative to traditional practices, enabling unhurried and more personalized care. This model supports:</p>
                                 </div>
                                 <div className="grid md:grid-cols-3 gap-8">
                                     {[
@@ -157,25 +157,20 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                     <div className="space-y-4">
                                         <h3 className="text-xl font-bold text-[#5b6d64] serif">Do I Still Need Insurance?</h3>
                                         <p className="text-slate-600 text-sm leading-relaxed">
-                                            MDVIP is not insurance, but it works well alongside it. I encourage patients to have health insurance, such as a PPO, high-deductible health plan, or catastrophic insurance plan for added peace of mind in the event of emergencies, hospitalizations, or specialty care. I do not recommend HMO plans with our membership, which can make referrals more difficult. This approach allows you to enjoy the benefits of direct, relationship-based primary care while still having insurance coverage for life’s unexpected events.
+                                            MDVIP is not insurance, but it works well alongside it. I encourage patients to have health insurance, such as a PPO, high-deductible health plan, or catastrophic insurance plan for added peace of mind in the event of emergencies, hospitalizations, or specialty care. This approach allows you to enjoy the benefits of direct, relationship-based primary care while still having insurance coverage for life’s unexpected events.
                                         </p>
                                     </div>
-                                    <div className="space-y-4">
-                                        <h3 className="text-xl font-bold text-[#5b6d64] serif">How is MDVIP different from concierge medicine?</h3>
-                                        <p className="text-slate-600 text-sm leading-relaxed">
-                                            MDVIP is generally more affordable and insurance-free. MDVIP charges a simple monthly fee without billing insurance, while concierge medicine typically has higher fees to be a member, and still bills insurance.
-                                        </p>
-                                    </div>
+
                                     <div className="space-y-4">
                                         <h3 className="text-xl font-bold text-[#5b6d64] serif">How is the fee structure set?</h3>
                                         <p className="text-slate-600 text-sm leading-relaxed">
-                                            There is a simple monthly billing structure after the additional enrollment fee to start being seen. You can cancel at any time with advance notice. You can also pay quarterly if this is preferred.
+                                            There is a simple annual billing structure after the additional enrollment fee to start being seen. You can cancel at any time with advance notice. You can also pay quarterly if this is preferred.
                                         </p>
                                     </div>
                                     <div className="space-y-4">
                                         <h3 className="text-xl font-bold text-[#5b6d64] serif">How do labs, referrals, and imaging work?</h3>
                                         <p className="text-slate-600 text-sm leading-relaxed">
-                                            Referrals, labs, and imaging orders can be placed by me that can then be billed through your insurance (provided you are not enrolled in an HMO plan).
+                                            Referrals, labs, and imaging orders can be placed by me that can then be billed through your insurance.
                                         </p>
                                     </div>
                                     <div className="space-y-4">
@@ -189,49 +184,29 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
 
                             <div className="space-y-12 pt-16 border-t border-slate-100">
                                 <div className="text-center max-w-3xl mx-auto space-y-6">
-                                    <h2 className="text-4xl font-bold text-[#5b6d64] serif">Membership Pricing</h2>
-                                    <div className="bg-slate-50 p-8 rounded-lg space-y-4">
-                                        <p className="text-xl font-bold text-[#5b6d64] serif">Monthly Membership Pricing:</p>
-                                        <ul className="space-y-2 text-slate-700">
-                                            <li>Adults (18+): $400/month <span className="text-[#c5a059] font-bold">(pre-enrollment price for first 50 members: $350)</span></li>
-                                            <li>Families of Two: $500/month <span className="text-[#c5a059] font-bold">(pre-enrollment price for first 50 members: $400)</span></li>
-                                            <li>Children: $25/month with parent membership</li>
-                                        </ul>
-                                        <div className="pt-4 text-sm text-slate-500 italic space-y-1">
-                                            <p>*Please reach out with questions or concerns regarding pricing.</p>
-                                            <p>First Enrollment fee waived. Any cancellations with reenrollment will be $150 to reenroll.</p>
+                                    <h2 className="text-4xl font-bold text-[#5b6d64] serif">Annual Membership Fee</h2>
+                                    <p className="text-slate-600 leading-relaxed">
+                                        MDVIP’s annual fee covers the Wellness Program and generally can be made in quarterly, semi-annual and annual payments.
+                                    </p>
+                                    <div className="bg-slate-50 p-8 rounded-lg">
+                                        <div className="grid grid-cols-3 gap-4 text-center">
+                                            <div className="space-y-2">
+                                                <p className="text-xs uppercase tracking-widest font-bold text-slate-500">Quarterly</p>
+                                                <p className="text-2xl font-bold text-[#5b6d64] serif">$862.50</p>
+                                            </div>
+                                            <div className="space-y-2 border-x border-slate-200">
+                                                <p className="text-xs uppercase tracking-widest font-bold text-slate-500">Semi-Annual</p>
+                                                <p className="text-2xl font-bold text-[#5b6d64] serif">$1,725.00</p>
+                                            </div>
+                                            <div className="space-y-2">
+                                                <p className="text-xs uppercase tracking-widest font-bold text-slate-500">Annual</p>
+                                                <p className="text-2xl font-bold text-[#5b6d64] serif">$3,450.00</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className="pt-4 space-y-4">
-                                        <a 
-                                            href="https://calendly.com/nlippey-palmandneedlemed/30min"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="inline-block bg-[#c5a059] text-white px-8 py-4 rounded-sm font-bold hover:bg-[#5b6d64] transition-colors uppercase tracking-widest text-sm text-center"
-                                        >
-                                            schedule meet & greet
-                                        </a>
-                                        <p className="text-xs text-slate-500 max-w-md mx-auto leading-relaxed">
-                                            A Meet and Greet appointment is a 30 minute, no obligation meeting with Dr. Kan to ensure that you understand how the practice works. It's a great place to ask any questions you might have. However, no medical advice will be dispensed during this meeting.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="space-y-8 pt-16 border-t border-slate-100 text-center max-w-3xl mx-auto">
-                                <h2 className="text-4xl font-bold text-[#5b6d64] serif">Previous Patients</h2>
-                                <p className="text-slate-600 leading-relaxed">
-                                    If you are a previous patient of mine and would prefer to skip the Meet & Greet, you can schedule your appointment directly using the link below. I look forward to continuing your care at Denise Kan MD!
-                                </p>
-                                <div className="pt-4">
-                                    <a 
-                                        href="https://app.elationemr.com/book/palmandneedlemed"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-block bg-[#5b6d64] text-white px-8 py-4 rounded-sm font-bold hover:bg-[#c5a059] transition-colors uppercase tracking-widest text-sm text-center"
-                                    >
-                                        schedule appointment
-                                    </a>
+                                    <p className="text-slate-600 font-medium">
+                                        To learn more about the Membership or the Annual Wellness program, call <a href="tel:650-643-3702" className="text-[#c5a059] hover:underline">650-643-3702</a>
+                                    </p>
                                 </div>
                             </div>
 
@@ -245,8 +220,8 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                     <div className="grid md:grid-cols-3 gap-12 items-center text-center md:text-left">
                         <div className="space-y-4">
                             <div className="flex items-center justify-center md:justify-start space-x-4">
-                                <img src="https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Logo_3.jpg" className="w-24 h-24 rounded shadow-lg border-2 border-white/20" alt="Denise Kan MD Logo" />
-                                <h3 className="text-xl font-bold serif">Denise Kan MD<br/>Medical Clinic</h3>
+                                <img src="https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_40.jpg" className="w-24 h-24 rounded shadow-lg border-2 border-white/20 object-cover" alt="Denise Kan, MD Logo" />
+                                <h3 className="text-xl font-bold serif">Denise Kan, MD</h3>
                             </div>
                         </div>
                         <a href="mailto:drkan@denisekanmd.com" className="space-y-2 hover:opacity-80 transition-opacity block">
