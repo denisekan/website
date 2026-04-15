@@ -11,9 +11,10 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
     const NINA_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_6.jpg";
     const BIO_IMG_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/SMP03232.jpg";
     const ADD4_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Additional_4.jpg";
-    const ADD5_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Additional_5.jpg";
-    const ADD6_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Additional_6.jpg";
-    const ADD7_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Additional_7.jpg";
+    const ADD5_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Aptos%20State%20Beach.jpeg";
+    const ADD6_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Santa%20Cruz%20Beach.jpeg";
+    const ADD7_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Sunset.jpeg";
+    const LOS_GATOS_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Los%20Gatos.jpeg";
 
     return (
         <div className="animate-fade-in">
@@ -136,14 +137,14 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 <div className="max-w-7xl mx-auto px-4 mt-24">
                     <div className="flex flex-wrap md:flex-nowrap overflow-hidden shadow-2xl">
                         {[
-                            { url: ADD4_URL, pos: 'center', caption: "Hiking The Narrows in Zion National Park" },
-                            { url: ADD6_URL, pos: 'center', caption: "Deer in Nara, Japan" },
+                            { url: LOS_GATOS_URL, pos: 'center', caption: "" },
+                            { url: ADD5_URL, pos: 'center', caption: "" },
                             { 
                                 url: ADD7_URL, 
-                                pos: 'center 85%', 
-                                caption: "Gray whale encounters in Guerrero Negro, Baja California Sur\nExpedition led by @natsoffthegrid\nPhoto credit: @job_olguin" 
+                                pos: 'center', 
+                                caption: "" 
                             },
-                            { url: ADD5_URL, pos: 'center 15%', caption: "Hiking in Mount Rainier National Park" }
+                            { url: ADD6_URL, pos: 'center', caption: "" }
                         ].map((item, i) => (
                             <div key={i} className="relative group aspect-square flex-1 min-w-[50%] md:min-w-0 overflow-hidden border-r border-white/10 last:border-0">
                                 <img 

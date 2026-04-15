@@ -35,7 +35,7 @@ const ReferralsPage = () => {
 
     const LOGO_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026.jpg";
     const KAN2026_1_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_1.jpg";
-    const KAN2026_6_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_6.jpg";
+    const KAN2026_6_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Orchids.jpeg";
     const KAN2026_40_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_40.jpg";
 
     const [formData, setFormData] = useState({
