@@ -39,7 +39,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
 
                     <div className="flex items-center">
                         <img 
-                            src="https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Logo_2.png" 
+                            src="https://raw.githubusercontent.com/denisekan/website-assets/main/Kan_2026.jpg" 
                             alt="Denise Kan MD Logo" 
                             className="w-20 h-20 sm:w-32 sm:h-32 object-contain cursor-pointer scale-125"
                             onClick={(e) => handleLinkClick(e as any, 'home', '#home')}

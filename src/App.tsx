@@ -10,10 +10,11 @@ export type ViewType = 'home' | 'about' | 'mdvip' | 'referrals';
 const App = () => {
     const [view, setView] = useState<ViewType>('home');
 
-    const LOGO_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Logo_2.png";
-    const KAN2026_1_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_1.jpg";
+    const LOGO_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan_2026.jpg";
+    const OFFICE50_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/office50.jpg";
+    const KAN2026_22_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_22.jpg";
     const KAN2026_40_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_40.jpg";
-    const NINA_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_6.jpg";
+    const NINA_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/SMP03193.jpg";
     const ADD2_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Additional_2.jpg";
 
     useEffect(() => {
@@ -38,14 +39,11 @@ const App = () => {
                         <div className="space-y-4">
                             <div className="text-left">
                                 <h1 className="text-5xl md:text-7xl font-bold text-[#5b6d64] serif leading-tight">Denise Kan MD</h1>
-                                <p className="text-xl md:text-2xl tracking-[0.4em] uppercase text-[#c5a059] font-bold mt-2">Medical Clinic</p>
+                                <p className="text-xl md:text-2xl tracking-[0.4em] uppercase text-[#c5a059] font-bold mt-2">Primary Care Physician</p>
                             </div>
-                            <p className="text-[#5b6d64] text-2xl md:text-3xl font-bold serif">
-                                Denise Kan, MD
-                            </p>
                             <h2 className="text-2xl md:text-3xl font-bold text-[#8da399] serif leading-tight italic">
-                                Healthcare Rooted <br className="hidden md:block" />
-                                <span className="text-[#5b6d64]">in Relationship.</span>
+                                A personalized <br className="hidden md:block" />
+                                <span className="text-[#5b6d64]">healthcare experience.</span>
                             </h2>
                         </div>
                         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
@@ -63,10 +61,10 @@ const App = () => {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-20 space-y-8">
                         <div className="max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl border-[12px] border-white bg-white">
-                            <img src={KAN2026_1_URL} className="w-full h-auto" alt="Clinic Services" />
+                            <img src={OFFICE50_URL} className="w-full h-auto" alt="Clinic Services" />
                         </div>
                         <div className="space-y-4">
-                            <span className="text-[#c5a059] uppercase tracking-[0.4em] font-bold text-xs">A Comprehensive Approach</span>
+                            <span className="text-[#c5a059] uppercase tracking-[0.4em] font-bold text-xs">A comprehensive, personalized approach to your health and wellness</span>
                             <h2 className="text-4xl md:text-5xl font-bold text-[#5b6d64] serif">Services</h2>
                             <div className="w-16 h-1 bg-[#c5a059] mx-auto rounded-full"></div>
                         </div>
@@ -105,7 +103,7 @@ const App = () => {
                         <div className="flex items-center space-x-4">
                             <span className="text-[#c5a059] uppercase tracking-[0.4em] font-bold text-xs">Meet Your Doctor</span>
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-bold text-[#5b6d64] serif leading-tight">Whole-Person Care Rooted in Balance</h2>
+                        <h2 className="text-4xl md:text-5xl font-bold text-[#5b6d64] serif leading-tight">A Higher Standard of Healthcare</h2>
                         <div className="space-y-6 text-slate-600 leading-relaxed">
                             <p>Growing up in California gave Dr. Kan a unique perspective on healing. She believes that health is an active process of restoring balance across mind, body, and spirit.</p>
                             <p>As a family medicine physician, she provides comprehensive primary care to patients of all ages, from newborns to seniors.</p>
@@ -141,10 +139,10 @@ const App = () => {
                     <div className="space-y-12">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold serif leading-tight">Schedule Your Appointment</h2>
                         <p className="text-slate-200 text-lg md:text-xl leading-relaxed max-w-lg opacity-90">
-                            Join our membership-based practice for personalized, unhurried healthcare.
+                            Join our membership-based practice for a healthcare experience that puts the patient first.
                         </p>
                         <div className="space-y-10 pt-10">
-                            <a href="mailto:care@denisekanmd.com" className="flex items-center space-x-6 group hover:opacity-80 transition-opacity">
+                            <a href="mailto:drkan@denisekanmd.com" className="flex items-center space-x-6 group hover:opacity-80 transition-opacity">
                                 <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center border border-white/20 text-3xl shadow-inner group-hover:bg-white/20 transition-colors">📍</div>
                                 <div>
                                     <p className="font-bold text-lg md:text-xl">400 Seaport Court, Suite 203</p>
@@ -152,19 +150,28 @@ const App = () => {
                                     <p className="text-xs italic opacity-80 mt-2 max-w-[280px]">Turn right upon entering the marina, and look for the sign "Seaport Health Collective"</p>
                                 </div>
                             </a>
-                            <a href="tel:650-977-4518" className="flex items-center space-x-6 group hover:opacity-80 transition-opacity">
-                                <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center border border-white/20 text-3xl shadow-inner group-hover:bg-white/20 transition-colors">📞</div>
-                                <div><p className="font-bold text-lg md:text-xl">650-977-4518</p><p className="text-sm opacity-60">Phone</p></div>
-                            </a>
-                            <a href="mailto:care@denisekanmd.com" className="flex items-center space-x-6 group hover:opacity-80 transition-opacity">
+                            <div className="flex items-start space-x-6 group">
+                                <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center border border-white/20 text-3xl shadow-inner">📞</div>
+                                <div className="space-y-4">
+                                    <a href="tel:650-643-3702" className="block hover:opacity-80 transition-opacity">
+                                        <p className="font-bold text-lg md:text-xl">650-643-3702</p>
+                                        <p className="text-sm opacity-60">New Patients</p>
+                                    </a>
+                                    <a href="tel:650-727-1940" className="block hover:opacity-80 transition-opacity">
+                                        <p className="font-bold text-lg md:text-xl">650-727-1940</p>
+                                        <p className="text-sm opacity-60">Current Patients</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="mailto:drkan@denisekanmd.com" className="flex items-center space-x-6 group hover:opacity-80 transition-opacity">
                                 <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center border border-white/20 text-3xl shadow-inner group-hover:bg-white/20 transition-colors">✉️</div>
-                                <div><p className="font-bold text-lg md:text-xl">care@denisekanmd.com</p><p className="text-sm opacity-60">Membership Inquiries</p></div>
+                                <div><p className="font-bold text-lg md:text-xl">drkan@denisekanmd.com</p><p className="text-sm opacity-60">Membership Inquiries</p></div>
                             </a>
                         </div>
                     </div>
                     <div className="bg-white p-6 md:p-8 lg:p-12 rounded shadow-2xl relative text-slate-800 flex flex-col items-center justify-center min-h-[300px]">
                         <div className="relative lg:absolute lg:-top-44 lg:-left-12 w-24 h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 bg-white rounded flex items-center justify-center shadow-2xl border-4 border-[#c5a059] transform hover:rotate-12 transition-transform overflow-hidden p-0 z-20 mb-8 lg:mb-0">
-                            <img src={LOGO_URL} className="w-full h-full object-contain scale-100 lg:scale-[1.5]" alt="" />
+                            <img src={KAN2026_22_URL} className="w-full h-full object-cover" alt="Clinic" />
                         </div>
                         <div className="text-center space-y-8 w-full">
                             <p className="text-slate-600 serif italic text-lg">Ready to begin your journey to better health?</p>

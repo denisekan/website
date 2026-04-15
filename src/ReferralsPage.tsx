@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const ReferralsPage = () => {
-    const LOGO_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Logo_2.png";
+    const LOGO_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan_2026.jpg";
     const KAN2026_40_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_40.jpg";
 
     const [formData, setFormData] = useState({
@@ -41,7 +41,7 @@ REFERRAL DETAILS
 Reason for Referral: ${formData.reason}
 Urgency: ${formData.urgency}
         `;
-        window.location.href = `mailto:care@denisekanmd.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = `mailto:drkan@denisekanmd.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     };
 
     const inputClasses = "w-full bg-slate-50 p-4 rounded-sm text-sm border border-slate-200 outline-none focus:ring-2 focus:ring-[#8da399] transition-all";
@@ -198,15 +198,18 @@ Urgency: ${formData.urgency}
                                 <h3 className="text-xl font-bold serif">Denise Kan MD<br/>Medical Clinic</h3>
                             </div>
                         </div>
-                        <a href="mailto:care@denisekanmd.com" className="space-y-2 hover:opacity-80 transition-opacity block">
+                        <a href="mailto:drkan@denisekanmd.com" className="space-y-2 hover:opacity-80 transition-opacity block">
                             <p className="text-xs uppercase tracking-widest opacity-60 font-bold">Location</p>
                             <p className="text-lg">400 Seaport Court, Suite 203</p>
                             <p className="text-sm opacity-80">Redwood City, CA 94063</p>
                         </a>
                         <div className="space-y-2">
                             <p className="text-xs uppercase tracking-widest opacity-60 font-bold">Contact</p>
-                            <a href="tel:650-977-4518" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-977-4518</a>
-                            <a href="mailto:care@denisekanmd.com" className="text-lg font-bold block hover:opacity-80 transition-opacity">care@denisekanmd.com</a>
+                            <div className="space-y-1">
+                                <a href="tel:650-643-3702" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-643-3702 <span className="text-xs font-normal opacity-60">(New Patients)</span></a>
+                                <a href="tel:650-727-1940" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-727-1940 <span className="text-xs font-normal opacity-60">(Current Patients)</span></a>
+                            </div>
+                            <a href="mailto:drkan@denisekanmd.com" className="text-lg font-bold block hover:opacity-80 transition-opacity">drkan@denisekanmd.com</a>
                         </div>
                     </div>
                 </div>

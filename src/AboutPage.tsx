@@ -6,10 +6,10 @@ interface AboutPageProps {
 }
 
 const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
-    const LOGO_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Logo_2.png";
+    const LOGO_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan_2026.jpg";
     const LOGO_3_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Logo_3.jpg";
-    const NINA_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Headshot_14.jpg";
-    const BIO_IMG_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Headshot_11.jpg";
+    const NINA_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/SMPO03195.jpg";
+    const BIO_IMG_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/SMP03232.jpg";
     const ADD4_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Additional_4.jpg";
     const ADD5_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Additional_5.jpg";
     const ADD6_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Additional_6.jpg";
@@ -41,24 +41,26 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             </section>
 
             <section className="py-24 bg-white">
-                <div className="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-16">
-                    <div className="space-y-6">
-                        <div className="flex items-center space-x-4 mb-4">
+                <div className="max-w-4xl mx-auto px-4">
+                    <div className="space-y-8">
+                        <div className="flex items-center space-x-4 mb-8">
                             <div className="w-12 h-px bg-[#c5a059]"></div>
-                            <h2 className="text-2xl font-bold text-[#5b6d64] serif">Mission Statement</h2>
+                            <h2 className="text-3xl font-bold text-[#5b6d64] serif">About my practice</h2>
                         </div>
-                        <p className="text-slate-600 leading-relaxed text-lg">
-                            My mission is to provide thoughtful, personalized primary care that treats the whole person—not just symptoms. I partner with my patients to support healing, restore balance, and promote long-term health and wellbeing.
-                        </p>
-                    </div>
-                    <div className="space-y-6">
-                        <div className="flex items-center space-x-4 mb-4">
-                            <div className="w-12 h-px bg-[#c5a059]"></div>
-                            <h2 className="text-2xl font-bold text-[#5b6d64] serif">Vision</h2>
+                        <div className="space-y-6 text-slate-600 leading-relaxed text-lg">
+                            <p>
+                                As a primary care physician, my passions are prevention and earlier detection where possible, and being an internal medicine doctor in the MDVIP model gives me the tools to better help you manage your chronic conditions. My medical interests include cardiovascular health, nutrition and integrative health. As a female physician, I also have a particular interest in women’s health, including perimenopause and menopause care.
+                            </p>
+                            <p>
+                                My goal is to provide personalized care in a warm and welcoming atmosphere. In my MDVIP-affiliated practice, I have more time to delve deeply in discussions with you about your personal health history, and we can partner to tailor action plans according to your individual needs and goals.
+                            </p>
+                            <p>
+                                My practice offers conveniences, like same- or next-day appointments with minimal waiting. My MDVIP-affiliated practice also offers services, including comprehensive, advanced health screenings and diagnostic tests, that go far beyond those found in concierge medicine practices.
+                            </p>
+                            <p>
+                                My practice serves patients across the Peninsula in Northern California, including Hillsborough, Foster City, San Mateo, Half Moon Bay, Belmont, San Carlos, Redwood City, Woodside, Atherton, Menlo Park, Palo Alto, and Portola Valley.
+                            </p>
                         </div>
-                        <p className="text-slate-600 leading-relaxed text-lg">
-                            My vision is to create a medical practice where care is unhurried, relationships matter, and patients feel truly heard. I aim to redefine primary care, empowering individuals to take an active role in their health and live fuller, healthier lives.
-                        </p>
                     </div>
                 </div>
             </section>
@@ -194,15 +196,18 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                                 <h3 className="text-xl font-bold serif">Denise Kan MD<br/>Medical Clinic</h3>
                             </div>
                         </div>
-                        <a href="mailto:care@denisekanmd.com" className="space-y-2 hover:opacity-80 transition-opacity block">
+                        <a href="mailto:drkan@denisekanmd.com" className="space-y-2 hover:opacity-80 transition-opacity block">
                             <p className="text-xs uppercase tracking-widest opacity-60 font-bold">Location</p>
                             <p className="text-lg">400 Seaport Court, Suite 203</p>
                             <p className="text-sm opacity-80">Redwood City, CA 94063</p>
                         </a>
                         <div className="space-y-2">
                             <p className="text-xs uppercase tracking-widest opacity-60 font-bold">Contact</p>
-                            <a href="tel:650-977-4518" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-977-4518</a>
-                            <a href="mailto:care@denisekanmd.com" className="text-lg font-bold block hover:opacity-80 transition-opacity">care@denisekanmd.com</a>
+                            <div className="space-y-1">
+                                <a href="tel:650-643-3702" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-643-3702 <span className="text-xs font-normal opacity-60">(New Patients)</span></a>
+                                <a href="tel:650-727-1940" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-727-1940 <span className="text-xs font-normal opacity-60">(Current Patients)</span></a>
+                            </div>
+                            <a href="mailto:drkan@denisekanmd.com" className="text-lg font-bold block hover:opacity-80 transition-opacity">drkan@denisekanmd.com</a>
                         </div>
                     </div>
                 </div>

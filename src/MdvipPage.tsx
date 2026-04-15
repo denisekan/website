@@ -7,7 +7,7 @@ interface MdvipPageProps {
 }
 
 const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
-    const LOGO_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Logo_2.png";
+    const LOGO_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan_2026.jpg";
     const CARD2_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Card_2.jpg";
     const MDVIP1_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/DPC_1.jpg";
     const MDVIP2_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/DPC_2.jpg";
@@ -31,27 +31,28 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                     <div className="max-w-6xl mx-auto px-4 relative z-10">
                         <div className="space-y-32">
                             
+                            {/* Care that puts you first */}
                             <div className="bg-slate-50/95 p-16 rounded-lg border border-slate-100 backdrop-blur-md shadow-sm text-center relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 opacity-10 pointer-events-none transform translate-x-1/2 -translate-y-1/2">
                                     <img src={LOGO_URL} className="w-full h-full object-contain" alt="" />
                                 </div>
-                                <h2 className="text-3xl font-bold text-[#5b6d64] serif mb-8">What is MDVIP?</h2>
+                                <h2 className="text-3xl font-bold text-[#5b6d64] serif mb-8">Care that puts you first</h2>
                                 <div className="space-y-6 max-w-3xl mx-auto">
-                                    <p className="text-xl font-medium text-[#8da399]">MDVIP restores time, access, and connection to healthcare.</p>
-                                    <p className="text-slate-600 text-lg">MDVIP is a healthcare model built around a direct relationship between you and your physician—without insurance in the middle.</p>
-                                    <p className="text-slate-600">Instead of billing your insurance for each visit, MDVIP works through a simple monthly membership fee. This covers most primary care services and allows me to focus on what matters most: your health, your time, and our relationship.</p>
-                                    <p className="text-xl serif italic text-[#5b6d64] pt-4">"MDVIP allows me to truly know my patients and care for them over time."</p>
+                                    <p className="text-xl font-medium text-[#8da399]">Whether you’re focused on maximizing your healthspan or managing a chronic condition, your MDVIP-affiliated doctor aims to deliver care aligned with your personal health goals.</p>
+                                    <p className="text-slate-600 text-lg">MDVIP makes wellness and prevention easier by providing your physician with innovative tools and technology. MDVIP supports your physician’s practice and seeks to eliminate barriers to a positive healthcare experience. Your doctor will determine whether and how to incorporate these tools at his/her discretion.</p>
                                 </div>
                             </div>
 
+                            {/* Annual exams */}
                             <div className="grid lg:grid-cols-12 gap-16 items-center">
                                 <div className="lg:col-span-7 space-y-8">
-                                    <div className="prose prose-lg max-w-none text-slate-700 leading-relaxed">
-                                        <p className="text-2xl font-light text-[#5b6d64] serif">
-                                            Unhurried, relationship-based healthcare designed around your needs.
+                                    <h2 className="text-3xl font-bold text-[#5b6d64] serif">Annual exams that go beyond the basics</h2>
+                                    <div className="prose prose-lg max-w-none text-slate-700 leading-relaxed space-y-6">
+                                        <p className="text-slate-600">
+                                            The MDVIP Annual Wellness Program includes an advanced exam each year, featuring comprehensive screenings and diagnostics that go beyond what's usually covered by insurance. For members who want to go further in identifying potential health risks early, we offer the option to add advanced screenings through partners like Grail and Prenuvo.
                                         </p>
-                                        <p className="text-slate-600 mt-6">
-                                            Your membership provides access to preventive care, routine visits, chronic disease management, and ongoing support, with predictable, transparent pricing. When appropriate, I can also provide a superbill for possible out-of-network insurance reimbursement. This model allows me to spend more time with you, build a strong doctor–patient relationship, and focus on your overall health—not paperwork.
+                                        <p className="text-slate-600">
+                                            Doctors who operate in the MDVIP models typically see far fewer patients than traditional primary care doctors. That gives them more time to develop deeper doctor-patient relationships that can lead to better outcomes. They can also offer conveniences that most primary care doctors can’t, including same- and next-day appointments. They’re available after hours for urgent matters. And they have time to focus on prevention. That focus begins with the MDVIP Wellness Program, which patients pay for with their annual membership fee.
                                         </p>
                                     </div>
                                 </div>
@@ -63,17 +64,17 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                 </div>
                             </div>
 
+                            {/* Deep doctor-patient relationship */}
                             <div className="space-y-12">
-                                <div className="text-center">
-                                    <h2 className="text-3xl font-bold text-[#5b6d64] serif">How MDVIP is Different</h2>
+                                <div className="text-center max-w-3xl mx-auto">
+                                    <h2 className="text-3xl font-bold text-[#5b6d64] serif mb-6">Deep doctor-patient relationship</h2>
+                                    <p className="text-slate-600 text-lg">MDVIP-affiliated physicians typically care for 40% fewer patients relative to traditional practices, enabling unhurried and more personalized care. This model supports:</p>
                                 </div>
-                                <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+                                <div className="grid md:grid-cols-3 gap-8">
                                     {[
-                                        { title: 'No Insurance Billing', text: 'I do not bill insurance for routine care. This means fewer administrative barriers, more transparency, and more time spent with you—not paperwork.' },
-                                        { title: 'Longer, Unhurried Visits', text: 'Appointments are not rushed. We take the time needed to fully address your concerns, ask questions, and create thoughtful care plans.' },
-                                        { title: 'Direct Access to Your Doctor', text: 'You can schedule same day or next day appointments, as well as telehealth visits. You have easier access to me for questions, follow-ups, and guidance—often without needing an office visit.' },
-                                        { title: 'Clear, Upfront Pricing', text: 'Your membership fee is predictable and transparent. There are no surprise bills or copays.' },
-                                        { title: 'Care Focused on You, Not Volume', text: 'Because I care for a smaller number of patients, I can provide more personalized, attentive care.' }
+                                        { title: 'Deeper Understanding', text: 'A deeper understanding of your health, lifestyle, and goals' },
+                                        { title: 'Comprehensive Consultations', text: 'More in-depth and comprehensive consultations' },
+                                        { title: 'Personalized Planning', text: 'Wellness planning personalized to your needs' }
                                     ].map((item, i) => (
                                         <div key={i} className="border-l-2 border-[#c5a059] pl-6 py-6 bg-white rounded shadow-sm hover:shadow-md transition-shadow">
                                             <h3 className="text-lg font-bold text-[#5b6d64] serif mb-3">{item.title}</h3>
@@ -83,6 +84,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                 </div>
                             </div>
 
+                            {/* Care that doesn’t keep you waiting */}
                             <div className="grid lg:grid-cols-12 gap-16 items-center">
                                 <div className="lg:col-span-4 flex justify-center lg:justify-start order-2 lg:order-1">
                                     <div className="relative group max-w-[400px]">
@@ -91,23 +93,14 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                     </div>
                                 </div>
                                 <div className="lg:col-span-8 order-1 lg:order-2 space-y-10">
-                                    <h2 className="text-4xl font-bold text-[#5b6d64] serif">What MDVIP Covers</h2>
+                                    <h2 className="text-4xl font-bold text-[#5b6d64] serif">Care that doesn’t keep you waiting</h2>
+                                    <p className="text-slate-600 text-lg">Your health needs don’t always follow office hours. That’s why MDVIP-affiliated physicians offer after-hours availability and more flexible scheduling when needed, which means:</p>
                                     <ul className="space-y-6">
                                         {[
-                                            'Same-day or next-day appointments (in-person and virtual visits) when needed',
-                                            'Extended appointment times',
-                                            'Preventative care',
-                                            'Annual wellness visits',
-                                            "Women's health",
-                                            'Lifestyle Medicine',
-                                            'Chronic disease management',
-                                            'Acute care (injuries, rashes, infections, UTIs, etc.)',
-                                            'Sick visits',
-                                            'Basic procedures (joint injections, earwax removal, skin biopsies, etc.)',
-                                            'In-office lab drawing',
-                                            'Select medications offered at cost',
-                                            'Coordination of care with specialists',
-                                            'Transparent costs for additional services'
+                                            'Same-day or next-day appointments with your doctor, not just whichever provider happens to be available',
+                                            'Minimal wait times when you arrive for your appointment',
+                                            'Direct after-hours communication with your doctor for urgent concerns',
+                                            'Continuous healthcare support from your doctor, even while out of town'
                                         ].map((item, i) => (
                                             <li key={i} className="flex items-start space-x-4 text-slate-700">
                                                 <span className="w-2 h-2 rounded-full bg-[#c5a059] mt-2.5 shrink-0"></span>
@@ -118,70 +111,30 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                 </div>
                             </div>
 
-                            <div className="space-y-16">
-                                <div className="text-center max-w-3xl mx-auto space-y-4">
-                                    <h2 className="text-4xl font-bold text-[#5b6d64] serif">MDVIP vs. Traditional Insurance-Based Care</h2>
-                                    <p className="text-slate-500">A side-by-side look at the membership experience.</p>
-                                </div>
-                                
-                                <div className="space-y-12">
-                                    <div className="overflow-x-auto rounded-lg shadow-sm border border-slate-200">
-                                        <table className="w-full border-collapse">
-                                            <thead>
-                                                <tr className="bg-slate-900 text-white text-[10px] uppercase tracking-[0.2em]">
-                                                    <th className="p-6 text-left border-r border-slate-800">Feature</th>
-                                                    <th className="p-6 text-left border-r border-slate-800">MDVIP Membership</th>
-                                                    <th className="p-6 text-left">Traditional Care</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody className="text-sm text-slate-700">
-                                                {[
-                                                    ['Pricing', 'Monthly fee, predictable', 'Copays & surprise bills'],
-                                                    ['Insurance', 'No insurance middleman', 'Care driven by billing codes'],
-                                                    ['Appointments', 'Longer, unhurried', 'Short, time-limited'],
-                                                    ['Access', 'Direct and easy', 'Limited outside visits'],
-                                                    ['Philosophy', 'Relationship-based', 'Volume-based']
-                                                ].map((row, i) => (
-                                                    <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
-                                                        <td className="p-5 font-bold text-[#5b6d64] serif border-r border-slate-200">{row[0]}</td>
-                                                        <td className="p-5 border-r border-slate-200">{row[1]}</td>
-                                                        <td className="p-5">{row[2]}</td>
-                                                    </tr>
-                                                ))}
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div className="flex justify-center">
-                                        <div className="relative rounded overflow-hidden shadow-lg border-2 border-white max-w-[300px] rotate-2">
-                                            <img src={CARD2_URL} className="w-full h-auto" alt="Membership Card" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                            {/* Support for advanced or specialized care */}
                             <div className="space-y-16 py-16 border-t border-slate-100">
-                                <div className="text-center max-w-3xl mx-auto space-y-4">
-                                    <h2 className="text-4xl font-bold text-[#5b6d64] serif">How Does MDVIP Save You Money?</h2>
-                                    <p className="text-slate-500">Investing in your health today can prevent significant costs tomorrow.</p>
+                                <div className="text-center max-w-3xl mx-auto space-y-6">
+                                    <h2 className="text-4xl font-bold text-[#5b6d64] serif">Support for advanced or specialized care</h2>
+                                    <p className="text-slate-600 text-lg">MDVIP’s Medical Centers of Excellence program exists to help MDVIP-affiliated physicians connect patients with nationally recognized institutions for complex health concerns, specialized treatments, or advanced care.</p>
                                 </div>
 
                                 <div className="grid md:grid-cols-3 gap-8">
                                     <div className="bg-white p-8 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow space-y-4">
-                                        <h3 className="text-xl font-bold text-[#5b6d64] serif">Emergency Room</h3>
+                                        <h3 className="text-xl font-bold text-[#5b6d64] serif">Referrals & Appointments</h3>
                                         <p className="text-slate-600 text-sm leading-relaxed">
-                                            A single ER visit can cost $1000-$3000 or more. Sometimes, this is necessary, but oftentimes, patients are unsure if their symptoms warrant immediate medical attention. Here, you have direct access to your doctor even after hours to assess possible medical emergencies and potentially save you a couple thousand dollars.
+                                            Assisting with referrals and appointment requests at nationally recognized medical institutions.
                                         </p>
                                     </div>
                                     <div className="bg-white p-8 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow space-y-4">
-                                        <h3 className="text-xl font-bold text-[#5b6d64] serif">Urgent Care</h3>
+                                        <h3 className="text-xl font-bold text-[#5b6d64] serif">Record Sharing</h3>
                                         <p className="text-slate-600 text-sm leading-relaxed">
-                                            Many patients go to urgent care because the wait times to see their primary care doctor are so long or they do not have insurance. A single urgent care visit can cost $100-$300 out of pocket (even before additional testing). If follow-up treatment is needed, that could cost another couple hundred dollars. Here we offer same-day or next-day appointments, you don't need insurance, and your visits are included.
+                                            Helping you share medical records and test results with specialists at partner medical centers.
                                         </p>
                                     </div>
                                     <div className="bg-white p-8 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow space-y-4">
-                                        <h3 className="text-xl font-bold text-[#5b6d64] serif">Prevention</h3>
+                                        <h3 className="text-xl font-bold text-[#5b6d64] serif">Logistics Support</h3>
                                         <p className="text-slate-600 text-sm leading-relaxed">
-                                            Early intervention can avert bigger health issues later. If you're a member, you've already removed the barrier to access timely preventative care, and you can focus on a healthier you. Treating smaller issues early on is usually much easier and cheaper than what those smaller issues can grow into later.
+                                            Providing resources for travel planning, accommodations, and logistics as needed.
                                         </p>
                                     </div>
                                 </div>
@@ -296,15 +249,18 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                 <h3 className="text-xl font-bold serif">Denise Kan MD<br/>Medical Clinic</h3>
                             </div>
                         </div>
-                        <a href="mailto:care@denisekanmd.com" className="space-y-2 hover:opacity-80 transition-opacity block">
+                        <a href="mailto:drkan@denisekanmd.com" className="space-y-2 hover:opacity-80 transition-opacity block">
                             <p className="text-xs uppercase tracking-widest opacity-60 font-bold">Location</p>
                             <p className="text-lg">400 Seaport Court, Suite 203</p>
                             <p className="text-sm opacity-80">Redwood City, CA 94063</p>
                         </a>
                         <div className="space-y-2">
                             <p className="text-xs uppercase tracking-widest opacity-60 font-bold">Contact</p>
-                            <a href="tel:650-977-4518" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-977-4518</a>
-                            <a href="mailto:care@denisekanmd.com" className="text-lg font-bold block hover:opacity-80 transition-opacity">care@denisekanmd.com</a>
+                            <div className="space-y-1">
+                                <a href="tel:650-643-3702" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-643-3702 <span className="text-xs font-normal opacity-60">(New Patients)</span></a>
+                                <a href="tel:650-727-1940" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-727-1940 <span className="text-xs font-normal opacity-60">(Current Patients)</span></a>
+                            </div>
+                            <a href="mailto:drkan@denisekanmd.com" className="text-lg font-bold block hover:opacity-80 transition-opacity">drkan@denisekanmd.com</a>
                         </div>
                     </div>
                 </div>
