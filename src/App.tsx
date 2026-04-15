@@ -10,7 +10,7 @@ export type ViewType = 'home' | 'about' | 'mdvip' | 'referrals';
 const App = () => {
     const [view, setView] = useState<ViewType>('home');
 
-    const LOGO_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan_2026.jpg";
+    const LOGO_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026.jpg";
     const OFFICE50_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/office50.jpg";
     const KAN2026_22_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_22.jpg";
     const KAN2026_40_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_40.jpg";
@@ -57,34 +57,6 @@ const App = () => {
                 </div>
             </header>
 
-            <section id="services" className="py-32 bg-white">
-                <div className="max-w-7xl mx-auto px-4">
-                    <div className="text-center mb-20 space-y-8">
-                        <div className="max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl border-[12px] border-white bg-white">
-                            <img src={OFFICE50_URL} className="w-full h-auto" alt="Clinic Services" />
-                        </div>
-                        <div className="space-y-4">
-                            <span className="text-[#c5a059] uppercase tracking-[0.4em] font-bold text-xs">A comprehensive, personalized approach to your health and wellness</span>
-                            <h2 className="text-4xl md:text-5xl font-bold text-[#5b6d64] serif">Services</h2>
-                            <div className="w-16 h-1 bg-[#c5a059] mx-auto rounded-full"></div>
-                        </div>
-                    </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-                        {SERVICES.map((s, i) => (
-                            <div 
-                                key={i} 
-                                onClick={() => navigateTo('mdvip')}
-                                className="group p-10 bg-white rounded-lg border border-slate-100 transition-all hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden cursor-pointer"
-                            >
-                                <h3 className="text-2xl font-bold text-[#5b6d64] serif mb-4">{s.title}</h3>
-                                <p className="text-slate-500 text-sm leading-relaxed mb-6">{s.desc}</p>
-                                <span className="text-[#c5a059] text-[10px] font-bold uppercase tracking-widest border-b border-transparent group-hover:border-[#c5a059] transition-all">Learn More →</span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             <section id="about-preview" className="py-32 bg-sage-light/40 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-24 items-center">
                     <div className="flex justify-center order-2 lg:order-1">
@@ -105,12 +77,12 @@ const App = () => {
                         </div>
                         <h2 className="text-4xl md:text-5xl font-bold text-[#5b6d64] serif leading-tight">A Higher Standard of Healthcare</h2>
                         <div className="space-y-6 text-slate-600 leading-relaxed">
-                            <p>Growing up in California gave Dr. Kan a unique perspective on healing. She believes that health is an active process of restoring balance across mind, body, and spirit.</p>
-                            <p>As a family medicine physician, she provides comprehensive primary care to patients of all ages, from newborns to seniors.</p>
+                            <p>I grew up here in the Bay Area and where my interest in medicine began with studying biology in parallel with volunteering at Peninsula Hospital in high school.</p>
+                            <p>My private practice allows me to focus on my patients by providing long visits, easy availability, and a warm and welcoming atmosphere.</p>
                         </div>
                         <div className="pt-6">
                              <button onClick={() => navigateTo('about')} className="text-[#c5a059] font-bold text-xs uppercase tracking-[0.2em] hover:text-[#5b6d64] flex items-center group">
-                                Read Full Bio & Mission <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                                Read Full Bio <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                              </button>
                         </div>
                     </div>
@@ -139,7 +111,7 @@ const App = () => {
                     <div className="space-y-12">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold serif leading-tight">Schedule Your Appointment</h2>
                         <p className="text-slate-200 text-lg md:text-xl leading-relaxed max-w-lg opacity-90">
-                            Join our membership-based practice for a healthcare experience that puts the patient first.
+                            Contact my office to learn more becoming a member of my patient panel.
                         </p>
                         <div className="space-y-10 pt-10">
                             <a href="mailto:drkan@denisekanmd.com" className="flex items-center space-x-6 group hover:opacity-80 transition-opacity">
@@ -174,7 +146,7 @@ const App = () => {
                             <img src={KAN2026_22_URL} className="w-full h-full object-cover" alt="Clinic" />
                         </div>
                         <div className="text-center space-y-8 w-full">
-                            <p className="text-slate-600 serif italic text-lg">Ready to begin your journey to better health?</p>
+                            <p className="text-slate-600 serif italic text-lg">A better healthcare experience starts here.</p>
                             <a 
                                 href="https://app.elationemr.com/book/palmandneedlemed"
                                 target="_blank"
@@ -184,7 +156,7 @@ const App = () => {
                                 Schedule your appointment now
                             </a>
                             <div className="pt-8">
-                                <p className="text-slate-500 text-sm italic">Personalized, unhurried healthcare designed around your needs.</p>
+                                <p className="text-slate-500 text-sm italic">A patient-centered healthcare experience</p>
                             </div>
                         </div>
                     </div>

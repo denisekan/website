@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const ReferralsPage = () => {
-    const LOGO_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan_2026.jpg";
+    const LOGO_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026.jpg";
     const KAN2026_40_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_40.jpg";
 
     const [formData, setFormData] = useState({

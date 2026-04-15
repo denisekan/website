@@ -6,9 +6,9 @@ interface AboutPageProps {
 }
 
 const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
-    const LOGO_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan_2026.jpg";
+    const LOGO_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026.jpg";
     const LOGO_3_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Logo_3.jpg";
-    const NINA_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/SMPO03195.jpg";
+    const NINA_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_6.jpg";
     const BIO_IMG_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/SMP03232.jpg";
     const ADD4_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Additional_4.jpg";
     const ADD5_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Additional_5.jpg";
@@ -35,7 +35,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                     </div>
                     <h1 className="text-3xl md:text-5xl font-bold text-[#5b6d64] serif mb-8">Dr. Denise Kan, MD</h1>
                     <p className="text-xl text-slate-600 serif italic leading-relaxed max-w-2xl mx-auto">
-                        "Healthcare is a collaboration—an active process of restoring balance across mind, body, and spirit."
+                        "A patient-centered healthcare experience"
                     </p>
                 </div>
             </section>
@@ -71,13 +71,12 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                         <span className="text-[#c5a059] uppercase tracking-[0.4em] font-bold text-xs block mb-4">What We Stand For</span>
                         <h2 className="text-4xl font-bold text-[#5b6d64] serif">Core Values</h2>
                     </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid md:grid-cols-2 gap-8">
                         {[
-                            { title: 'Relationship-Centered Care', text: 'I believe strong doctor–patient relationships are the foundation of excellent healthcare. I view healthcare as a collaboration.' },
-                            { title: 'Whole-Person Medicine', text: 'I treat the body as an interconnected system. Care plans address physical, emotional, and lifestyle factors—not just isolated symptoms.' },
-                            { title: 'Time & Access', text: 'I value time, availability, and continuity. Longer visits and direct communication allow for deeper understanding and better outcomes.' },
-                            { title: 'Transparency & Integrity', text: 'I believe healthcare should be straightforward and honest. I am committed to clear pricing, ethical practice, and evidence-based care.' },
-                            { title: 'Prevention & Sustainability', text: 'I focus on prevention, education, and long-term health—helping patients stay well, not just get well.' }
+                            { title: 'Time & Access', text: "I value spending time with my patients and making sure they have direct access to me. No phone trees- a person will always answer your call. And same or next-day appointments are available when you're sick." },
+                            { title: 'A Comprehensive Approach to Wellness', text: "Everything from your history, family background, and lifestyle plays a role in how we approach your health and wellness. I take everything into account." },
+                            { title: 'Specialist Referrals', text: "I can connect you with excellent specialists in our area. The MDVIP Medical Centers of Excellence Program helps me connect you with the premier academic and research hospitals across the country and make sure the process goes smoothly." },
+                            { title: 'Value & Transparent Pricing', text: "One predictable fee covers your personalized Annual Wellness Program and preventive services not typically reimbursed by insurance.\n\nYou can continue using your insurance for routine medical care, specialist visits, and hospitalization expenses." }
                         ].map((v, i) => (
                             <div key={i} className="bg-white p-8 rounded border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
                                 <h3 className="text-xl font-bold text-[#8da399] serif mb-4">{v.title}</h3>
@@ -108,22 +107,16 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                         
                         <div className="space-y-6 text-slate-700 leading-relaxed text-lg font-light">
                             <p>
-                                I bring an integrative approach to primary care shaped by growing up in California. Being immersed in two cultures from an early age influenced my interest in blending Western medicine with Eastern healing traditions and in caring for patients as whole individuals.
+                                I grew up here in the Bay Area and where my interest in medicine began with studying biology in parallel with volunteering at Peninsula Hospital in high school.
                             </p>
                             <p>
-                                I completed my undergraduate education at Brown University in Neuroscience, earned my Doctor of Osteopathic Medicine degree from Marian University College of Osteopathic Medicine, and completed my Family Medicine residency at St. Joseph’s Medical Center in Stockton, CA.
+                                I earned my undergraduate degree in Molecular and Cell Biology at the University of California at Berkeley, followed by doing research at UCSF's Cardiovascular Research Institute. I earned my Doctor of Medicine degree from Wayne State University and completed my Internal Medicine Residency at the Mount Carmel Health System.
                             </p>
                             <p>
-                                I have always been drawn to family medicine because of its emphasis on whole-person care, continuity, and cultural awareness. I believe health is influenced not only by physical symptoms, but also by lifestyle, environment, and personal values. My goal is to offer integrative, patient-centered options for chronic illness and long-term wellness.
+                                My private practice allows me to focus on my patients by providing long visits, easy availability, and a warm and welcoming atmosphere. I truly value the meaningful relationships I am able to build with my patients and their families, and am honored to be their partner in health and wellness.
                             </p>
                             <p>
-                                I chose to practice MDVIP because it allows me to practice medicine in alignment with my values. Over time, I found that the traditional insurance-based model increasingly limited the time I could spend with patients and added administrative burdens that took focus away from meaningful patient care. By removing the constraints of insurance-based care, MDVIP allows for longer visits, improved access, and a stronger patient–physician relationship. This enables me to focus on prevention, education, and individualized care rather than treating symptoms in isolation.
-                            </p>
-                            <p>
-                                My goal is to provide thoughtful, inclusive, and culturally responsive comprehensive primary care that supports patients throughout their healthcare journey.
-                            </p>
-                            <p>
-                                Outside of work, I value opportunities for exploration and connection. I enjoy going on adventures that involve animals, skiing, snorkeling, traveling, and catching live comedy shows.
+                                Outside of the office, I can be found spending time with my daughter and our dogs, and taking them on local adventures.
                             </p>
                         </div>
 
