@@ -40,7 +40,7 @@ const App = () => {
                     <div className="lg:col-span-4 space-y-8 animate-fade-in relative z-10">
                         <div className="space-y-4">
                             <div className="text-left">
-                                <h1 className="text-4xl md:text-6xl font-bold text-[#5b6d64] serif leading-tight whitespace-nowrap"><span className="bg-[#c5a059]/10 px-2 -mx-2 rounded border border-[#c5a059]/20">Denise Kan, MD</span></h1>
+                                <h1 className="text-4xl md:text-6xl font-bold text-[#5b6d64] serif leading-tight whitespace-nowrap"><span className="bg-[#c5a059]/30 px-2 -mx-2 rounded border border-[#c5a059]/20">Denise Kan, MD</span></h1>
                                 <p className="text-xl md:text-2xl tracking-[0.4em] uppercase text-[#c5a059] font-bold mt-2">Primary Care Physician</p>
                             </div>
                             <h2 className="text-2xl md:text-3xl font-bold text-[#5b6d64] serif leading-tight italic">

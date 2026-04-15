@@ -49,7 +49,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                         </div>
                         <div className="space-y-6 text-slate-600 leading-relaxed text-lg">
                             <p>
-                                As a primary care physician, my passions are prevention and earlier detection, and being an internal medicine doctor gives me the tools to better help you manage any chronic and complex conditions. My medical interests include cardiovascular health, nutrition, and integrative health. I also have a particular interest in women’s health, including perimenopause and menopause care.
+                                As a primary care physician, my passions are prevention and earlier detection, and being an Internal Medicine doctor gives me the tools to better help you manage any chronic and complex conditions. My medical interests include cardiovascular health, nutrition, and integrative health. I also have a particular interest in women’s health, including perimenopause and menopause care. My partnership with MDVIP means that I stay up to date on the latest advances in preventative medicine.
                             </p>
                             <p>
                                 My goal is to provide personalized care in a warm and welcoming atmosphere. In my MDVIP-affiliated practice, I have more time to delve deeply in discussions with you about your personal health history, and we can partner to tailor action plans according to your individual needs and goals.
@@ -74,7 +74,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                     <div className="grid md:grid-cols-2 gap-8">
                         {[
                             { title: 'Time & Access', text: "I value spending time with my patients and making sure they have direct access to me. No phone trees- a person will always answer your call. And same or next-day appointments are available when you're sick." },
-                            { title: 'A Comprehensive Approach to Wellness', text: "Everything from your history, family background, and lifestyle plays a role in how we approach your health and wellness. I take everything into account and understand how to treat the whole person, not just a set of numbers." },
+                            { title: 'A Comprehensive Approach to Wellness', text: "Everything from your history, family background, and lifestyle plays a role in how we approach your health and wellness. I take every aspect into account and understand how to treat the whole person, not just a set of numbers." },
                             { title: 'Specialist Referrals', text: "I can connect you with the best specialists in our area, knowing who will be a good fit for you. The MDVIP Medical Centers of Excellence Program helps me connect you with the premier academic and research hospitals across the country and make sure the process goes smoothly." },
                             { title: 'Value & Transparent Pricing', text: "One predictable fee covers your personalized Annual Wellness Program and preventive services not typically reimbursed by insurance.\n\nYou can continue using your insurance for routine medical care, specialist visits, and hospitalization expenses." }
                         ].map((v, i) => (
@@ -107,7 +107,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                         
                         <div className="space-y-6 text-slate-700 leading-relaxed text-lg font-light">
                             <p>
-                                I grew up here on the Peninsula and where my interest in medicine began with studying biology in parallel with volunteering at Peninsula Hospital in high school.
+                                I grew up here on the Peninsula and where my interest in medicine was sparked by my love of science and my time as a volunteer at Peninsula Hospital in high school.
                             </p>
                             <p>
                                 I earned my undergraduate degree in Molecular and Cell Biology at the University of California at Berkeley, followed by doing research at UCSF's Cardiovascular Research Institute. I earned my Doctor of Medicine degree from Wayne State University and completed my Internal Medicine Residency at the Mount Carmel Health System.

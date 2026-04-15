@@ -57,7 +57,7 @@ Urgency: ${formData.urgency}
                 <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
                     <span className="text-[#c5a059] uppercase tracking-[0.4em] font-bold text-xs mb-6 block">Coordinated Care</span>
                     <h1 className="text-5xl md:text-7xl font-bold text-[#5b6d64] serif mb-8">Referrals</h1>
-                    <p className="text-xl text-[#5b6d64] leading-relaxed max-w-2xl mx-auto serif italic mb-12">For other clinicians</p>
+                    <p className="text-xl text-[#5b6d64] leading-relaxed max-w-2xl mx-auto serif italic mb-12">For other medical providers</p>
                 </div>
             </section>
 

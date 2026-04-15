@@ -39,7 +39,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                 <h2 className="text-3xl font-bold text-[#5b6d64] serif mb-8">Care that puts you first</h2>
                                 <div className="space-y-6 max-w-3xl mx-auto">
                                     <p className="text-xl font-medium text-[#8da399]">Whether you’re focused on maximizing your healthspan or managing a chronic condition, an MDVIP-affiliated doctor can deliver care aligned with your personal health goals.</p>
-                                    <p className="text-slate-600 text-lg">MDVIP makes wellness and prevention easier by innovative tools and technology. MDVIP supports my practice and seeks to eliminate barriers to a positive healthcare experience. This means deeper doctor-patient relationships, proactive prevention, and care that goes above and beyond.</p>                                </div>
+                                    <p className="text-slate-600 text-lg">MDVIP makes wellness and prevention easier by providing innovative tools and technology. MDVIP supports my practice and seeks to eliminate barriers to a positive healthcare experience. This means deeper doctor-patient relationships, proactive prevention, and care that goes above and beyond.</p>                                </div>
                             </div>
 
                             {/* Annual exams */}
