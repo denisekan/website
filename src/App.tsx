@@ -19,6 +19,8 @@ const App = () => {
     const NINA_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/SMP03193.jpg";
     const ADD2_URL = "https://raw.githubusercontent.com/nmlippey/palmandneedlemed-assets/main/Additional_2.jpg";
 
+    const ORCHIDS_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Orchids.jpeg";
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [view]);

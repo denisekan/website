@@ -15,6 +15,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
     const ADD6_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Santa%20Cruz%20Beach.jpeg";
     const ADD7_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Sunset.jpeg";
     const LOS_GATOS_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Los%20Gatos.jpeg";
+    const BOARDWALK_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Santa%20Cruz%20Beach%20Boardwalk.jpeg";
 
     return (
         <div className="animate-fade-in">
@@ -70,7 +71,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <span className="text-[#c5a059] uppercase tracking-[0.4em] font-bold text-xs block mb-4">What I Stand For</span>
-                        <h2 className="text-4xl font-bold text-[#5b6d64] serif">Core Values</h2>
+                        <h2 className="text-4xl font-bold text-[#5b6d64] serif">My Values</h2>
                     </div>
                     <div className="grid md:grid-cols-2 gap-8">
                         {[
@@ -144,12 +145,12 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                                 pos: 'center', 
                                 caption: "" 
                             },
-                            { url: ADD6_URL, pos: 'center', caption: "" }
+                            { url: BOARDWALK_URL, pos: 'center', caption: "" }
                         ].map((item, i) => (
                             <div key={i} className="relative group aspect-square flex-1 min-w-[50%] md:min-w-0 overflow-hidden border-r border-white/10 last:border-0">
                                 <img 
                                     src={item.url} 
-                                    alt={`Life outside work ${i + 1}`} 
+                                    alt={i === 0 ? "Los Gatos" : i === 3 ? "Santa Cruz Beach Boardwalk" : `Life outside work ${i + 1}`} 
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                     style={{ objectPosition: item.pos }}
                                     referrerPolicy="no-referrer"
