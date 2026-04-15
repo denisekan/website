@@ -73,8 +73,14 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                 <div className="grid md:grid-cols-3 gap-8">
                                     {[
                                         { title: 'Deeper Understanding', text: 'A deeper understanding of your health, lifestyle, and goals' },
-                                        { title: 'Comprehensive Consultations', text: 'More in-depth and comprehensive consultations' },
-                                        { title: 'Personalized Planning', text: 'Wellness planning personalized to your needs' }
+                                        { 
+                                            title: 'Comprehensive Consultations', 
+                                            text: 'More in-depth and comprehensive consultations. Tailored to your age, history, and goals, these annual tests are designed to help detect subtle health changes before they become bigger issues. These tests may cover:\nHeart Health\nDiabetes\nBrain Health\nRespiratory Health\nBone Health\nSleep Quality\nVision and Hearing\nNutrition and Fitness\nWeight Management\nEmotional Well-being\nSexual Health\nMedication Management' 
+                                        },
+                                        { 
+                                            title: 'Personalized Planning', 
+                                            text: 'Wellness planning personalized to your needs-- your plan includes c nutrition and meal strategies, fitness recommendations, sleep and stress management tools, and other prevention strategies customized to you.' 
+                                        }
                                     ].map((item, i) => (
                                         <div key={i} className="border-l-2 border-[#c5a059] pl-6 py-6 bg-white rounded shadow-sm hover:shadow-md transition-shadow">
                                             <h3 className="text-lg font-bold text-[#5b6d64] serif mb-3">{item.title}</h3>

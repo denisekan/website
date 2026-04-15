@@ -55,7 +55,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                                 My goal is to provide personalized care in a warm and welcoming atmosphere. In my MDVIP-affiliated practice, I have more time to delve deeply in discussions with you about your personal health history, and we can partner to tailor action plans according to your individual needs and goals.
                             </p>
                             <p>
-                                My practice offers conveniences, like same- or next-day appointments with minimal waiting. My MDVIP-affiliated practice also offers services, including comprehensive, advanced health screenings and diagnostic tests, that go far beyond those found in concierge medicine practices.
+                                We offer conveniences, like same- or next-day appointments with minimal waiting. Thanks to my affiliation with MDVIP, I offer services, including comprehensive, advanced health screenings and diagnostic tests, that go far beyond those found in concierge medicine practices.
                             </p>
                             <p>
                                 My practice serves patients across the Peninsula in Northern California, including Hillsborough, Foster City, San Mateo, Half Moon Bay, Belmont, San Carlos, Redwood City, Woodside, Atherton, Menlo Park, Palo Alto, and Portola Valley.
@@ -74,8 +74,8 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                     <div className="grid md:grid-cols-2 gap-8">
                         {[
                             { title: 'Time & Access', text: "I value spending time with my patients and making sure they have direct access to me. No phone trees- a person will always answer your call. And same or next-day appointments are available when you're sick." },
-                            { title: 'A Comprehensive Approach to Wellness', text: "Everything from your history, family background, and lifestyle plays a role in how we approach your health and wellness. I take everything into account." },
-                            { title: 'Specialist Referrals', text: "I can connect you with excellent specialists in our area. The MDVIP Medical Centers of Excellence Program helps me connect you with the premier academic and research hospitals across the country and make sure the process goes smoothly." },
+                            { title: 'A Comprehensive Approach to Wellness', text: "Everything from your history, family background, and lifestyle plays a role in how we approach your health and wellness. I take everything into account and understand how to treat the whole person, not just a set of numbers." },
+                            { title: 'Specialist Referrals', text: "I can connect you with the best specialists in our area, knowing who will be a good fit for you. The MDVIP Medical Centers of Excellence Program helps me connect you with the premier academic and research hospitals across the country and make sure the process goes smoothly." },
                             { title: 'Value & Transparent Pricing', text: "One predictable fee covers your personalized Annual Wellness Program and preventive services not typically reimbursed by insurance.\n\nYou can continue using your insurance for routine medical care, specialist visits, and hospitalization expenses." }
                         ].map((v, i) => (
                             <div key={i} className="bg-white p-8 rounded border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
@@ -107,13 +107,13 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                         
                         <div className="space-y-6 text-slate-700 leading-relaxed text-lg font-light">
                             <p>
-                                I grew up here in the Bay Area and where my interest in medicine began with studying biology in parallel with volunteering at Peninsula Hospital in high school.
+                                I grew up here on the Peninsula and where my interest in medicine began with studying biology in parallel with volunteering at Peninsula Hospital in high school.
                             </p>
                             <p>
                                 I earned my undergraduate degree in Molecular and Cell Biology at the University of California at Berkeley, followed by doing research at UCSF's Cardiovascular Research Institute. I earned my Doctor of Medicine degree from Wayne State University and completed my Internal Medicine Residency at the Mount Carmel Health System.
                             </p>
                             <p>
-                                My private practice allows me to focus on my patients by providing long visits, easy availability, and a warm and welcoming atmosphere. I truly value the meaningful relationships I am able to build with my patients and their families, and am honored to be their partner in health and wellness.
+                                Being in private practice allows me to focus on my patients by providing long visits, easy availability, and a warm and welcoming atmosphere. I truly value the meaningful relationships I am able to build with my patients and their families, and am honored to be their partner in health and wellness.
                             </p>
                             <p>
                                 Outside of the office, I can be found spending time with my daughter and our dogs, and taking them on local adventures.
@@ -186,7 +186,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                         <div className="space-y-2">
                             <p className="text-xs uppercase tracking-widest opacity-60 font-bold">Contact</p>
                             <div className="space-y-1">
-                                <a href="tel:650-643-3702" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-643-3702 <span className="text-xs font-normal opacity-60">(New Patients)</span></a>
+                                <a href="tel:650-643-3702" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-643-3702 <span className="text-xs font-normal opacity-60">(New Patients & Inquiries)</span></a>
                                 <a href="tel:650-727-1940" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-727-1940 <span className="text-xs font-normal opacity-60">(Current Patients)</span></a>
                             </div>
                             <a href="mailto:drkan@denisekanmd.com" className="text-lg font-bold block hover:opacity-80 transition-opacity">drkan@denisekanmd.com</a>

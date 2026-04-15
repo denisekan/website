@@ -11,6 +11,7 @@ const App = () => {
     const [view, setView] = useState<ViewType>('home');
 
     const LOGO_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026.jpg";
+    const OFFICE33_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Office33.jpg";
     const OFFICE50_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/office50.jpg";
     const KAN2026_22_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_22.jpg";
     const KAN2026_40_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_40.jpg";
@@ -38,7 +39,7 @@ const App = () => {
                     <div className="lg:col-span-4 space-y-8 animate-fade-in relative z-10">
                         <div className="space-y-4">
                             <div className="text-left">
-                                <h1 className="text-5xl md:text-7xl font-bold text-[#5b6d64] serif leading-tight whitespace-nowrap">Denise Kan, <span className="text-[#b48a3d] drop-shadow-sm">MD</span></h1>
+                                <h1 className="text-5xl md:text-7xl font-bold text-[#5b6d64] serif leading-tight whitespace-nowrap"><span className="bg-[#c5a059]/10 px-2 -mx-2 rounded">Denise Kan, MD</span></h1>
                                 <p className="text-xl md:text-2xl tracking-[0.4em] uppercase text-[#c5a059] font-bold mt-2">Primary Care Physician</p>
                             </div>
                             <h2 className="text-2xl md:text-3xl font-bold text-[#5b6d64] serif leading-tight italic">
@@ -77,8 +78,8 @@ const App = () => {
                         </div>
                         <h2 className="text-4xl md:text-5xl font-bold text-[#5b6d64] serif leading-tight">A Higher Standard of Healthcare</h2>
                         <div className="space-y-6 text-slate-600 leading-relaxed">
-                            <p>I grew up here in the Bay Area and where my interest in medicine began with studying biology in parallel with volunteering at Peninsula Hospital in high school.</p>
-                            <p>My private practice allows me to focus on my patients by providing long visits, easy availability, and a warm and welcoming atmosphere.</p>
+                            <p>I grew up here on the Peninsula and where my interest in medicine began with studying biology in parallel with volunteering at Peninsula Hospital in high school.</p>
+                            <p>Being in private practice allows me to focus on my patients by providing long visits, easy availability, and a warm and welcoming atmosphere.</p>
                         </div>
                         <div className="pt-6">
                              <button onClick={() => navigateTo('about')} className="text-[#c5a059] font-bold text-xs uppercase tracking-[0.2em] hover:text-[#5b6d64] flex items-center group">
@@ -111,7 +112,7 @@ const App = () => {
                     <div className="space-y-12">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold serif leading-tight">Schedule Your Appointment</h2>
                         <p className="text-slate-200 text-lg md:text-xl leading-relaxed max-w-lg opacity-90">
-                            Contact my office to learn more becoming a member of my patient panel.
+                            Learn more becoming a member.
                         </p>
                         <div className="space-y-10 pt-10">
                             <a href="mailto:drkan@denisekanmd.com" className="flex items-center space-x-6 group hover:opacity-80 transition-opacity">
@@ -148,9 +149,7 @@ const App = () => {
                         <div className="text-center space-y-8 w-full">
                             <p className="text-slate-600 serif italic text-lg">A better healthcare experience starts here.</p>
                             <a 
-                                href="https://app.elationemr.com/book/palmandneedlemed"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                href="mailto:drkan@denisekanmd.com"
                                 className="flex items-center justify-center w-full bg-[#c5a059] text-white py-6 font-bold uppercase tracking-[0.4em] text-xs hover:bg-[#5b6d64] transition-all shadow-xl hover:-translate-y-1 text-center pl-[0.4em] md:pl-0 md:block"
                             >
                                 Schedule your appointment now
