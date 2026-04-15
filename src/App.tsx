@@ -38,12 +38,12 @@ const App = () => {
                     <div className="lg:col-span-4 space-y-8 animate-fade-in relative z-10">
                         <div className="space-y-4">
                             <div className="text-left">
-                                <h1 className="text-5xl md:text-7xl font-bold text-[#5b6d64] serif leading-tight whitespace-nowrap">Denise Kan, <span className="text-[#c5a059]">MD</span></h1>
+                                <h1 className="text-5xl md:text-7xl font-bold text-[#5b6d64] serif leading-tight whitespace-nowrap">Denise Kan, <span className="text-[#b48a3d] drop-shadow-sm">MD</span></h1>
                                 <p className="text-xl md:text-2xl tracking-[0.4em] uppercase text-[#c5a059] font-bold mt-2">Primary Care Physician</p>
                             </div>
-                            <h2 className="text-2xl md:text-3xl font-bold text-[#8da399] serif leading-tight italic">
+                            <h2 className="text-2xl md:text-3xl font-bold text-[#5b6d64] serif leading-tight italic">
                                 A personalized <br className="hidden md:block" />
-                                <span className="text-[#5b6d64]">healthcare experience.</span>
+                                healthcare experience.
                             </h2>
                         </div>
                         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
