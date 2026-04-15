@@ -39,8 +39,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                 <h2 className="text-3xl font-bold text-[#5b6d64] serif mb-8">Care that puts you first</h2>
                                 <div className="space-y-6 max-w-3xl mx-auto">
                                     <p className="text-xl font-medium text-[#8da399]">Whether you’re focused on maximizing your healthspan or managing a chronic condition, an MDVIP-affiliated doctor can deliver care aligned with your personal health goals.</p>
-                                    <p className="text-slate-600 text-lg">MDVIP makes wellness and prevention easier by providing your physician with innovative tools and technology. MDVIP supports your physician’s practice and seeks to eliminate barriers to a positive healthcare experience. This means deeper doctor-patient relationships, proactive prevention, and care that goes above and beyond.</p>
-                                </div>
+                                    <p className="text-slate-600 text-lg">MDVIP makes wellness and prevention easier by innovative tools and technology. MDVIP supports my practice and seeks to eliminate barriers to a positive healthcare experience. This means deeper doctor-patient relationships, proactive prevention, and care that goes above and beyond.</p>                                </div>
                             </div>
 
                             {/* Annual exams */}
@@ -67,19 +66,19 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                             {/* Deep doctor-patient relationship */}
                             <div className="space-y-12">
                                 <div className="text-center max-w-3xl mx-auto">
-                                    <h2 className="text-3xl font-bold text-[#5b6d64] serif mb-6">Deep doctor-patient relationship</h2>
-                                    <p className="text-slate-600 text-lg">MDVIP-affiliated physicians Care for fewer patients relative to traditional practices, enabling unhurried and more personalized care. This model supports:</p>
+                                    <h2 className="text-3xl font-bold text-[#5b6d64] serif mb-6">A true partnership in care</h2>
+                                    <p className="text-slate-600 text-lg">MDVIP-affiliated physicians have smaller patient panels relative to traditional practices, enabling unhurried and more personalized care. This model supports:</p>
                                 </div>
                                 <div className="grid md:grid-cols-3 gap-8">
                                     {[
-                                        { title: 'Deeper Understanding', text: 'A deeper understanding of your health, lifestyle, and goals' },
+                                        { title: 'Deeper Understanding', text: "A deeper understanding of your health, lifestyle, and goals by moving beyond symptom checklists to undercover the context behind your concerns, revealing patterns that are often missed in brief encounters, and fostering a richer, more empathetic grasp of each patient's unique story." },
                                         { 
                                             title: 'Comprehensive Consultations', 
-                                            text: 'More in-depth and comprehensive consultations. Tailored to your age, history, and goals, these annual tests are designed to help detect subtle health changes before they become bigger issues. These tests may cover:\nHeart Health\nDiabetes\nBrain Health\nRespiratory Health\nBone Health\nSleep Quality\nVision and Hearing\nNutrition and Fitness\nWeight Management\nEmotional Well-being\nSexual Health\nMedication Management' 
+                                            text: 'More in-depth and comprehensive consultations. Tailored to your age, history, and goals, these annual tests are designed to help detect subtle health changes before they become bigger issues. These tests may cover: Heart Health, Diabetes, Brain Health, Respiratory Health, Bone Health, Sleep Quality, Vision and Hearing, Nutrition and Fitness, Weight Management, Emotional Well-being, Sexual Health, Medication Management' 
                                         },
                                         { 
                                             title: 'Personalized Planning', 
-                                            text: 'Wellness planning personalized to your needs-- your plan includes c nutrition and meal strategies, fitness recommendations, sleep and stress management tools, and other prevention strategies customized to you.' 
+                                            text: 'Wellness planning personalized to your needs—your plan includes nutrition and meal strategies, fitness recommendations, sleep and stress management tools, and other prevention strategies customized to you.' 
                                         }
                                     ].map((item, i) => (
                                         <div key={i} className="border-l-2 border-[#c5a059] pl-6 py-6 bg-white rounded shadow-sm hover:shadow-md transition-shadow">
@@ -120,7 +119,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                             {/* Support for advanced or specialized care */}
                             <div className="space-y-16 py-16 border-t border-slate-100">
                                 <div className="text-center max-w-3xl mx-auto space-y-6">
-                                    <h2 className="text-4xl font-bold text-[#5b6d64] serif">Support for advanced or specialized care</h2>
+                                    <h2 className="text-4xl font-bold text-[#5b6d64] serif">Support for specialized care</h2>
                                     <p className="text-slate-600 text-lg">MDVIP’s Medical Centers of Excellence program exists to help MDVIP-affiliated physicians connect patients with nationally recognized institutions for complex health concerns, specialized treatments, or advanced care.</p>
                                 </div>
 
@@ -161,7 +160,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                             <div className="space-y-12 pt-16 border-t border-slate-100">
                                 <div className="grid md:grid-cols-2 gap-12">
                                     <div className="space-y-4">
-                                        <h3 className="text-xl font-bold text-[#5b6d64] serif">Do I Still Need Insurance?</h3>
+                                        <h3 className="text-xl font-bold text-[#5b6d64] serif">Do I still need insurance?</h3>
                                         <p className="text-slate-600 text-sm leading-relaxed">
                                             MDVIP is not insurance, but it works well alongside it. I encourage patients to have health insurance, such as a PPO, high-deductible health plan, or catastrophic insurance plan for added peace of mind in the event of emergencies, hospitalizations, or specialty care. This approach allows you to enjoy the benefits of direct, relationship-based primary care while still having insurance coverage for life’s unexpected events.
                                         </p>

@@ -13,6 +13,7 @@ const App = () => {
     const LOGO_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026.jpg";
     const OFFICE33_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Office33.jpg";
     const OFFICE50_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/office50.jpg";
+    const KAN2026_11_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_11.jpg";
     const KAN2026_22_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_22.jpg";
     const KAN2026_40_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_40.jpg";
     const NINA_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/SMP03193.jpg";
@@ -39,7 +40,7 @@ const App = () => {
                     <div className="lg:col-span-4 space-y-8 animate-fade-in relative z-10">
                         <div className="space-y-4">
                             <div className="text-left">
-                                <h1 className="text-5xl md:text-7xl font-bold text-[#5b6d64] serif leading-tight whitespace-nowrap"><span className="bg-[#c5a059]/10 px-2 -mx-2 rounded">Denise Kan, MD</span></h1>
+                                <h1 className="text-4xl md:text-6xl font-bold text-[#5b6d64] serif leading-tight whitespace-nowrap"><span className="bg-[#c5a059]/10 px-2 -mx-2 rounded border border-[#c5a059]/20">Denise Kan, MD</span></h1>
                                 <p className="text-xl md:text-2xl tracking-[0.4em] uppercase text-[#c5a059] font-bold mt-2">Primary Care Physician</p>
                             </div>
                             <h2 className="text-2xl md:text-3xl font-bold text-[#5b6d64] serif leading-tight italic">
@@ -92,7 +93,7 @@ const App = () => {
                 <div className="max-w-7xl mx-auto px-4 mt-24">
                     <div className="relative group overflow-hidden rounded-lg shadow-2xl border-8 border-white">
                         <img 
-                            src={ADD2_URL} 
+                            src={KAN2026_11_URL} 
                             alt="Dr. Kan's Practice" 
                             className="w-full aspect-[21/9] object-cover [object-position:center_75%]" 
                             referrerPolicy="no-referrer"
@@ -120,7 +121,7 @@ const App = () => {
                                 <div>
                                     <p className="font-bold text-lg md:text-xl">400 Seaport Court, Suite 203</p>
                                     <p className="text-sm opacity-60">Redwood City, CA 94063</p>
-                                    <p className="text-xs italic opacity-80 mt-2 max-w-[280px]">Turn right upon entering the marina, and look for the sign "Seaport Health Collective"</p>
+                                    <p className="text-xs italic opacity-80 mt-2 max-w-[280px]">Turn right upon entering the marina, and look for the sign that says "Seaport Health Collective"</p>
                                 </div>
                             </a>
                             <div className="flex items-start space-x-6 group">
@@ -128,7 +129,7 @@ const App = () => {
                                 <div className="space-y-4">
                                     <a href="tel:650-643-3702" className="block hover:opacity-80 transition-opacity">
                                         <p className="font-bold text-lg md:text-xl">650-643-3702</p>
-                                        <p className="text-sm opacity-60">New Patients</p>
+                                        <p className="text-sm opacity-60">New Patients & Membership Inquiries</p>
                                     </a>
                                     <a href="tel:650-727-1940" className="block hover:opacity-80 transition-opacity">
                                         <p className="font-bold text-lg md:text-xl">650-727-1940</p>
@@ -155,7 +156,7 @@ const App = () => {
                                 Schedule your appointment now
                             </a>
                             <div className="pt-8">
-                                <p className="text-slate-500 text-sm italic">A patient-centered healthcare experience</p>
+                                <p className="text-slate-500 text-sm italic">High quality care that puts you first</p>
                             </div>
                         </div>
                     </div>

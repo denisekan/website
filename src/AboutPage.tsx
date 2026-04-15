@@ -35,7 +35,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                     </div>
                     <h1 className="text-3xl md:text-5xl font-bold text-[#5b6d64] serif mb-8">Dr. Denise Kan, MD</h1>
                     <p className="text-xl text-slate-600 serif italic leading-relaxed max-w-2xl mx-auto">
-                        "A patient-centered healthcare experience"
+                        A patient-centered healthcare experience
                     </p>
                 </div>
             </section>
@@ -49,7 +49,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                         </div>
                         <div className="space-y-6 text-slate-600 leading-relaxed text-lg">
                             <p>
-                                As a primary care physician, my passions are prevention and earlier detection where possible, and being an internal medicine doctor in the MDVIP model gives me the tools to better help you manage your chronic conditions. My medical interests include cardiovascular health, nutrition and integrative health. As a female physician, I also have a particular interest in women’s health, including perimenopause and menopause care.
+                                As a primary care physician, my passions are prevention and earlier detection, and being an internal medicine doctor gives me the tools to better help you manage any chronic and complex conditions. My medical interests include cardiovascular health, nutrition, and integrative health. I also have a particular interest in women’s health, including perimenopause and menopause care.
                             </p>
                             <p>
                                 My goal is to provide personalized care in a warm and welcoming atmosphere. In my MDVIP-affiliated practice, I have more time to delve deeply in discussions with you about your personal health history, and we can partner to tailor action plans according to your individual needs and goals.
@@ -123,9 +123,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                         <div className="pt-12 space-y-6">
                             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 justify-center lg:justify-start">
                                 <a 
-                                    href="https://app.elationemr.com/book/palmandneedlemed"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                    href="mailto:drkan@denisekanmd.com"
                                     className="bg-[#c5a059] text-white px-8 py-4 rounded-sm font-bold text-xs uppercase tracking-[0.2em] hover:bg-[#5b6d64] transition-all shadow-lg hover:-translate-y-1 text-center"
                                 >
                                     Schedule Appointment
