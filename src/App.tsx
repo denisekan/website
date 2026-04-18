@@ -156,8 +156,8 @@ const App = () => {
                             >
                                 Schedule your appointment now
                             </a>
-                            <div className="pt-8">
-                                <p className="text-slate-500 text-sm italic">High quality care that puts you first</p>
+                            <div className="pt-8 flex justify-center">
+                                <img src={ORCHIDS_URL} alt="Orchids" className="w-24 h-24 object-cover rounded shadow-md" referrerPolicy="no-referrer" />
                             </div>
                         </div>
                     </div>

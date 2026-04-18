@@ -57,10 +57,10 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                                 My goal is to provide personalized care in a warm and welcoming atmosphere. As a physician in private practice, I have more time to delve deeply in discussions with you about your personal health history, and we can partner to tailor action plans according to your individual needs and goals.
                             </p>
                             <p>
-                                We offer conveniences, like same- or next-day appointments with minimal waiting. Thanks to my affiliation with MDVIP, I offer services, including comprehensive, advanced health screenings and diagnostic tests, that go far beyond those found in concierge medicine practices.
+                                We offer conveniences like same- or next-day appointments with minimal waiting. Thanks to my affiliation with MDVIP, I offer services, including comprehensive, advanced health screenings and diagnostic tests, that go far beyond those found in concierge medicine practices.
                             </p>
                             <p>
-                                My practice serves patients across the Peninsula of the San Francisco Bay Area, including Hillsborough, Foster City, San Mateo, Half Moon Bay, Belmont, San Carlos, Redwood City, Woodside, Atherton, Menlo Park, Palo Alto, and Portola Valley.
+                                My practice serves patients across the Peninsula, of the San Francisco Bay Area, including Hillsborough, Foster City, San Mateo, Half Moon Bay, Belmont, San Carlos, Redwood City, Woodside, Atherton, Menlo Park, Palo Alto, and Portola Valley.
                             </p>
                         </div>
                     </div>
@@ -109,7 +109,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                         
                         <div className="space-y-6 text-slate-700 leading-relaxed text-lg font-light">
                             <p>
-                                I grew up here on the Peninsula where my interest in medicine was sparked by my childhood love of science and discovery and my time as a volunteer at Peninsula Hospital. Naturally, I've dedicated my professional life to expanding my knowledge and applying it to helping people get and stay healthy.
+                                I grew up here on the Peninsula, where my interest in medicine was sparked by my childhood love of science and discovery and my time as a volunteer at Peninsula Hospital. Naturally, I've dedicated my professional life to expanding my knowledge and applying it to helping people get and stay healthy.
                             </p>
                             <p>
                                 I earned my undergraduate degree in Molecular and Cell Biology at the University of California at Berkeley, followed by doing research at UCSF's Cardiovascular Research Institute. I earned my Doctor of Medicine degree from Wayne State University and completed my Internal Medicine Residency in the Mount Carmel Health System. I am board-certified by the American Board of Internal Medicine and a member of the American College of Physicians and the American College of Lifestyle Medicine.
@@ -118,7 +118,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                                 Being in private practice allows me to focus on my patients by providing long visits, easy availability, and a warm and welcoming atmosphere. I truly value the meaningful relationships I am able to build with my patients and their families, and am honored to be their partner in health and wellness.
                             </p>
                             <p>
-                                Outside of the office, I can be found with my nose in book, connecting with friends over a good meal, and taking my daughter and our dogs on local adventures.
+                                Outside of the office, I can be found with my nose in a book, connecting with friends over a good meal, and taking my daughter and our dogs on local adventures.
                             </p>
                         </div>
 
