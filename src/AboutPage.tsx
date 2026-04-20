@@ -26,7 +26,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
                     <div className="mb-12 flex justify-center">
                         <div className="relative group">
-                            <div className="absolute -inset-4 bg-[#8da399] opacity-10 rounded-lg blur-lg"></div>
+                            <div className="absolute -inset-4 bg-[#7abf7d] opacity-10 rounded-lg blur-lg"></div>
                             <img 
                                 src={NINA_URL} 
                                 alt="Dr. Denise Kan" 
@@ -35,8 +35,8 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                             />
                         </div>
                     </div>
-                    <h1 className="text-3xl md:text-5xl font-bold text-[#5b6d64] serif mb-8">Dr. Denise Kan, MD</h1>
-                    <p className="text-xl text-slate-600 serif italic leading-relaxed max-w-2xl mx-auto">
+                    <h1 className="text-3xl md:text-5xl font-bold text-white serif mb-8">Dr. Denise Kan, MD</h1>
+                    <p className="text-xl text-white/90 serif italic leading-relaxed max-w-2xl mx-auto">
                         A patient-centered healthcare experience
                     </p>
                 </div>
@@ -46,8 +46,8 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 <div className="max-w-4xl mx-auto px-4">
                     <div className="space-y-8">
                         <div className="flex items-center space-x-4 mb-8">
-                            <div className="w-12 h-px bg-[#c5a059]"></div>
-                            <h2 className="text-3xl font-bold text-[#5b6d64] serif">About my practice</h2>
+                            <div className="w-12 h-px bg-[#d4a5d9]"></div>
+                            <h2 className="text-3xl font-bold text-[#8ca38a] serif">About my practice</h2>
                         </div>
                         <div className="space-y-6 text-slate-600 leading-relaxed text-lg">
                             <p>
@@ -70,8 +70,11 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             <section className="py-24 bg-slate-50">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
-                        <span className="text-[#c5a059] uppercase tracking-[0.4em] font-bold text-xs block mb-4">What I Stand For</span>
-                        <h2 className="text-4xl font-bold text-[#5b6d64] serif">My Values</h2>
+                        <span className="text-[#d4a5d9] uppercase tracking-[0.4em] font-bold text-xs block mb-4">What I Stand For</span>
+                        <div className="flex items-center space-x-4 mb-4">
+                            <div className="w-12 h-px bg-[#d4a5d9]"></div>
+                            <h2 className="text-4xl font-bold text-[#8ca38a] serif">My Values</h2>
+                        </div>
                     </div>
                     <div className="grid md:grid-cols-2 gap-8">
                         {[
@@ -81,7 +84,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                             { title: 'Value & Transparent Pricing', text: "One predictable fee covers your personalized Annual Wellness Program and preventive services not typically reimbursed by insurance.\n\nYou can continue using your insurance for routine medical care, specialist visits, and hospitalization expenses." }
                         ].map((v, i) => (
                             <div key={i} className="bg-white p-8 rounded border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                                <h3 className="text-xl font-bold text-[#8da399] serif mb-4">{v.title}</h3>
+                                <h3 className="text-xl font-bold text-[#7abf7d] serif mb-4">{v.title}</h3>
                                 <p className="text-slate-600 text-sm leading-relaxed">{v.text}</p>
                             </div>
                         ))}
@@ -93,7 +96,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-12 gap-16 items-start">
                     <div className="lg:col-span-4 lg:sticky lg:top-48">
                         <div className="relative group max-w-sm mx-auto lg:mx-0">
-                            <div className="absolute -inset-4 bg-[#8da399] opacity-10 rounded-lg rotate-2 blur-lg"></div>
+                            <div className="absolute -inset-4 bg-[#7abf7d] opacity-10 rounded-lg rotate-2 blur-lg"></div>
                             <img 
                                 src={BIO_IMG_URL} 
                                 alt="Dr. Denise Kan" 
@@ -104,7 +107,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                     </div>
                     <div className="lg:col-span-8 space-y-8">
                         <div className="flex items-center space-x-4">
-                            <h2 className="text-4xl font-bold text-[#5b6d64] serif">Biography</h2>
+                            <h2 className="text-4xl font-bold text-[#8ca38a] serif">Biography</h2>
                         </div>
                         
                         <div className="space-y-6 text-slate-700 leading-relaxed text-lg font-light">
@@ -126,7 +129,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 justify-center lg:justify-start">
                                 <a 
                                     href="mailto:care@denisekanmd.com"
-                                    className="bg-[#c5a059] text-white px-8 py-4 rounded-sm font-bold text-xs uppercase tracking-[0.2em] hover:bg-[#5b6d64] transition-all shadow-lg hover:-translate-y-1 text-center"
+                                    className="bg-[#d4a5d9] text-white px-8 py-4 rounded-sm font-bold text-xs uppercase tracking-[0.2em] hover:bg-white hover:text-[#8ca38a] transition-all shadow-lg hover:-translate-y-1 text-center"
                                 >
                                     Schedule Appointment
                                 </a>
@@ -169,7 +172,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 </div>
             </section>
 
-            <section className="py-24 bg-[#5b6d64] text-white relative overflow-hidden">
+            <section className="py-24 bg-[#8ca38a] text-white relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 relative z-10">
                     <div className="grid md:grid-cols-3 gap-12 items-center text-center md:text-left">
                         <div className="space-y-4">

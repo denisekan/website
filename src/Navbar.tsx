@@ -19,17 +19,17 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-32 items-center">
                     <div className="hidden md:flex space-x-4 lg:space-x-6 items-center">
-                        <a href="#home" onClick={(e) => handleLinkClick(e, 'home', '#home')} className="text-slate-600 hover:text-[#c5a059] nav-link whitespace-nowrap">Home</a>
-                        <a href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="text-slate-600 hover:text-[#c5a059] nav-link whitespace-nowrap">Meet Dr. Kan</a>
-                        <a href="#mdvip" onClick={(e) => handleLinkClick(e, 'mdvip')} className="text-slate-600 hover:text-[#c5a059] nav-link whitespace-nowrap">MDVIP</a>
-                        <a href="#referrals" onClick={(e) => handleLinkClick(e, 'referrals')} className="text-slate-600 hover:text-[#c5a059] nav-link whitespace-nowrap">Referrals</a>
+                        <a href="#home" onClick={(e) => handleLinkClick(e, 'home', '#home')} className="text-slate-600 hover:text-[#d4a5d9] nav-link whitespace-nowrap">Home</a>
+                        <a href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="text-slate-600 hover:text-[#d4a5d9] nav-link whitespace-nowrap">Meet Dr. Kan</a>
+                        <a href="#mdvip" onClick={(e) => handleLinkClick(e, 'mdvip')} className="text-slate-600 hover:text-[#d4a5d9] nav-link whitespace-nowrap">MDVIP</a>
+                        <a href="#referrals" onClick={(e) => handleLinkClick(e, 'referrals')} className="text-slate-600 hover:text-[#d4a5d9] nav-link whitespace-nowrap">Referrals</a>
                         <div className="flex space-x-2">
-                            <a href="mailto:care@denisekanmd.com" className="bg-[#c5a059] text-white px-4 py-2.5 rounded-sm nav-link hover:bg-[#5b6d64] whitespace-nowrap">Schedule Appointment</a>
+                            <a href="mailto:care@denisekanmd.com" className="bg-[#d4a5d9] text-white px-4 py-2.5 rounded-sm nav-link hover:bg-white hover:text-[#8ca38a] whitespace-nowrap">Schedule Appointment</a>
                         </div>
                     </div>
 
                     <div className="md:hidden flex items-center">
-                        <button onClick={() => setIsOpen(!isOpen)} className="text-[#5b6d64] p-2">
+                        <button onClick={() => setIsOpen(!isOpen)} className="text-[#8ca38a] p-2">
                             <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} strokeWidth="2" strokeLinecap="round"/>
                             </svg>
@@ -53,7 +53,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
                     <a href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="block text-slate-600 nav-link">Meet Dr. Kan</a>
                     <a href="#mdvip" onClick={(e) => handleLinkClick(e, 'mdvip')} className="block text-slate-600 nav-link">MDVIP</a>
                     <a href="#referrals" onClick={(e) => handleLinkClick(e, 'referrals')} className="block text-slate-600 nav-link">Referrals</a>
-                    <a href="mailto:care@denisekanmd.com" className="block bg-[#c5a059] text-white text-center py-3 rounded-sm nav-link">Schedule Appointment</a>
+                    <a href="mailto:care@denisekanmd.com" className="block bg-[#d4a5d9] text-white text-center py-3 rounded-sm nav-link">Schedule Appointment</a>
                 </div>
             )}
         </nav>

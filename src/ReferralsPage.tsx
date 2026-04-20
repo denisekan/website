@@ -108,7 +108,7 @@ Urgency: ${formData.urgency}
         }
     };
 
-    const inputClasses = "w-full bg-slate-50 p-4 rounded-sm text-sm border border-slate-200 outline-none focus:ring-2 focus:ring-[#8da399] transition-all";
+    const inputClasses = "w-full bg-slate-50 p-4 rounded-sm text-sm border border-slate-200 outline-none focus:ring-2 focus:ring-[#7abf7d] transition-all";
     const labelClasses = "block text-[10px] uppercase tracking-widest font-bold text-slate-500 mb-2";
 
     return (
@@ -118,9 +118,9 @@ Urgency: ${formData.urgency}
                     <img src={LOGO_URL} className="w-full h-full object-contain scale-150 transform -translate-x-1/2" alt="" />
                 </div>
                 <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
-                    <span className="text-[#c5a059] uppercase tracking-[0.4em] font-bold text-xs mb-6 block">Coordinated Care</span>
-                    <h1 className="text-5xl md:text-7xl font-bold text-[#5b6d64] serif mb-8">Referrals</h1>
-                    <p className="text-xl text-[#5b6d64] leading-relaxed max-w-2xl mx-auto serif italic mb-12">For other medical providers</p>
+                    <span className="text-white uppercase tracking-[0.4em] font-bold text-xs mb-6 block">Coordinated Care</span>
+                    <h1 className="text-5xl md:text-7xl font-bold text-white serif mb-8">Referrals</h1>
+                    <p className="text-xl text-white/90 leading-relaxed max-w-2xl mx-auto serif italic mb-12">For other medical providers</p>
                 </div>
             </section>
 
@@ -129,7 +129,7 @@ Urgency: ${formData.urgency}
                     <div className="grid lg:grid-cols-12 gap-16 items-start">
                         <div className="lg:col-span-4 sticky top-48 hidden lg:block">
                             <div className="relative group">
-                                <div className="absolute -inset-4 bg-[#8da399] opacity-10 rounded-lg rotate-2 blur-lg"></div>
+                                <div className="absolute -inset-4 bg-[#7abf7d] opacity-10 rounded-lg rotate-2 blur-lg"></div>
                                 <img 
                                     src={KAN2026_40_URL} 
                                     alt="Clinician Collaboration" 
@@ -151,7 +151,7 @@ Urgency: ${formData.urgency}
 
                             <div className="lg:hidden mb-12 flex justify-center">
                                 <div className="relative group max-w-sm">
-                                    <div className="absolute -inset-4 bg-[#8da399] opacity-10 rounded-lg rotate-2 blur-lg"></div>
+                                    <div className="absolute -inset-4 bg-[#7abf7d] opacity-10 rounded-lg rotate-2 blur-lg"></div>
                                     <img 
                                         src={KAN2026_40_URL} 
                                         alt="Clinician Collaboration" 
@@ -164,7 +164,7 @@ Urgency: ${formData.urgency}
                             <form onSubmit={handleSubmit} className="space-y-16">
                         <div className="space-y-8">
                             <div className="flex items-center space-x-4">
-                                <h2 className="text-2xl font-bold text-[#5b6d64] serif">Patient Information</h2>
+                                <h2 className="text-2xl font-bold text-[#8ca38a] serif">Patient Information</h2>
                                 <div className="flex-grow h-px bg-slate-100"></div>
                             </div>
                             
@@ -197,7 +197,7 @@ Urgency: ${formData.urgency}
 
                         <div className="space-y-8">
                             <div className="flex items-center space-x-4">
-                                <h2 className="text-2xl font-bold text-[#5b6d64] serif">Referring Clinician Information</h2>
+                                <h2 className="text-2xl font-bold text-[#8ca38a] serif">Referring Clinician Information</h2>
                                 <div className="flex-grow h-px bg-slate-100"></div>
                             </div>
 
@@ -243,7 +243,7 @@ Urgency: ${formData.urgency}
                         </div>
 
                         <div className="pt-8">
-                            <button type="submit" className="w-full bg-[#c5a059] text-white py-6 font-bold uppercase tracking-[0.4em] text-xs hover:bg-[#5b6d64] transition-all shadow-xl hover:-translate-y-1 rounded-sm">
+                            <button type="submit" className="w-full bg-[#d4a5d9] text-white py-6 font-bold uppercase tracking-[0.4em] text-xs hover:bg-white hover:text-[#8ca38a] transition-all shadow-xl hover:-translate-y-1 rounded-sm">
                                 Submit Referral
                             </button>
                         </div>
@@ -253,7 +253,7 @@ Urgency: ${formData.urgency}
         </div>
     </section>
 
-            <section className="py-24 bg-[#5b6d64] text-white relative overflow-hidden">
+            <section className="py-24 bg-[#8ca38a] text-white relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 relative z-10">
                     <div className="grid md:grid-cols-3 gap-12 items-center text-center md:text-left">
                         <div className="space-y-4">

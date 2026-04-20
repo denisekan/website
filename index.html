@@ -12,10 +12,10 @@
     <style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; margin: 0; padding: 0; }
         h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
-        .bg-sage-light { background-color: #f4f7f5; }
-        .bg-sage-primary { background-color: #8da399; }
-        .bg-sage-dark { background-color: #5b6d64; }
-        .text-gold-muted { color: #c5a059; }
+        .bg-sage-light { background-color: #8ca38a; }
+        .bg-sage-primary { background-color: #7abf7d; }
+        .bg-sage-dark { background-color: #ffffff; }
+        .text-gold-muted { color: #d4a5d9; }
         .nav-link { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; transition: all 0.3s ease; cursor: pointer; }
         
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
@@ -33,11 +33,11 @@
         
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #f1f1f1; }
-        ::-webkit-scrollbar-thumb { background: #8da399; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #5b6d64; }
+        ::-webkit-scrollbar-thumb { background: #7abf7d; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #8ca38a; }
 
         /* Fix for hidden content until React loads */
-        #root:empty { min-height: 100vh; background: #f4f7f5; display: flex; align-items: center; justify-content: center; }
+        #root:empty { min-height: 100vh; background: #ffffff; display: flex; align-items: center; justify-content: center; }
         #root:empty::after { content: ""; width: 80px; height: 80px; background: url('https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026.jpg') no-repeat center; background-size: 140%; animation: pulse 2s infinite; }
         @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
     </style>
