@@ -125,7 +125,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                         <div className="pt-12 space-y-6">
                             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 justify-center lg:justify-start">
                                 <a 
-                                    href="mailto:drkan@denisekanmd.com"
+                                    href="mailto:care@denisekanmd.com"
                                     className="bg-[#c5a059] text-white px-8 py-4 rounded-sm font-bold text-xs uppercase tracking-[0.2em] hover:bg-[#5b6d64] transition-all shadow-lg hover:-translate-y-1 text-center"
                                 >
                                     Schedule Appointment
@@ -178,7 +178,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                                 <h3 className="text-xl font-bold serif">Denise Kan, MD</h3>
                             </div>
                         </div>
-                        <a href="mailto:drkan@denisekanmd.com" className="space-y-2 hover:opacity-80 transition-opacity block">
+                        <a href="mailto:care@denisekanmd.com" className="space-y-2 hover:opacity-80 transition-opacity block">
                             <p className="text-xs uppercase tracking-widest opacity-60 font-bold">Location</p>
                             <p className="text-lg">400 Seaport Court, Suite 203</p>
                             <p className="text-sm opacity-80">Redwood City, CA 94063</p>
@@ -189,7 +189,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                                 <a href="tel:650-643-3702" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-643-3702 <span className="text-xs font-normal opacity-60">(New Patients & Inquiries)</span></a>
                                 <a href="tel:650-727-1940" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-727-1940 <span className="text-xs font-normal opacity-60">(Current Patients)</span></a>
                             </div>
-                            <a href="mailto:drkan@denisekanmd.com" className="text-lg font-bold block hover:opacity-80 transition-opacity">drkan@denisekanmd.com</a>
+                            <a href="mailto:care@denisekanmd.com" className="text-lg font-bold block hover:opacity-80 transition-opacity">care@denisekanmd.com</a>
                         </div>
                     </div>
                 </div>

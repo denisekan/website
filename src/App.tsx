@@ -10,6 +10,27 @@ export type ViewType = 'home' | 'about' | 'mdvip' | 'referrals';
 const App = () => {
     const [view, setView] = useState<ViewType>('home');
 
+    // Handle initial load and browser back/forward buttons
+    useEffect(() => {
+        const handleNavigation = () => {
+            const hash = window.location.hash.replace('#', '') || 'home';
+            // Map common variants if needed, or stick to ViewType
+            if (['home', 'about', 'mdvip', 'referrals'].includes(hash)) {
+                setView(hash as ViewType);
+            }
+        };
+
+        // Initial check
+        handleNavigation();
+
+        window.addEventListener('popstate', handleNavigation);
+        window.addEventListener('hashchange', handleNavigation);
+        return () => {
+            window.removeEventListener('popstate', handleNavigation);
+            window.removeEventListener('hashchange', handleNavigation);
+        };
+    }, []);
+
     const LOGO_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026.jpg";
     const OFFICE33_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/office33.jpg";
     const OFFICE50_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/office50.jpg";
@@ -22,11 +43,20 @@ const App = () => {
     const ORCHIDS_URL = "https://raw.githubusercontent.com/denisekan/website-assets/main/Orchids.jpeg";
 
     useEffect(() => {
-        window.scrollTo(0, 0);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }, [view]);
 
     const navigateTo = (newView: ViewType, hash?: string) => {
-        setView(newView);
+        const targetHash = hash || `#${newView}`;
+        
+        if (window.location.hash !== targetHash) {
+            window.history.pushState(null, '', targetHash);
+            setView(newView);
+        } else {
+            // If already on the view, just scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
         if (hash) {
             setTimeout(() => {
                 const el = document.getElementById(hash.replace('#', ''));
@@ -117,7 +147,7 @@ const App = () => {
                             Learn more becoming a member.
                         </p>
                         <div className="space-y-10 pt-10">
-                            <a href="mailto:drkan@denisekanmd.com" className="flex items-center space-x-6 group hover:opacity-80 transition-opacity">
+                            <a href="mailto:care@denisekanmd.com" className="flex items-center space-x-6 group hover:opacity-80 transition-opacity">
                                 <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center border border-white/20 text-3xl shadow-inner group-hover:bg-white/20 transition-colors">📍</div>
                                 <div>
                                     <p className="font-bold text-lg md:text-xl">400 Seaport Court, Suite 203</p>
@@ -138,9 +168,9 @@ const App = () => {
                                     </a>
                                 </div>
                             </div>
-                            <a href="mailto:drkan@denisekanmd.com" className="flex items-center space-x-6 group hover:opacity-80 transition-opacity">
+                            <a href="mailto:care@denisekanmd.com" className="flex items-center space-x-6 group hover:opacity-80 transition-opacity">
                                 <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center border border-white/20 text-3xl shadow-inner group-hover:bg-white/20 transition-colors">✉️</div>
-                                <div><p className="font-bold text-lg md:text-xl">drkan@denisekanmd.com</p><p className="text-sm opacity-60">Membership Inquiries</p></div>
+                                <div><p className="font-bold text-lg md:text-xl">care@denisekanmd.com</p><p className="text-sm opacity-60">Membership Inquiries</p></div>
                             </a>
                         </div>
                     </div>
@@ -151,7 +181,7 @@ const App = () => {
                         <div className="text-center space-y-8 w-full">
                             <p className="text-slate-600 serif italic text-lg">A better healthcare experience starts here.</p>
                             <a 
-                                href="mailto:drkan@denisekanmd.com"
+                                href="mailto:care@denisekanmd.com"
                                 className="flex items-center justify-center w-full bg-[#c5a059] text-white py-6 font-bold uppercase tracking-[0.4em] text-xs hover:bg-[#5b6d64] transition-all shadow-xl hover:-translate-y-1 text-center pl-[0.4em] md:pl-0 md:block"
                             >
                                 Schedule your appointment now
