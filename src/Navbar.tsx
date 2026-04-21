@@ -24,7 +24,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
                         <a href="#mdvip" onClick={(e) => handleLinkClick(e, 'mdvip')} className="text-slate-600 hover:text-[#d18dbd] nav-link whitespace-nowrap">MDVIP</a>
                         <a href="#referrals" onClick={(e) => handleLinkClick(e, 'referrals')} className="text-slate-600 hover:text-[#d18dbd] nav-link whitespace-nowrap">Referrals</a>
                         <div className="flex space-x-2">
-                            <a href="mailto:care@denisekanmd.com" className="bg-[#d18dbd] text-white px-4 py-2.5 rounded-sm nav-link hover:bg-white hover:text-[#9ba37a] whitespace-nowrap">Schedule Appointment</a>
+                            <a href="mailto:care@denisekanmd.com" className="bg-[#d18dbd] text-white px-6 py-3.5 rounded-sm nav-link hover:bg-white hover:text-[#9ba37a] whitespace-nowrap">Schedule Appointment</a>
                         </div>
                     </div>
 
@@ -43,7 +43,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
                     <a href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="block text-slate-600 nav-link">Meet Dr. Kan</a>
                     <a href="#mdvip" onClick={(e) => handleLinkClick(e, 'mdvip')} className="block text-slate-600 nav-link">MDVIP</a>
                     <a href="#referrals" onClick={(e) => handleLinkClick(e, 'referrals')} className="block text-slate-600 nav-link">Referrals</a>
-                    <a href="mailto:care@denisekanmd.com" className="block bg-[#d18dbd] text-white text-center py-3 rounded-sm nav-link">Schedule Appointment</a>
+                    <a href="mailto:care@denisekanmd.com" className="block bg-[#d18dbd] text-white text-center py-4 rounded-sm nav-link">Schedule Appointment</a>
                 </div>
             )}
         </nav>
