@@ -208,7 +208,8 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                         </div>
                                     </div>
                                     <p className="text-slate-600 font-medium">
-                                        To learn more about the Membership or the Annual Wellness program, call <a href="tel:650-643-3702" className="text-[#d18dbd] hover:underline">650-643-3702</a>
+                                        To learn more about the Membership or the Annual Wellness program,<br />
+                                        call <a href="tel:650-643-3702" className="text-[#d18dbd] hover:underline">650-643-3702</a> or click <a href="https://mdvip.com" target="_blank" rel="noopener noreferrer" className="text-[#d18dbd] hover:underline">here</a>.
                                     </p>
                                 </div>
                             </div>
