@@ -63,6 +63,16 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                                 My practice serves patients across the Peninsula, of the San Francisco Bay Area, including Hillsborough, Foster City, San Mateo, Half Moon Bay, Belmont, San Carlos, Redwood City, Woodside, Atherton, Menlo Park, Palo Alto, and Portola Valley.
                             </p>
                         </div>
+
+                        <div className="pt-16 border-t border-slate-100">
+                            <div className="flex items-center space-x-4 mb-8">
+                                <div className="w-12 h-px bg-[#d18dbd]"></div>
+                                <h2 className="text-3xl font-bold text-[#9ba37a] serif">Patient Ratings & Reviews</h2>
+                            </div>
+                            <p className="text-slate-600 text-lg">
+                                Read about Dr. Kan on <a href="https://www.healthgrades.com/physician/dr-marie-kan-xynqvww" target="_blank" rel="noopener noreferrer" className="text-[#d18dbd] hover:underline">Healthgrades</a> and <a href="https://health.usnews.com/doctors/marie-denise-kan-1419581" target="_blank" rel="noopener noreferrer" className="text-[#d18dbd] hover:underline">U.S. News and World Report</a>.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
