@@ -4,8 +4,9 @@ import { SERVICES } from './constants';
 import AboutPage from './AboutPage';
 import MdvipPage from './MdvipPage';
 import ReferralsPage from './ReferralsPage';
+import MemberEventsPage from './MemberEventsPage';
 
-export type ViewType = 'home' | 'about' | 'mdvip' | 'referrals';
+export type ViewType = 'home' | 'about' | 'mdvip' | 'referrals' | 'events';
 
 const App = () => {
     const [view, setView] = useState<ViewType>('home');
@@ -15,7 +16,7 @@ const App = () => {
         const handleNavigation = () => {
             const hash = window.location.hash.replace('#', '') || 'home';
             // Map common variants if needed, or stick to ViewType
-            if (['home', 'about', 'mdvip', 'referrals'].includes(hash)) {
+            if (['home', 'about', 'mdvip', 'referrals', 'events'].includes(hash)) {
                 setView(hash as ViewType);
             }
         };
@@ -201,6 +202,7 @@ const App = () => {
             case 'about': return <AboutPage onNavigate={navigateTo} />;
             case 'mdvip': return <MdvipPage onNavigate={navigateTo} />;
             case 'referrals': return <ReferralsPage />;
+            case 'events': return <MemberEventsPage onNavigate={navigateTo} />;
             default: return <LandingPage />;
         }
     };
