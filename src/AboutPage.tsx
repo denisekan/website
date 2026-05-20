@@ -57,7 +57,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                                 My goal is to provide personalized care in a warm and welcoming atmosphere. As a physician in private practice, I have more time to delve deeply in discussions with you about your personal health history, and we can partner to tailor action plans according to your individual needs and goals.
                             </p>
                             <p>
-                                We offer conveniences like same- or next-day appointments with minimal waiting. Thanks to my affiliation with MDVIP, I offer services, including comprehensive, advanced health screenings and diagnostic tests, that go far beyond those found in concierge medicine practices.
+                                We offer conveniences like same- or next-day appointments with minimal waiting and in-office blood draws. Thanks to my affiliation with MDVIP, I offer services, including comprehensive, advanced health screenings and diagnostic tests, that go far beyond those found in concierge medicine practices.
                             </p>
                             <p>
                                 My practice serves patients across the Peninsula, of the San Francisco Bay Area, including Hillsborough, Foster City, San Mateo, Half Moon Bay, Belmont, San Carlos, Redwood City, Woodside, Atherton, Menlo Park, Palo Alto, and Portola Valley.
