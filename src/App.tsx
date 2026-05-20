@@ -145,7 +145,7 @@ const App = () => {
                     <div className="space-y-12">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold serif leading-tight">Schedule Your Appointment</h2>
                         <p className="text-slate-200 text-lg md:text-xl leading-relaxed max-w-lg opacity-90">
-                            Learn more becoming a member.
+                            Learn more about becoming a member:
                         </p>
                         <div className="space-y-10 pt-10">
                             <a href="mailto:care@denisekanmd.com" className="flex items-center space-x-6 group hover:opacity-80 transition-opacity">
@@ -185,7 +185,7 @@ const App = () => {
                                 href="mailto:care@denisekanmd.com"
                                 className="flex items-center justify-center w-full bg-[#d18dbd] text-white py-6 font-bold uppercase tracking-[0.4em] text-xs hover:bg-white hover:text-[#9ba37a] transition-all shadow-xl hover:-translate-y-1 text-center pl-[0.4em] md:pl-0 md:block"
                             >
-                                Schedule your appointment now
+                                Schedule an appointment
                             </a>
                             <div className="pt-8 flex justify-center">
                                 <img src={ORCHIDS_URL} alt="Orchids" className="w-64 h-64 sm:w-96 sm:h-96 object-cover rounded shadow-md" referrerPolicy="no-referrer" />
