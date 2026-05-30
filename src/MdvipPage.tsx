@@ -42,6 +42,32 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                     <p className="text-slate-600 text-lg">My partnership with MDVIP makes wellness and prevention easier by providing innovative tools and technology, and supports my practice and seeks to eliminate barriers to a positive healthcare experience. This means deeper doctor-patient relationships, proactive prevention, and care that goes above and beyond what's available in traditional practice.</p>                                </div>
                             </div>
 
+                            {/* Annual Membership Fee */}
+                            <div className="space-y-12">
+                                <div className="text-center max-w-3xl mx-auto space-y-6">
+                                    <h2 className="text-4xl font-bold text-[#9ba37a] serif">Annual Membership Fee</h2>
+                                    <p className="text-slate-600 leading-relaxed">
+                                        MDVIP’s annual fee covers the Wellness Program and generally can be made in quarterly, semi-annual and annual payments.
+                                    </p>
+                                    <div className="bg-slate-50 p-8 rounded-lg">
+                                        <div className="grid grid-cols-3 gap-4 text-center">
+                                            <div className="space-y-2">
+                                                <p className="text-xs uppercase tracking-widest font-bold text-slate-500">Quarterly</p>
+                                                <p className="text-2xl font-bold text-[#9ba37a] serif">$862.50</p>
+                                            </div>
+                                            <div className="space-y-2 border-x border-slate-200">
+                                                <p className="text-xs uppercase tracking-widest font-bold text-slate-500">Semi-Annual</p>
+                                                <p className="text-2xl font-bold text-[#9ba37a] serif">$1,725.00</p>
+                                            </div>
+                                            <div className="space-y-2">
+                                                <p className="text-xs uppercase tracking-widest font-bold text-slate-500">Annual</p>
+                                                <p className="text-2xl font-bold text-[#9ba37a] serif">$3,450.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             {/* Annual exams */}
                             <div className="grid lg:grid-cols-12 gap-16 items-center">
                                 <div className="lg:col-span-7 space-y-8">
@@ -101,10 +127,10 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                     <p className="text-slate-600 text-lg">Your health needs don’t always follow office hours. That’s why MDVIP-affiliated physicians offer after-hours availability and more flexible scheduling when needed, which means:</p>
                                     <ul className="space-y-6">
                                         {[
-                                            'Same-day or next-day appointments with your doctor, not just whichever provider happens to be available',
+                                            'Same-day or next-day appointments with Dr. Kan, not just whichever provider happens to be available',
                                             'Minimal wait times when you arrive for your appointment',
-                                            'Direct after-hours communication with your doctor for urgent concerns',
-                                            'Continuous healthcare support from your doctor, even while out of town'
+                                            'Direct after-hours communication with Dr. Kan for urgent concerns',
+                                            'Continuous healthcare support from Dr. Kan, even while out of town'
                                         ].map((item, i) => (
                                             <li key={i} className="flex items-start space-x-4 text-slate-700">
                                                 <span className="w-2 h-2 rounded-full bg-[#d18dbd] mt-2.5 shrink-0"></span>
@@ -156,6 +182,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                             </div>
 
                             <div className="space-y-12 pt-16 border-t border-slate-100">
+                                <h2 className="text-3xl md:text-4xl font-bold text-[#9ba37a] serif text-center">Frequently asked questions</h2>
                                 <div className="grid md:grid-cols-2 gap-12">
                                     <div className="space-y-4">
                                         <h3 className="text-xl font-bold text-[#9ba37a] serif">Do I still need insurance?</h3>
@@ -185,33 +212,11 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                 </div>
                             </div>
 
-                            <div className="space-y-12 pt-16 border-t border-slate-100">
-                                <div className="text-center max-w-3xl mx-auto space-y-6">
-                                    <h2 className="text-4xl font-bold text-[#9ba37a] serif">Annual Membership Fee</h2>
-                                    <p className="text-slate-600 leading-relaxed">
-                                        MDVIP’s annual fee covers the Wellness Program and generally can be made in quarterly, semi-annual and annual payments.
-                                    </p>
-                                    <div className="bg-slate-50 p-8 rounded-lg">
-                                        <div className="grid grid-cols-3 gap-4 text-center">
-                                            <div className="space-y-2">
-                                                <p className="text-xs uppercase tracking-widest font-bold text-slate-500">Quarterly</p>
-                                                <p className="text-2xl font-bold text-[#9ba37a] serif">$862.50</p>
-                                            </div>
-                                            <div className="space-y-2 border-x border-slate-200">
-                                                <p className="text-xs uppercase tracking-widest font-bold text-slate-500">Semi-Annual</p>
-                                                <p className="text-2xl font-bold text-[#9ba37a] serif">$1,725.00</p>
-                                            </div>
-                                            <div className="space-y-2">
-                                                <p className="text-xs uppercase tracking-widest font-bold text-slate-500">Annual</p>
-                                                <p className="text-2xl font-bold text-[#9ba37a] serif">$3,450.00</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p className="text-slate-600 font-medium">
-                                        To learn more about the Membership or the Annual Wellness program,<br />
-                                        call <a href="tel:650-643-3702" className="text-[#d18dbd] hover:underline">650-643-3702</a> or click <a href="https://mdvip.com" target="_blank" rel="noopener noreferrer" className="text-[#d18dbd] hover:underline">here</a>.
-                                    </p>
-                                </div>
+                            <div className="text-center pt-12 mt-12 border-t border-slate-100 max-w-3xl mx-auto">
+                                <p className="text-slate-600 text-lg font-medium leading-relaxed">
+                                    To learn more about the Membership or the Annual Wellness program,<br />
+                                    call <a href="tel:650-643-3702" className="text-[#d18dbd] hover:underline">650-643-3702</a> or click <a href="https://mdvip.com" target="_blank" rel="noopener noreferrer" className="text-[#d18dbd] hover:underline">here</a>.
+                                </p>
                             </div>
 
                         </div>
