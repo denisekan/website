@@ -129,6 +129,21 @@ const MemberEventsPage: React.FC<MemberEventsPageProps> = ({ onNavigate }) => {
                             </div>
 
                         </div>
+
+                        {/* Past Events Section */}
+                        <div className="mt-12 bg-slate-50/90 p-8 md:p-12 rounded-lg border border-slate-100 shadow-sm relative overflow-hidden animate-fade-in-up">
+                            <div className="absolute top-0 right-0 w-32 h-32 opacity-5 pointer-events-none transform translate-x-1/2 -translate-y-1/2">
+                                <img src={LOGO_URL} className="w-full h-full object-contain" alt="" />
+                            </div>
+                            <span className="text-[#9ba37a] uppercase tracking-[0.3em] font-bold text-xs block mb-6">Previous Gatherings</span>
+                            <div className="bg-white p-6 md:p-8 rounded-lg border border-slate-100">
+                                <h3 className="font-bold text-xl text-[#d18dbd] serif mb-3">Patient Appreciation Open House</h3>
+                                <p className="text-slate-600 leading-relaxed font-light">
+                                    Thank you for attending our Patient Appreciation Open House! We enjoyed meeting your friends and family, and are deeply grateful for your support.
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </section>
 

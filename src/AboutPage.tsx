@@ -88,7 +88,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                     </div>
                     <div className="grid md:grid-cols-2 gap-8">
                         {[
-                            { title: 'Time & Access', text: "I value spending time with my patients and making sure they have direct access to me. No phone trees- a person will always answer your call. And same or next-day appointments are available when you're sick." },
+                            { title: 'Time & Access', text: "I value spending time with my patients and making sure they have direct access to me. No phone trees- a person will always answer your call. And same or next-day appointments are available when you're sick. To make your day easier, we offer in-office blood draws as well." },
                             { title: 'Seeing the Whole Person', text: "Everything from your history, family background, and lifestyle plays a role in how we approach your health and wellness. I take every aspect into account and understand how to treat you as an individual, not just a set of numbers." },
                             { title: 'High Quality Expertise', text: "I can connect you with the best specialists in our area, knowing who will be a good fit for you. The MDVIP Medical Centers of Excellence Program helps me connect you with the premier academic and research hospitals across the country and make sure the process goes smoothly." },
                             { title: 'Value & Transparent Pricing', text: "One predictable fee covers your personalized Annual Wellness Program and preventive services not typically reimbursed by insurance.\n\nYou can continue using your insurance for routine medical care, specialist visits, and hospitalization expenses." }

@@ -68,7 +68,17 @@ const App = () => {
 
     const LandingPage = () => (
         <>
-            <header id="home" className="relative pt-80 pb-24 bg-[#9ba37a] overflow-hidden">
+            <header id="home" className="relative pt-[370px] pb-24 bg-[#9ba37a] overflow-hidden">
+                {/* Now Accepting New Patients Banner */}
+                <div role="img" aria-label="accepting new patients" className="absolute top-32 left-0 right-0 bg-[#d18dbd] text-white py-3.5 px-4 text-center text-xs font-bold uppercase tracking-[0.25em] z-20 shadow-md">
+                    <div className="flex items-center justify-center space-x-2 animate-fade-in">
+                        <span className="relative flex h-2 w-2">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+                        </span>
+                        <span>Now accepting new patients</span>
+                    </div>
+                </div>
                 <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-12 gap-24 items-center">
                     <div className="lg:col-span-5 space-y-8 animate-fade-in relative z-10">
                         <div className="space-y-4">
@@ -87,7 +97,9 @@ const App = () => {
                     </div>
                     <div className="lg:col-span-7 relative animate-fade-in lg:translate-x-12">
                         <div className="absolute -inset-8 bg-[#8db56d] opacity-10 -rotate-2 blur-3xl"></div>
-                        <img src={KAN2026_40_URL} alt="Clinic Office" className="relative z-10 shadow-2xl object-cover object-[center_35%] aspect-[4/3] w-full" />
+                        <div className="relative z-10 shadow-2xl rounded-sm overflow-hidden aspect-[4/3] w-full">
+                            <img src={KAN2026_40_URL} alt="Primary Care Doctor - Dr. Kan" className="object-cover object-[center_35%] w-full h-full" />
+                        </div>
                     </div>
                 </div>
             </header>
@@ -126,7 +138,7 @@ const App = () => {
                     <div className="relative group overflow-hidden rounded-lg shadow-2xl border-8 border-white">
                         <img 
                             src={KAN2026_11_URL} 
-                            alt="Dr. Kan's Practice" 
+                            alt="Primary care in Woodside" 
                             className="w-full aspect-[21/9] object-cover [object-position:center_75%]" 
                             referrerPolicy="no-referrer"
                         />
@@ -177,7 +189,7 @@ const App = () => {
                     </div>
                     <div className="bg-white p-6 md:p-8 lg:p-12 rounded shadow-2xl relative text-slate-800 flex flex-col items-center justify-center min-h-[300px]">
                         <div className="relative lg:absolute lg:-top-44 lg:-left-12 w-24 h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 bg-white rounded flex items-center justify-center shadow-2xl border-4 border-[#d18dbd] transform hover:rotate-12 transition-transform overflow-hidden p-0 z-20 mb-8 lg:mb-0">
-                            <img src={KAN2026_22_URL} className="w-full h-full object-cover" alt="Clinic" />
+                            <img src={KAN2026_22_URL} className="w-full h-full object-cover" alt="Primary care in San Mateo" />
                         </div>
                         <div className="text-center space-y-8 w-full">
                             <p className="text-slate-600 serif italic text-lg">A better healthcare experience starts here.</p>
