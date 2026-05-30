@@ -138,7 +138,7 @@ const App = () => {
                     <div className="relative group overflow-hidden rounded-lg shadow-2xl border-8 border-white">
                         <img 
                             src={KAN2026_11_URL} 
-                            alt="Primary care Hillsborough Foster City, San Mateo, Half Moon Bay, Belmont, San Carlos, Redwood City Woodside Atherton Menlo Park Palo Alto Portola Valley" 
+                            alt="Dr. Kan's office is located at Seaport Health Collective, also the home of a Med Spa, acupuncture, and family medicine." 
                             className="w-full aspect-[21/9] object-cover [object-position:center_75%]" 
                             referrerPolicy="no-referrer"
                         />

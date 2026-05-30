@@ -58,7 +58,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                 <div className="lg:col-span-5 flex justify-center lg:justify-end">
                                     <div className="relative group max-w-[400px]">
                                         <div className="absolute -inset-3 bg-sage-light rounded-lg rotate-3 group-hover:rotate-0 transition-transform blur-lg opacity-40"></div>
-                                        <img src={MDVIP1_URL} className="relative z-10 w-full h-auto object-cover rounded shadow-xl border-4 border-white" alt="Clinic Consultation Room" />
+                                        <img src={MDVIP1_URL} className="relative z-10 w-full h-auto object-cover rounded shadow-xl border-4 border-white" alt="Dr. Kan is a concierge medicine doctor taking new patients in Hillsborough, San Mateo, San Carlos, Redwood City, Woodside and surrounding communities." />
                                     </div>
                                 </div>
                             </div>
