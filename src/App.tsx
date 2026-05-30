@@ -76,7 +76,7 @@ const App = () => {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
                         </span>
-                        <span>Now accepting new patients - appointment required</span>
+                        <span>Accepting new patients - appointment required</span>
                     </div>
                 </div>
                 <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-12 gap-24 items-center">

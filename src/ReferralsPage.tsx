@@ -258,7 +258,7 @@ Urgency: ${formData.urgency}
                     <div className="grid md:grid-cols-3 gap-12 items-center text-center md:text-left">
                         <div className="space-y-4">
                             <div className="flex items-center justify-center md:justify-start space-x-4">
-                                <img src={KAN2026_6_URL} className="w-24 h-24 rounded shadow-lg border-2 border-white/20 object-cover" alt="Denise Kan, MD Logo" />
+                                <img src={KAN2026_6_URL} className="w-24 h-24 rounded shadow-lg border-2 border-white/20 object-cover" alt="Concierge medicine on the Peninsula" />
                                 <h3 className="text-xl font-bold serif">Denise Kan, MD</h3>
                             </div>
                         </div>

@@ -170,11 +170,11 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                             </div>
 
                             <div className="py-12 flex justify-center">
-                                <div className="relative group max-w-4xl w-full">
+                                <div className="relative group max-w-5xl w-full">
                                     <div className="absolute -inset-4 bg-[#8db56d] opacity-10 rounded-lg rotate-1 blur-lg"></div>
                                     <img 
                                         src={PIC2_URL} 
-                                        alt="Clinic Environment" 
+                                        alt="Seaport Health is a primary care doctor's office and medical spa, where expert physicians provide the highest quality of care to our valued members." 
                                         className="relative z-10 w-full rounded-lg shadow-2xl border-8 border-white object-cover aspect-[21/9]" 
                                         referrerPolicy="no-referrer"
                                     />
@@ -229,7 +229,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                     <div className="grid md:grid-cols-3 gap-12 items-center text-center md:text-left">
                         <div className="space-y-4">
                             <div className="flex items-center justify-center md:justify-start space-x-4">
-                                <img src="https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_40.jpg" className="w-24 h-24 rounded shadow-lg border-2 border-white/20 object-cover" alt="Denise Kan, MD Logo" />
+                                <img src="https://raw.githubusercontent.com/denisekan/website-assets/main/Kan2026_40.jpg" className="w-24 h-24 rounded shadow-lg border-2 border-white/20 object-cover" alt="Concierge medicine on the Peninsula" />
                                 <h3 className="text-xl font-bold serif">Denise Kan, MD</h3>
                             </div>
                         </div>
