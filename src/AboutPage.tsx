@@ -109,7 +109,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                             <div className="absolute -inset-4 bg-[#8db56d] opacity-10 rounded-lg rotate-2 blur-lg"></div>
                             <img 
                                 src={BIO_IMG_URL} 
-                                alt="Dr. Denise Kan" 
+                                alt="For her work as an Internist, Dr. Kan has been recognized by America's Best in Medicine in 2026." 
                                 className="relative z-10 w-full rounded-lg shadow-2xl border-8 border-white object-cover aspect-[4/5]" 
                                 referrerPolicy="no-referrer"
                             />
