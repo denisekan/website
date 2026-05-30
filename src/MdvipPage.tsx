@@ -34,7 +34,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                             {/* Care that puts you first */}
                             <div className="bg-slate-50/95 p-16 rounded-lg border border-slate-100 backdrop-blur-md shadow-sm text-center relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 opacity-10 pointer-events-none transform translate-x-1/2 -translate-y-1/2">
-                                    <img src={LOGO_URL} className="w-full h-full object-contain" alt="Learn abut the advantages of an executive physical through Dr. Kan's MDVIP-affiliated primary care practice." />
+                                    <img src={LOGO_URL} className="w-full h-full object-contain" alt="MDVIP is not a DPC or direct primary care practice. We work with insurance to provide top quality concierge care. Learn abut the advantages of an executive physical through Dr. Kan's MDVIP-affiliated primary care practice." />
                                 </div>
                                 <h2 className="text-3xl font-bold text-[#9ba37a] serif mb-8">Care that puts you first</h2>
                                 <div className="space-y-6 max-w-3xl mx-auto">
@@ -174,7 +174,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                     <div className="absolute -inset-4 bg-[#8db56d] opacity-10 rounded-lg rotate-1 blur-lg"></div>
                                     <img 
                                         src={PIC2_URL} 
-                                        alt="Seaport Health is a primary care doctor's office and medical spa, where expert physicians provide the highest quality of care to our valued members." 
+                                        alt="Concierge medicine vs direct primary care (DPC): which is right for you?" 
                                         className="relative z-10 w-full rounded-lg shadow-2xl border-8 border-white object-cover aspect-[21/9]" 
                                         referrerPolicy="no-referrer"
                                     />
