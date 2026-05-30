@@ -19,7 +19,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
             <div className="relative z-10">
                 <section className="pt-80 pb-16 bg-sage-light relative overflow-hidden">
                     <div className="absolute top-0 left-0 w-1/4 h-full opacity-5 pointer-events-none">
-                        <img src={LOGO_URL} className="w-full h-full object-contain scale-150 transform -translate-x-1/2" alt="" />
+                        <img src={LOGO_URL} className="w-full h-full object-contain scale-150 transform -translate-x-1/2" alt="Learn about the advantages of having a concierge doctor" />
                     </div>
                     <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
                         <span className="text-white/80 uppercase tracking-[0.4em] font-bold text-xs mb-6 block">A better approach to healthcare</span>
@@ -34,12 +34,12 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                             {/* Care that puts you first */}
                             <div className="bg-slate-50/95 p-16 rounded-lg border border-slate-100 backdrop-blur-md shadow-sm text-center relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 opacity-10 pointer-events-none transform translate-x-1/2 -translate-y-1/2">
-                                    <img src={LOGO_URL} className="w-full h-full object-contain" alt="" />
+                                    <img src={LOGO_URL} className="w-full h-full object-contain" alt="Learn abut the advantages of an executive physical through Dr. Kan's MDVIP-affiliated primary care practice." />
                                 </div>
                                 <h2 className="text-3xl font-bold text-[#9ba37a] serif mb-8">Care that puts you first</h2>
                                 <div className="space-y-6 max-w-3xl mx-auto">
                                     <p className="text-xl font-medium text-[#8db56d]">Whether you’re focused on maximizing your healthspan or managing a chronic condition, an MDVIP-affiliated doctor can deliver care aligned with your personal health goals.</p>
-                                    <p className="text-slate-600 text-lg">My partnership with MDVIP makes wellness and prevention easier by providing innovative tools and technology, and supports my practice and seeks to eliminate barriers to a positive healthcare experience. This means deeper doctor-patient relationships, proactive prevention, and care that goes above and beyond what's available in traditional practice.</p>                                </div>
+                                    <p className="text-slate-600 text-lg">My partnership with MDVIP makes wellness and prevention easier by providing innovative tools and technology, and supports my practice by eliminating barriers to a positive healthcare experience. This means deeper doctor-patient relationships, proactive prevention, and care that goes above and beyond what's available in traditional practice.</p>                                </div>
                             </div>
 
                             {/* Annual Membership Fee */}
@@ -215,7 +215,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                             <div className="text-center pt-12 mt-12 border-t border-slate-100 max-w-3xl mx-auto">
                                 <p className="text-slate-600 text-lg font-medium leading-relaxed">
                                     To learn more about the Membership or the Annual Wellness program,<br />
-                                    call <a href="tel:650-643-3702" className="text-[#d18dbd] hover:underline">650-643-3702</a> or click <a href="https://mdvip.com" target="_blank" rel="noopener noreferrer" className="text-[#d18dbd] hover:underline">here</a>.
+                                    call <a href="tel:650-727-1940" className="text-[#d18dbd] hover:underline">650-727-1940</a> or click <a href="https://mdvip.com" target="_blank" rel="noopener noreferrer" className="text-[#d18dbd] hover:underline">here</a>.
                                 </p>
                             </div>
 
@@ -241,8 +241,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                         <div className="space-y-2">
                             <p className="text-xs uppercase tracking-widest opacity-60 font-bold">Contact</p>
                             <div className="space-y-1">
-                                <a href="tel:650-643-3702" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-643-3702 <span className="text-xs font-normal opacity-60">(New Patients & Inquiries)</span></a>
-                                <a href="tel:650-727-1940" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-727-1940 <span className="text-xs font-normal opacity-60">(Current Patients)</span></a>
+                                <a href="tel:650-727-1940" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-727-1940</a>
                             </div>
                             <a href="mailto:care@denisekanmd.com" className="text-lg font-bold block hover:opacity-80 transition-opacity">care@denisekanmd.com</a>
                         </div>

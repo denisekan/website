@@ -115,7 +115,7 @@ Urgency: ${formData.urgency}
         <div className="animate-fade-in">
             <section className="pt-80 pb-24 bg-sage-light relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-1/4 h-full opacity-5 pointer-events-none">
-                    <img src={LOGO_URL} className="w-full h-full object-contain scale-150 transform -translate-x-1/2" alt="" />
+                    <img src={LOGO_URL} className="w-full h-full object-contain scale-150 transform -translate-x-1/2" alt="Patients from San Francisco to Los Gatos have joined Dr. Kan's concierge practice." />
                 </div>
                 <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
                     <span className="text-white uppercase tracking-[0.4em] font-bold text-xs mb-6 block">Coordinated Care</span>
@@ -132,7 +132,7 @@ Urgency: ${formData.urgency}
                                 <div className="absolute -inset-4 bg-[#8db56d] opacity-10 rounded-lg rotate-2 blur-lg"></div>
                                 <img 
                                     src={KAN2026_40_URL} 
-                                    alt="Clinician Collaboration" 
+                                    alt="Dr. Kan works with closely with specialists at UCSF, Sutter/Palo Alto Medical Foundation, Stanford, Dignity Health to coordinate your care." 
                                     className="relative z-10 w-full rounded-lg shadow-2xl border-8 border-white object-cover" 
                                     referrerPolicy="no-referrer"
                                 />
@@ -154,7 +154,7 @@ Urgency: ${formData.urgency}
                                     <div className="absolute -inset-4 bg-[#8db56d] opacity-10 rounded-lg rotate-2 blur-lg"></div>
                                     <img 
                                         src={KAN2026_40_URL} 
-                                        alt="Clinician Collaboration" 
+                                        alt="Dr. Kan works with closely with specialists at UCSF, Sutter/Palo Alto Medical Foundation, Stanford, Dignity Health to coordinate your care." 
                                         className="relative z-10 w-full rounded-lg shadow-2xl border-8 border-white object-cover" 
                                         referrerPolicy="no-referrer"
                                     />
@@ -270,8 +270,7 @@ Urgency: ${formData.urgency}
                         <div className="space-y-2">
                             <p className="text-xs uppercase tracking-widest opacity-60 font-bold">Contact</p>
                             <div className="space-y-1">
-                                <a href="tel:650-643-3702" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-643-3702 <span className="text-xs font-normal opacity-60">(New Patients & Inquiries)</span></a>
-                                <a href="tel:650-727-1940" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-727-1940 <span className="text-xs font-normal opacity-60">(Current Patients)</span></a>
+                                <a href="tel:650-727-1940" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-727-1940</a>
                             </div>
                             <a href="mailto:care@denisekanmd.com" className="text-lg font-bold block hover:opacity-80 transition-opacity">care@denisekanmd.com</a>
                         </div>

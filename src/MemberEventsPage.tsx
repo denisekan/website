@@ -15,7 +15,7 @@ const MemberEventsPage: React.FC<MemberEventsPageProps> = ({ onNavigate }) => {
                 {/* Hero Header */}
                 <section className="pt-80 pb-16 bg-sage-light relative overflow-hidden">
                     <div className="absolute top-0 left-0 w-1/4 h-full opacity-5 pointer-events-none">
-                        <img src={LOGO_URL} className="w-full h-full object-contain scale-150 transform -translate-x-1/2" alt="" />
+                        <img src={LOGO_URL} className="w-full h-full object-contain scale-150 transform -translate-x-1/2" alt="Conveniently located near Woodside Rd, Dr. Kan's concierge medicine practice is accessible via Highway 101 from San Mateo, Hillsborough, Belmont, San Carlos, Redwood City, Woodside, Atherton, and more." />
                     </div>
                     <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
                         <span className="text-white/80 uppercase tracking-[0.4em] font-bold text-xs mb-6 block">Exclusive Practice Gatherings</span>
@@ -30,7 +30,7 @@ const MemberEventsPage: React.FC<MemberEventsPageProps> = ({ onNavigate }) => {
                         {/* Event Card */}
                         <div className="bg-slate-50/90 p-8 md:p-16 rounded-lg border border-slate-100 shadow-sm relative overflow-hidden">
                             <div className="absolute top-0 right-0 w-32 h-32 opacity-5 pointer-events-none transform translate-x-1/2 -translate-y-1/2">
-                                <img src={LOGO_URL} className="w-full h-full object-contain" alt="" />
+                                <img src={LOGO_URL} className="w-full h-full object-contain" alt="Dr. Kan in collabotation with the rest of Seaport Health welcomes her patients to  attend complementary wellness events including pilates, yoga, sound baths, and seminars on topics such as women's health and heart health." />
                             </div>
 
                             {/* Section: Main Header */}
@@ -133,7 +133,7 @@ const MemberEventsPage: React.FC<MemberEventsPageProps> = ({ onNavigate }) => {
                         {/* Past Events Section */}
                         <div className="mt-12 bg-slate-50/90 p-8 md:p-12 rounded-lg border border-slate-100 shadow-sm relative overflow-hidden animate-fade-in-up">
                             <div className="absolute top-0 right-0 w-32 h-32 opacity-5 pointer-events-none transform translate-x-1/2 -translate-y-1/2">
-                                <img src={LOGO_URL} className="w-full h-full object-contain" alt="" />
+                                <img src={LOGO_URL} className="w-full h-full object-contain" alt="Dr. Kan in collabotation with the rest of Seaport Health welcomes her patients to  attend complementary wellness events including pilates, yoga, sound baths, and seminars on topics such as women's health and heart health." />
                             </div>
                             <span className="text-[#9ba37a] uppercase tracking-[0.3em] font-bold text-xs block mb-6">Previous Gatherings</span>
                             <div className="bg-white p-6 md:p-8 rounded-lg border border-slate-100">
@@ -165,8 +165,8 @@ const MemberEventsPage: React.FC<MemberEventsPageProps> = ({ onNavigate }) => {
                             <div className="space-y-2">
                                 <p className="text-xs uppercase tracking-widest opacity-60 font-bold">Contact</p>
                                 <div className="space-y-1">
-                                    <a href="tel:650-643-3702" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-643-3702 <span className="text-xs font-normal opacity-60">(New Patients & Inquiries)</span></a>
-                                    <a href="tel:650-727-1940" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-727-1940 <span className="text-xs font-normal opacity-60">(Current Patients)</span></a>
+                                    <a href="tel:650-727-1940" className="text-lg font-bold block hover:opacity-80 transition-opacity">650-727-1940</a>
+                                    
                                 </div>
                                 <a href="mailto:care@denisekanmd.com" className="text-lg font-bold block hover:opacity-80 transition-opacity">care@denisekanmd.com</a>
                             </div>

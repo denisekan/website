@@ -45,6 +45,39 @@ const App = () => {
 
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        // Dynamic Document Title and SEO Meta Description management
+        let title = "Denise Kan, MD | Concierge Medicine & Primary Care | Redwood City, CA";
+        let metaDesc = "Denise Kan, MD offers personalized concierge medicine and relationship-focused primary care in the San Francisco Bay Area Peninsula. Serving Redwood City, Hillsborough, Woodside, Atherton, Menlo Park, Palo Alto, and surrounding areas.";
+
+        switch (view) {
+            case 'home':
+                title = "Denise Kan, MD | Concierge Medicine & Primary Care | Redwood City, CA";
+                metaDesc = "Denise Kan, MD offers personalized concierge medicine and relationship-focused primary care in the San Francisco Bay Area Peninsula. Serving Redwood City, Hillsborough, Woodside, Atherton, Menlo Park, Palo Alto, and surrounding areas.";
+                break;
+            case 'about':
+                title = "About Dr. Denise Kan, MD | Experienced Internal Medicine Doctor";
+                metaDesc = "Learn about Dr. Denise Kan, MD, a board-certified Internal Medicine & concierge doctor serving the San Francisco Bay Area Peninsula from her Redwood City office.";
+                break;
+            case 'mdvip':
+                title = "MDVIP Membership Benefits | Dr. Denise Kan, MD";
+                metaDesc = "Discover the unique advantages of having an MDVIP-affiliated concierge doctor, including proactive prevention plans and executive physicals with Dr. Denise Kan.";
+                break;
+            case 'referrals':
+                title = "Patient Referrals & Specialized Care Coordination | Dr. Denise Kan";
+                metaDesc = "Dr. Kan collaborates with leading specialists and medical centers of excellence globally to coordinate expert patient care on the SF Bay Area Peninsula.";
+                break;
+            case 'events':
+                title = "Complementary Patient Wellness Events | Dr. Denise Kan, MD";
+                metaDesc = "Join complementary patient wellness events hosted by Dr. Kan and Seaport Health, including pilates, yoga, sound baths, and women's health seminars.";
+                break;
+        }
+
+        document.title = title;
+        const metaDescEl = document.querySelector('meta[name="description"]');
+        if (metaDescEl) {
+            metaDescEl.setAttribute('content', metaDesc);
+        }
     }, [view]);
 
     const navigateTo = (newView: ViewType, hash?: string) => {
@@ -150,7 +183,7 @@ const App = () => {
             <section id="contact" className="py-20 lg:py-32 bg-[#9ba37a] text-white relative z-10">
                 <div className="hidden lg:block absolute inset-0 overflow-hidden pointer-events-none">
                      <div className="absolute top-0 right-0 p-24 opacity-5 pointer-events-none -rotate-12 translate-x-1/4">
-                          <img src={LOGO_URL} className="w-[1000px] h-[1000px] object-contain invert scale-[1.5]" alt="" />
+                          <img src={LOGO_URL} className="w-[1000px] h-[1000px] object-contain invert scale-[1.5]" alt="Looking for a concierge doctor? Dr. Kan is accepting new patients at her boutique primary care clinic." />
                      </div>
                 </div>
                 <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16 lg:gap-24 relative z-10">
@@ -165,25 +198,21 @@ const App = () => {
                                 <div>
                                     <p className="font-bold text-lg md:text-xl">400 Seaport Court, Suite 203</p>
                                     <p className="text-sm opacity-60">Redwood City, CA 94063</p>
-                                    <p className="text-xs italic opacity-80 mt-2 max-w-[280px]">Turn right upon entering the marina, and look for the sign that says "Seaport Health Collective"</p>
+                                    <p className="text-xs italic opacity-80 mt-2 max-w-[280px]">Look for the sign that says "Seaport Health Collective"</p>
                                 </div>
                             </a>
                             <div className="flex items-start space-x-6 group">
                                 <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center border border-white/20 text-3xl shadow-inner">📞</div>
-                                <div className="space-y-4">
-                                    <a href="tel:650-643-3702" className="block hover:opacity-80 transition-opacity">
-                                        <p className="font-bold text-lg md:text-xl">650-643-3702</p>
-                                        <p className="text-sm opacity-60">New Patients & Membership Inquiries</p>
-                                    </a>
+                                <div>
                                     <a href="tel:650-727-1940" className="block hover:opacity-80 transition-opacity">
                                         <p className="font-bold text-lg md:text-xl">650-727-1940</p>
-                                        <p className="text-sm opacity-60">Current Patients</p>
                                     </a>
+                                    <p className="text-sm opacity-60 mt-1">Schedule a complementary meet-and-greet with Dr. Kan</p>
                                 </div>
                             </div>
                             <a href="mailto:care@denisekanmd.com" className="flex items-center space-x-6 group hover:opacity-80 transition-opacity">
                                 <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center border border-white/20 text-3xl shadow-inner group-hover:bg-white/20 transition-colors">✉️</div>
-                                <div><p className="font-bold text-lg md:text-xl">care@denisekanmd.com</p><p className="text-sm opacity-60">Membership Inquiries</p></div>
+                                <div><p className="font-bold text-lg md:text-xl">care@denisekanmd.com</p><p className="text-sm opacity-60">Membership inquiries only: do not send personal health information to this email address.</p></div>
                             </a>
                         </div>
                     </div>
