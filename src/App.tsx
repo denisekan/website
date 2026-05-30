@@ -98,7 +98,7 @@ const App = () => {
                     <div className="lg:col-span-7 relative animate-fade-in lg:translate-x-12">
                         <div className="absolute -inset-8 bg-[#8db56d] opacity-10 -rotate-2 blur-3xl"></div>
                         <div className="relative z-10 shadow-2xl rounded-sm overflow-hidden aspect-[4/3] w-full">
-                            <img src={KAN2026_40_URL} alt="Primary Care Doctor - Dr. Kan" className="object-cover object-[center_35%] w-full h-full" />
+                            <img src={KAN2026_40_URL} alt="Dr. Denise Kan provides dedicated concierge primary care across San Mateo, Hillsborough, San Carlos, Redwood City, Woodside and surrounding cities." className="object-cover object-[center_35%] w-full h-full" />
                         </div>
                     </div>
                 </div>
@@ -138,7 +138,7 @@ const App = () => {
                     <div className="relative group overflow-hidden rounded-lg shadow-2xl border-8 border-white">
                         <img 
                             src={KAN2026_11_URL} 
-                            alt="Primary care in Woodside" 
+                            alt="Primary care Hillsborough Foster City, San Mateo, Half Moon Bay, Belmont, San Carlos, Redwood City Woodside Atherton Menlo Park Palo Alto Portola Valley" 
                             className="w-full aspect-[21/9] object-cover [object-position:center_75%]" 
                             referrerPolicy="no-referrer"
                         />
