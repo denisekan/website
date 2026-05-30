@@ -76,7 +76,7 @@ const App = () => {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
                         </span>
-                        <span>Now accepting new patients</span>
+                        <span>Now accepting new patients - appointment required</span>
                     </div>
                 </div>
                 <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-12 gap-24 items-center">
@@ -110,7 +110,7 @@ const App = () => {
                         <div className="max-w-xs w-full relative group">
                             <div className="absolute -inset-4 bg-[#8db56d] opacity-10 rounded-lg rotate-3 group-hover:rotate-0 transition-transform blur-lg"></div>
                             <div className="relative z-10 rounded-lg overflow-hidden shadow-2xl border-8 border-white bg-slate-100">
-                                <img src={NINA_URL} alt="Dr. Denise Kan" className="w-full grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000 object-cover object-[70%_center] aspect-[4/5]" />
+                                <img src={NINA_URL} alt="Denise Kan, MD: a woman-owned medical clinic." className="w-full grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000 object-cover object-[70%_center] aspect-[4/5]" />
                             </div>
                             <div className="absolute -bottom-8 -right-8 bg-[#d18dbd] text-white px-8 py-5 rounded shadow-2xl z-20 border-2 border-white/10">
                                 <p className="font-bold text-lg serif italic leading-none">Dr. Denise Kan, MD</p>
