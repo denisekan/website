@@ -189,7 +189,7 @@ const App = () => {
                     </div>
                     <div className="bg-white p-6 md:p-8 lg:p-12 rounded shadow-2xl relative text-slate-800 flex flex-col items-center justify-center min-h-[300px]">
                         <div className="relative lg:absolute lg:-top-44 lg:-left-12 w-24 h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 bg-white rounded flex items-center justify-center shadow-2xl border-4 border-[#d18dbd] transform hover:rotate-12 transition-transform overflow-hidden p-0 z-20 mb-8 lg:mb-0">
-                            <img src={KAN2026_22_URL} className="w-full h-full object-cover" alt="Primary care in San Mateo" />
+                            <img src={KAN2026_22_URL} className="w-full h-full object-cover" alt="Primary care doctor near me" />
                         </div>
                         <div className="text-center space-y-8 w-full">
                             <p className="text-slate-600 serif italic text-lg">A better healthcare experience starts here.</p>
