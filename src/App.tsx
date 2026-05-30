@@ -200,7 +200,7 @@ const App = () => {
                                 Schedule an appointment
                             </a>
                             <div className="pt-8 flex justify-center">
-                                <img src={ORCHIDS_URL} alt="Orchids" className="w-64 h-64 sm:w-96 sm:h-96 object-cover rounded shadow-md" referrerPolicy="no-referrer" />
+                                <img src={ORCHIDS_URL} alt="Doctor near me" className="w-64 h-64 sm:w-96 sm:h-96 object-cover rounded shadow-md" referrerPolicy="no-referrer" />
                             </div>
                         </div>
                     </div>
