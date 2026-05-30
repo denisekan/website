@@ -23,7 +23,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                     </div>
                     <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
                         <span className="text-white/80 uppercase tracking-[0.4em] font-bold text-xs mb-6 block">A better approach to healthcare</span>
-                        <h1 className="text-5xl md:text-7xl font-bold text-white serif mb-8">MDVIP</h1>
+                        <h1 className="text-5xl md:text-7xl font-bold text-white serif mb-8">MDVIP Membership</h1>
                     </div>
                 </section>
 

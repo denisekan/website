@@ -21,7 +21,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
                     <div className="hidden md:flex space-x-12 lg:space-x-16 items-center">
                         <a href="#home" onClick={(e) => handleLinkClick(e, 'home', '#home')} className="text-slate-600 hover:text-[#d18dbd] nav-link whitespace-nowrap">Home</a>
                         <a href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="text-slate-600 hover:text-[#d18dbd] nav-link whitespace-nowrap">Meet Dr. Kan</a>
-                        <a href="#mdvip" onClick={(e) => handleLinkClick(e, 'mdvip')} className="text-slate-600 hover:text-[#d18dbd] nav-link whitespace-nowrap">MDVIP</a>
+                        <a href="#mdvip" onClick={(e) => handleLinkClick(e, 'mdvip')} className="text-slate-600 hover:text-[#d18dbd] nav-link whitespace-nowrap">MDVIP Membership</a>
                         <a href="#referrals" onClick={(e) => handleLinkClick(e, 'referrals')} className="text-slate-600 hover:text-[#d18dbd] nav-link whitespace-nowrap">Referrals</a>
                         <a href="#events" onClick={(e) => handleLinkClick(e, 'events')} className="text-slate-600 hover:text-[#d18dbd] nav-link whitespace-nowrap">Member Events</a>
                         <div className="flex space-x-2">
@@ -42,7 +42,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
                 <div className="md:hidden bg-white border-b border-slate-100 py-6 px-4 space-y-4 animate-fade-in shadow-2xl overflow-y-auto max-h-[calc(100vh-96px)]">
                     <a href="#home" onClick={(e) => handleLinkClick(e, 'home', '#home')} className="block text-slate-600 nav-link">Home</a>
                     <a href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="block text-slate-600 nav-link">Meet Dr. Kan</a>
-                    <a href="#mdvip" onClick={(e) => handleLinkClick(e, 'mdvip')} className="block text-slate-600 nav-link">MDVIP</a>
+                    <a href="#mdvip" onClick={(e) => handleLinkClick(e, 'mdvip')} className="block text-slate-600 nav-link">MDVIP Membership</a>
                     <a href="#referrals" onClick={(e) => handleLinkClick(e, 'referrals')} className="block text-slate-600 nav-link">Referrals</a>
                     <a href="#events" onClick={(e) => handleLinkClick(e, 'events')} className="block text-slate-600 nav-link">Member Events</a>
                     <a href="mailto:care@denisekanmd.com" className="block bg-[#d18dbd] text-white text-center py-4 rounded-sm nav-link">Schedule Appointment</a>
