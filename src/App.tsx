@@ -131,7 +131,7 @@ const App = () => {
                     <div className="lg:col-span-7 relative animate-fade-in lg:translate-x-12">
                         <div className="absolute -inset-8 bg-[#8db56d] opacity-10 -rotate-2 blur-3xl"></div>
                         <div className="relative z-10 shadow-2xl rounded-sm overflow-hidden aspect-[4/3] w-full">
-                            <img src={KAN2026_40_URL} alt="Dr. Denise Kan provides dedicated concierge primary care across San Mateo, Hillsborough, San Carlos, Redwood City, Woodside and surrounding cities." className="object-cover object-[center_35%] w-full h-full" />
+                            <img src={KAN2026_40_URL} alt="Dr. Denise Kan provides dedicated concierge primary care in San Mateo, Hillsborough, Belmont, San Carlos, Redwood City, and Woodside." className="object-cover object-[center_35%] w-full h-full" />
                         </div>
                     </div>
                 </div>
@@ -171,7 +171,7 @@ const App = () => {
                     <div className="relative group overflow-hidden rounded-lg shadow-2xl border-8 border-white">
                         <img 
                             src={KAN2026_11_URL} 
-                            alt="Dr. Kan's office is located at Seaport Health Collective, also the home of a Med Spa, acupuncture, and family medicine." 
+                            alt="Dr. Kan's office at Seaport Health Collective, featuring a med spa, acupuncture, and family medicine." 
                             className="w-full aspect-[21/9] object-cover [object-position:center_75%]" 
                             referrerPolicy="no-referrer"
                         />
@@ -218,7 +218,7 @@ const App = () => {
                     </div>
                     <div className="bg-white p-6 md:p-8 lg:p-12 rounded shadow-2xl relative text-slate-800 flex flex-col items-center justify-center min-h-[300px]">
                         <div className="relative lg:absolute lg:-top-44 lg:-left-12 w-24 h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 bg-white rounded flex items-center justify-center shadow-2xl border-4 border-[#d18dbd] transform hover:rotate-12 transition-transform overflow-hidden p-0 z-20 mb-8 lg:mb-0">
-                            <img src={KAN2026_22_URL} className="w-full h-full object-cover" alt="Dr. Kan is a primary care doctor at Seaport Health, which also features a med spa with aesthetics, family practice doctors, and acupuncture." />
+                            <img src={KAN2026_22_URL} className="w-full h-full object-cover" alt="Dr. Kan is a primary care doctor at Seaport Health, featuring a medical spa, family medicine, and acupuncture." />
                         </div>
                         <div className="text-center space-y-8 w-full">
                             <p className="text-slate-600 serif italic text-lg">A better healthcare experience starts here.</p>

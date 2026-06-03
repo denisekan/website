@@ -115,7 +115,7 @@ Urgency: ${formData.urgency}
         <div className="animate-fade-in">
             <section className="pt-80 pb-24 bg-sage-light relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-1/4 h-full opacity-5 pointer-events-none">
-                    <img src={LOGO_URL} className="w-full h-full object-contain scale-150 transform -translate-x-1/2" alt="Dr. Kan is a primary care physician in Redwood City, but patients from San Francisco to Los Gatos have joined Dr. Kan's concierge practice because they value exceptional service and highly qualified expertise." />
+                    <img src={LOGO_URL} className="w-full h-full object-contain scale-150 transform -translate-x-1/2" alt="Dr. Kan is a primary care physician in Redwood City, serving concierge patients from San Francisco to Los Gatos." />
                 </div>
                 <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
                     <span className="text-white uppercase tracking-[0.4em] font-bold text-xs mb-6 block">Coordinated Care</span>
@@ -132,7 +132,7 @@ Urgency: ${formData.urgency}
                                 <div className="absolute -inset-4 bg-[#8db56d] opacity-10 rounded-lg rotate-2 blur-lg"></div>
                                 <img 
                                     src={KAN2026_40_URL} 
-                                    alt="Dr. Kan works with closely with specialists at UCSF, Sutter/Palo Alto Medical Foundation, Stanford, Dignity Health to coordinate your care." 
+                                    alt="Dr. Kan coordinates care with medical specialists at Stanford, UCSF, Sutter PAMF, and Dignity Health." 
                                     className="relative z-10 w-full rounded-lg shadow-2xl border-8 border-white object-cover" 
                                     referrerPolicy="no-referrer"
                                 />
@@ -154,7 +154,7 @@ Urgency: ${formData.urgency}
                                     <div className="absolute -inset-4 bg-[#8db56d] opacity-10 rounded-lg rotate-2 blur-lg"></div>
                                     <img 
                                         src={KAN2026_40_URL} 
-                                        alt="Dr. Kan works with closely with specialists at UCSF, Sutter/Palo Alto Medical Foundation, Stanford, Dignity Health to coordinate your care." 
+                                        alt="Dr. Kan coordinates care with medical specialists at Stanford, UCSF, Sutter PAMF, and Dignity Health." 
                                         className="relative z-10 w-full rounded-lg shadow-2xl border-8 border-white object-cover" 
                                         referrerPolicy="no-referrer"
                                     />

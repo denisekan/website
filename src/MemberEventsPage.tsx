@@ -15,7 +15,7 @@ const MemberEventsPage: React.FC<MemberEventsPageProps> = ({ onNavigate }) => {
                 {/* Hero Header */}
                 <section className="pt-80 pb-16 bg-sage-light relative overflow-hidden">
                     <div className="absolute top-0 left-0 w-1/4 h-full opacity-5 pointer-events-none">
-                        <img src={LOGO_URL} className="w-full h-full object-contain scale-150 transform -translate-x-1/2" alt="Conveniently located near Woodside Rd, Dr. Kan's concierge medicine practice is accessible via Highway 101 from San Mateo, Hillsborough, Belmont, San Carlos, Redwood City, Woodside, Atherton, and more." />
+                        <img src={LOGO_URL} className="w-full h-full object-contain scale-150 transform -translate-x-1/2" alt="Dr. Kan's Redwood City concierge practice is conveniently accessible via Highway 101 near Woodside Road." />
                     </div>
                     <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
                         <span className="text-white/80 uppercase tracking-[0.4em] font-bold text-xs mb-6 block">Exclusive Practice Gatherings</span>
@@ -30,7 +30,7 @@ const MemberEventsPage: React.FC<MemberEventsPageProps> = ({ onNavigate }) => {
                         {/* Event Card */}
                         <div className="bg-slate-50/90 p-8 md:p-16 rounded-lg border border-slate-100 shadow-sm relative overflow-hidden">
                             <div className="absolute top-0 right-0 w-32 h-32 opacity-5 pointer-events-none transform translate-x-1/2 -translate-y-1/2">
-                                <img src={LOGO_URL} className="w-full h-full object-contain" alt="Dr. Kan in collabotation with the rest of Seaport Health welcomes her patients to  attend complementary wellness events including pilates, yoga, sound baths, and seminars on topics such as women's health and heart health." />
+                                <img src={LOGO_URL} className="w-full h-full object-contain" alt="Dr. Kan and Seaport Health invite wellness event attendees to pilates, yoga, sound baths, and health seminars." />
                             </div>
 
                             {/* Section: Main Header */}
@@ -133,7 +133,7 @@ const MemberEventsPage: React.FC<MemberEventsPageProps> = ({ onNavigate }) => {
                         {/* Past Events Section */}
                         <div className="mt-12 bg-slate-50/90 p-8 md:p-12 rounded-lg border border-slate-100 shadow-sm relative overflow-hidden animate-fade-in-up">
                             <div className="absolute top-0 right-0 w-32 h-32 opacity-5 pointer-events-none transform translate-x-1/2 -translate-y-1/2">
-                                <img src={LOGO_URL} className="w-full h-full object-contain" alt="Dr. Kan in collabotation with the rest of Seaport Health welcomes her patients to  attend complementary wellness events including pilates, yoga, sound baths, and seminars on topics such as women's health and heart health." />
+                                <img src={LOGO_URL} className="w-full h-full object-contain" alt="Dr. Kan and Seaport Health invite wellness event attendees to pilates, yoga, sound baths, and health seminars." />
                             </div>
                             <span className="text-[#9ba37a] uppercase tracking-[0.3em] font-bold text-xs block mb-6">Previous Gatherings</span>
                             <div className="bg-white p-6 md:p-8 rounded-lg border border-slate-100">

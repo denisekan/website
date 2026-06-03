@@ -45,26 +45,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             <section className="py-24 bg-white">
                 <div className="max-w-4xl mx-auto px-4">
                     <div className="space-y-8">
-                        <div className="flex items-center space-x-4 mb-8">
-                            <div className="w-12 h-px bg-[#d18dbd]"></div>
-                            <h2 className="text-3xl font-bold text-[#9ba37a] serif">About my practice</h2>
-                        </div>
-                        <div className="space-y-6 text-slate-600 leading-relaxed text-lg">
-                            <p>
-                                As a primary care physician, my passions are prevention and earlier detection, and being an Internal Medicine doctor gives me the tools to better help you manage any chronic and complex conditions. My medical interests include cardiovascular health, nutrition, and integrative health. I also have a particular interest in women’s health, including perimenopause and menopause care. My partnership with MDVIP means that I stay up to date on the latest advances in preventative medicine.
-                            </p>
-                            <p>
-                                My goal is to provide personalized care in a warm and welcoming atmosphere. As a physician in private practice, I have more time to delve deeply in discussions with you about your personal health history, and we can partner to tailor action plans according to your individual needs and goals.
-                            </p>
-                            <p>
-                                I offer conveniences like same- or next-day appointments with minimal waiting and in-office blood draws. Thanks to my affiliation with MDVIP, I offer services, including comprehensive, advanced health screenings and diagnostic tests, that go far beyond those found in concierge medicine practices.
-                            </p>
-                            <p>
-                                My practice serves patients across the Peninsula, including Hillsborough, Foster City, San Mateo, Half Moon Bay, Belmont, San Carlos, Redwood City, Woodside, Atherton, Menlo Park, Palo Alto, and Portola Valley.
-                            </p>
-                        </div>
-
-                        <div className="pt-16 border-t border-slate-100">
+                        <div>
                             <div className="flex items-center space-x-4 mb-8">
                                 <div className="w-12 h-px bg-[#d18dbd]"></div>
                                 <h2 className="text-3xl font-bold text-[#9ba37a] serif">Patient Ratings & Reviews</h2>
@@ -72,6 +53,27 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                             <p className="text-slate-600 text-lg">
                                 Read about Dr. Kan on <a href="https://www.healthgrades.com/physician/dr-marie-kan-xynqvww" target="_blank" rel="noopener noreferrer" className="text-[#d18dbd] hover:underline">Healthgrades</a> and <a href="https://health.usnews.com/doctors/marie-denise-kan-1419581" target="_blank" rel="noopener noreferrer" className="text-[#d18dbd] hover:underline">U.S. News and World Report</a>.
                             </p>
+                        </div>
+
+                        <div className="pt-16 border-t border-slate-100">
+                            <div className="flex items-center space-x-4 mb-8">
+                                <div className="w-12 h-px bg-[#d18dbd]"></div>
+                                <h2 className="text-3xl font-bold text-[#9ba37a] serif">About my practice</h2>
+                            </div>
+                            <div className="space-y-6 text-slate-600 leading-relaxed text-lg">
+                                <p>
+                                    As a primary care physician, my passions are prevention and earlier detection, and being an Internal Medicine doctor gives me the tools to better help you manage any chronic and complex conditions. My medical interests include cardiovascular health, nutrition, and integrative health. I also have a particular interest in women’s health, including perimenopause and menopause care. My partnership with MDVIP means that I stay up to date on the latest advances in preventative medicine.
+                                </p>
+                                <p>
+                                    My goal is to provide personalized care in a warm and welcoming atmosphere. As a physician in private practice, I have more time to delve deeply in discussions with you about your personal health history, and we can partner to tailor action plans according to your individual needs and goals.
+                                </p>
+                                <p>
+                                    I offer conveniences like same- or next-day appointments with minimal waiting and in-office blood draws. Thanks to my affiliation with MDVIP, I offer services, including comprehensive, advanced health screenings and diagnostic tests, that go far beyond those found in concierge medicine practices.
+                                </p>
+                                <p>
+                                    My practice serves patients across the Peninsula, including Hillsborough, Foster City, San Mateo, Half Moon Bay, Belmont, San Carlos, Redwood City, Woodside, Atherton, Menlo Park, Palo Alto, and Portola Valley.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

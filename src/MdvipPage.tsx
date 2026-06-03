@@ -34,7 +34,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                             {/* Care that puts you first */}
                             <div className="bg-slate-50/95 p-16 rounded-lg border border-slate-100 backdrop-blur-md shadow-sm text-center relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 opacity-10 pointer-events-none transform translate-x-1/2 -translate-y-1/2">
-                                    <img src={LOGO_URL} className="w-full h-full object-contain" alt="MDVIP is not a DPC or direct primary care practice. We work with insurance to provide top quality concierge care. Learn abut the advantages of an executive physical through Dr. Kan's MDVIP-affiliated primary care practice." />
+                                    <img src={LOGO_URL} className="w-full h-full object-contain" alt="MDVIP concierge medicine practice. Learn about the advantages of personalized primary care and executive physicals." />
                                 </div>
                                 <h2 className="text-3xl font-bold text-[#9ba37a] serif mb-8">Care that puts you first</h2>
                                 <div className="space-y-6 max-w-3xl mx-auto">
@@ -84,7 +84,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                 <div className="lg:col-span-5 flex justify-center lg:justify-end">
                                     <div className="relative group max-w-[400px]">
                                         <div className="absolute -inset-3 bg-sage-light rounded-lg rotate-3 group-hover:rotate-0 transition-transform blur-lg opacity-40"></div>
-                                        <img src={MDVIP1_URL} className="relative z-10 w-full h-auto object-cover rounded shadow-xl border-4 border-white" alt="Dr. Kan is a concierge medicine doctor taking new patients in Hillsborough, San Mateo, San Carlos, Redwood City, Woodside and surrounding communities." />
+                                        <img src={MDVIP1_URL} className="relative z-10 w-full h-auto object-cover rounded shadow-xl border-4 border-white" alt="Dr. Kan, concierge doctor, taking new patients in Hillsborough, San Mateo, San Carlos, Redwood City, and Woodside." />
                                     </div>
                                 </div>
                             </div>
@@ -119,7 +119,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
                                 <div className="lg:col-span-4 flex justify-center lg:justify-start order-2 lg:order-1">
                                     <div className="relative group max-w-[400px]">
                                         <div className="absolute -inset-2 bg-[#8db56d]/10 rounded rotate-[-4deg] group-hover:rotate-0 transition-transform blur-lg opacity-40"></div>
-                                        <img src={TOYS1_URL} className="relative z-10 w-full rounded shadow-lg border-2 border-white" alt="Family Friendly Atmosphere" />
+                                        <img src={TOYS1_URL} className="relative z-10 w-full rounded shadow-lg border-2 border-white" alt="Primary care doctor near me" />
                                     </div>
                                 </div>
                                 <div className="lg:col-span-8 order-1 lg:order-2 space-y-10">
