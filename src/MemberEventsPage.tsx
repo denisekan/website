@@ -27,25 +27,24 @@ const MemberEventsPage: React.FC<MemberEventsPageProps> = ({ onNavigate }) => {
                 <section className="py-24 bg-white relative">
                     <div className="max-w-4xl mx-auto px-4 relative z-10">
                         
-                        {/* Event Card */}
-                        <div className="bg-slate-50/90 p-8 md:p-16 rounded-lg border border-slate-100 shadow-sm relative overflow-hidden">
+                        {/* Upcoming Event Card */}
+                        <div className="bg-slate-50/90 p-8 md:p-12 rounded-lg border border-slate-100 shadow-sm relative overflow-hidden mb-12 animate-fade-in-up">
                             <div className="absolute top-0 right-0 w-32 h-32 opacity-5 pointer-events-none transform translate-x-1/2 -translate-y-1/2">
                                 <img src={LOGO_URL} className="w-full h-full object-contain" alt="Dr. Kan and Seaport Health invite wellness event attendees to pilates, yoga, sound baths, and health seminars." />
                             </div>
+                            <span className="text-[#d18dbd] uppercase tracking-[0.3em] font-bold text-xs block mb-3">Group Wellness Session</span>
+                            <h2 className="text-3xl md:text-4xl font-bold text-[#9ba37a] serif mb-4">Pilates at the Clinic</h2>
 
-                            {/* Section: Main Header */}
-                            <div className="text-center md:text-left border-b border-slate-200/60 pb-8 mb-10">
-                                <span className="text-[#d18dbd] uppercase tracking-[0.3em] font-bold text-xs block mb-3">Group Wellness Session</span>
-                                <h2 className="text-4xl font-bold text-[#9ba37a] serif mb-4">Pilates at Seaport Health</h2>
-                                <p className="text-slate-500 italic text-lg leading-relaxed">No experience necessary. All fitness and experience levels are warmly welcome.</p>
-                            </div>
+                            <p className="text-slate-600 text-lg leading-relaxed font-light mb-8 max-w-3xl">
+                                Join us for a fun, small-group Pilates session right here at the clinic. Taught by Stella Lorvan, this is part of a 4-class series — but you're welcome to join at any point. All classes are beginner-friendly, so no experience needed. A great way to build core strength, improve posture, and connect with others in a relaxed, welcoming setting.
+                            </p>
 
-                            {/* Detail Blocks Grid */}
-                            <div className="grid sm:grid-cols-3 gap-6 mb-12">
+                            {/* Detail Grid */}
+                            <div className="grid sm:grid-cols-3 gap-6 mb-10">
                                 <div className="bg-white p-6 rounded-lg border border-slate-100 text-center sm:text-left">
                                     <div className="text-3xl mb-3">📅</div>
                                     <h4 className="font-bold text-slate-800 text-sm uppercase tracking-wider mb-1">Date</h4>
-                                    <p className="text-[#8db56d] font-bold serif text-lg">Monday, June 1st</p>
+                                    <p className="text-[#8db56d] font-bold serif text-lg">Monday, June 29th</p>
                                 </div>
                                 <div className="bg-white p-6 rounded-lg border border-slate-100 text-center sm:text-left">
                                     <div className="text-3xl mb-3">🕒</div>
@@ -62,7 +61,7 @@ const MemberEventsPage: React.FC<MemberEventsPageProps> = ({ onNavigate }) => {
                                 </div>
                             </div>
 
-                            {/* About the Instructor */}
+                            {/* Meet the Instructor */}
                             <div className="bg-white p-8 rounded-lg border border-slate-100 mb-10">
                                 <div className="flex items-center space-x-4 mb-6">
                                     <div className="w-1.5 h-12 bg-[#d18dbd] rounded-full"></div>
@@ -71,63 +70,49 @@ const MemberEventsPage: React.FC<MemberEventsPageProps> = ({ onNavigate }) => {
                                         <p className="text-xs text-slate-400 uppercase tracking-widest font-bold mt-1">Certified Pilates Practitioner</p>
                                     </div>
                                 </div>
-                                <p className="text-slate-600 leading-relaxed text-md mb-4 font-light">
-                                    We're thrilled to welcome Stella Lorvan as our instructor. Stella has been studying and teaching pilates since 1989, is certified through St. Francis Hospital's Center for Dance Medicine, and has worked with everyone from Olympic-level athletes to stroke survivors.
-                                </p>
                                 <p className="text-slate-600 leading-relaxed text-md font-light">
-                                    She opened her own studios, taught the first mat class in a gym in San Francisco, and has extensive experience in chiropractic and physical therapy settings — so she truly understands how the body moves and heals.
+                                    Stella Lorvan has been studying and teaching Pilates since 1989. Certified through St. Francis Hospital's Center for Dance Medicine, she has worked with individuals across all mobility profiles — from Olympic-level athletes to stroke survivors — helping them build balanced strength, recover gracefully, and move with ease.
                                 </p>
                             </div>
 
-                            {/* RSVP Block (Accent colored) */}
+                            {/* RSVP Block */}
                             <div className="bg-[#9ba37a]/10 border border-[#9ba37a]/20 p-8 rounded-lg mb-10 text-center md:text-left">
                                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
                                     <div className="space-y-2">
                                         <h3 className="font-bold text-lg text-[#9ba37a] serif">Reserve Your Spot</h3>
                                         <p className="text-slate-600 text-sm max-w-lg leading-relaxed">
-                                            Spots are limited to **14 participants** to ensure personalized, attentive instruction. Reserve your spot today.
+                                            Spots are limited to <strong className="font-semibold text-slate-800">14 participants</strong> to ensure personalized, attentive instruction. Reserve your spot today.
                                         </p>
                                     </div>
                                     <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                                        <a href="mailto:care@denisekanmd.com?subject=RSVP for Pilates at Seaport Health" className="bg-[#d18dbd] hover:bg-[#d18dbd]/90 text-white font-bold text-xs uppercase tracking-widest px-6 py-4 rounded-sm shadow-md hover:-translate-y-0.5 transition-all text-center">
+                                        <a href="mailto:care@denisekanmd.com?subject=RSVP for Pilates at the Clinic" className="bg-[#d18dbd] hover:bg-[#d18dbd]/90 text-white font-bold text-xs uppercase tracking-widest px-6 py-4 rounded-sm shadow-md hover:-translate-y-0.5 transition-all text-center">
                                             RSVP via Email
                                         </a>
-                                        <a href="tel:650-267-2098" className="bg-white hover:bg-slate-50 text-[#9ba37a] border border-[#9ba37a]/30 font-bold text-xs uppercase tracking-widest px-6 py-4 rounded-sm shadow-sm hover:-translate-y-0.5 transition-all text-center">
-                                            Call 650-267-2098
+                                        <a href="tel:650-727-1940" className="bg-white hover:bg-slate-50 text-[#9ba37a] border border-[#9ba37a]/30 font-bold text-xs uppercase tracking-widest px-6 py-4 rounded-sm shadow-sm hover:-translate-y-0.5 transition-all text-center font-mono">
+                                            Call 650-727-1940
                                         </a>
                                     </div>
                                 </div>
                             </div>
 
-                            {/* What to bring & Waiver columns */}
-                            <div className="grid md:grid-cols-2 gap-8 pt-6 border-t border-slate-200/50">
-                                <div>
-                                    <h4 className="font-bold text-slate-800 text-sm uppercase tracking-wider mb-4 text-[#d18dbd]">What to bring:</h4>
-                                    <ul className="space-y-3 text-slate-600 text-sm">
-                                        <li className="flex items-center space-x-3">
-                                            <span className="text-[#8db56d]">✓</span>
-                                            <span>A thick yoga mat</span>
-                                        </li>
-                                        <li className="flex items-center space-x-3">
-                                            <span className="text-[#8db56d]">✓</span>
-                                            <span>Water bottle</span>
-                                        </li>
-                                        <li className="flex items-center space-x-3">
-                                            <span className="text-[#8db56d]">✓</span>
-                                            <span>Comfortable, form-fitting clothing</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className="flex flex-col justify-between">
-                                    <div className="space-y-3">
-                                        <h4 className="font-bold text-slate-800 text-sm uppercase tracking-wider mb-1 text-[#d18dbd]">Arrival Details:</h4>
-                                        <p className="text-slate-600 text-sm leading-relaxed font-light">
-                                            We'll have a waiver for you to sign when you arrive in Suite 203. Please try to arrive 5–10 minutes early so we can get settled and start on time!
-                                        </p>
-                                    </div>
-                                </div>
+                            {/* What to bring */}
+                            <div className="pt-6 border-t border-slate-200/50">
+                                <h4 className="font-bold text-slate-800 text-sm uppercase tracking-wider mb-4 text-[#d18dbd]">What to bring:</h4>
+                                <ul className="grid sm:grid-cols-3 gap-3 text-slate-600 text-sm">
+                                    <li className="flex items-center space-x-3">
+                                        <span className="text-[#8db56d] text-lg">✓</span>
+                                        <span>A thick yoga mat</span>
+                                    </li>
+                                    <li className="flex items-center space-x-3">
+                                        <span className="text-[#8db56d] text-lg">✓</span>
+                                        <span>Comfortable workout clothes</span>
+                                    </li>
+                                    <li className="flex items-center space-x-3">
+                                        <span className="text-[#8db56d] text-lg">✓</span>
+                                        <span>Water bottle</span>
+                                    </li>
+                                </ul>
                             </div>
-
                         </div>
 
                         {/* Past Events Section */}
@@ -136,11 +121,28 @@ const MemberEventsPage: React.FC<MemberEventsPageProps> = ({ onNavigate }) => {
                                 <img src={LOGO_URL} className="w-full h-full object-contain" alt="Dr. Kan and Seaport Health invite wellness event attendees to pilates, yoga, sound baths, and health seminars." />
                             </div>
                             <span className="text-[#9ba37a] uppercase tracking-[0.3em] font-bold text-xs block mb-6">Previous Gatherings</span>
-                            <div className="bg-white p-6 md:p-8 rounded-lg border border-slate-100">
-                                <h3 className="font-bold text-xl text-[#d18dbd] serif mb-3">Patient Appreciation Open House</h3>
-                                <p className="text-slate-600 leading-relaxed font-light">
-                                    Thank you for attending our Patient Appreciation Open House! We enjoyed meeting your friends and family, and are deeply grateful for your support.
-                                </p>
+                            <div className="space-y-8">
+                                <div className="bg-white p-6 md:p-8 rounded-lg border border-slate-100">
+                                    <span className="text-[#d18dbd] uppercase tracking-[0.3em] font-bold text-xs block mb-2">June 2026</span>
+                                    <h3 className="font-bold text-xl text-[#9ba37a] serif mb-3">It's Not Hysteria: Perimenopause and Personalized Women's Care</h3>
+                                    <p className="text-slate-600 leading-relaxed font-light mb-4 text-md">
+                                        We hosted an informative wellness seminar on Saturday, June 13th at the Sequoia Yacht Club with guest speaker Dr. Mary Pravdin, exploring personalized women's care and navigating perimenopause.
+                                    </p>
+                                </div>
+                                <div className="bg-white p-6 md:p-8 rounded-lg border border-slate-100">
+                                    <span className="text-[#d18dbd] uppercase tracking-[0.3em] font-bold text-xs block mb-2">June 2026</span>
+                                    <h3 className="font-bold text-xl text-[#9ba37a] serif mb-3">Pilates at Seaport Health</h3>
+                                    <p className="text-slate-600 leading-relaxed font-light mb-4 text-md">
+                                        We hosted a successful group wellness session on Monday, June 1st. Many thanks to certified instructor Stella Lorvan for guiding our members through a restorative Pilates session designed for all movement levels.
+                                    </p>
+                                </div>
+                                <div className="bg-white p-6 md:p-8 rounded-lg border border-slate-100">
+                                    <span className="text-[#d18dbd] uppercase tracking-[0.3em] font-bold text-xs block mb-2">April 2026</span>
+                                    <h3 className="font-bold text-xl text-[#9ba37a] serif mb-3">Patient Appreciation Open House</h3>
+                                    <p className="text-slate-600 leading-relaxed font-light text-md">
+                                        Thank you for attending our Patient Appreciation Open House! We enjoyed meeting your friends and family, and are deeply grateful for your support.
+                                    </p>
+                                </div>
                             </div>
                         </div>
 

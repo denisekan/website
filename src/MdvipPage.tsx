@@ -19,7 +19,7 @@ const MdvipPage: React.FC<MdvipPageProps> = ({ onNavigate }) => {
             <div className="relative z-10">
                 <section className="pt-80 pb-16 bg-sage-light relative overflow-hidden">
                     <div className="absolute top-0 left-0 w-1/4 h-full opacity-5 pointer-events-none">
-                        <img src={LOGO_URL} className="w-full h-full object-contain scale-150 transform -translate-x-1/2" alt="Learn about the advantages of having a concierge doctor" />
+                        <img src={LOGO_URL} className="w-full h-full object-contain scale-150 transform -translate-x-1/2" alt="learn about the advantages of having concierge doctor and direct care" />
                     </div>
                     <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
                         <span className="text-white/80 uppercase tracking-[0.4em] font-bold text-xs mb-6 block">A better approach to healthcare</span>
