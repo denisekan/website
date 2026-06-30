@@ -33,10 +33,10 @@ const MemberEventsPage: React.FC<MemberEventsPageProps> = ({ onNavigate }) => {
                                 <img src={LOGO_URL} className="w-full h-full object-contain" alt="Dr. Kan and Seaport Health invite wellness event attendees to pilates, yoga, sound baths, and health seminars." />
                             </div>
                             <span className="text-[#d18dbd] uppercase tracking-[0.3em] font-bold text-xs block mb-3">Group Wellness Session</span>
-                            <h2 className="text-3xl md:text-4xl font-bold text-[#9ba37a] serif mb-4">Pilates at the Clinic</h2>
+                            <h2 className="text-3xl md:text-4xl font-bold text-[#9ba37a] serif mb-4">Move Better, Feel Better: Stretch & Mobility Class</h2>
 
                             <p className="text-slate-600 text-lg leading-relaxed font-light mb-8 max-w-3xl">
-                                Join us for a fun, small-group Pilates session right here at the clinic. Taught by Stella Lorvan, this is part of a 4-class series — but you're welcome to join at any point. All classes are beginner-friendly, so no experience needed. A great way to build core strength, improve posture, and connect with others in a relaxed, welcoming setting.
+                                Join us for a guided stretch and mobility class led by <strong className="font-semibold text-slate-800"><a href="https://www.drmichellele.com" target="_blank" rel="noopener noreferrer" className="text-[#d18dbd] hover:underline">Dr. Michelle Le</a></strong>! Whether you're dealing with everyday stiffness, recovering from an injury, or just want to move more freely, this class is designed to help you feel your best. We'll focus on improving flexibility, releasing tension, and building the kind of mobility that makes daily life easier — from bending down to tying your shoes to keeping up with your summer adventures. All levels welcome. Space is limited, so grab your spot early!
                             </p>
 
                             {/* Detail Grid */}
@@ -44,35 +44,21 @@ const MemberEventsPage: React.FC<MemberEventsPageProps> = ({ onNavigate }) => {
                                 <div className="bg-white p-6 rounded-lg border border-slate-100 text-center sm:text-left">
                                     <div className="text-3xl mb-3">📅</div>
                                     <h4 className="font-bold text-slate-800 text-sm uppercase tracking-wider mb-1">Date</h4>
-                                    <p className="text-[#8db56d] font-bold serif text-lg">Monday, June 29th</p>
+                                    <p className="text-[#8db56d] font-bold serif text-lg">Thursday, July 9th</p>
                                 </div>
                                 <div className="bg-white p-6 rounded-lg border border-slate-100 text-center sm:text-left">
                                     <div className="text-3xl mb-3">🕒</div>
                                     <h4 className="font-bold text-slate-800 text-sm uppercase tracking-wider mb-1">Time</h4>
-                                    <p className="text-[#8db56d] font-bold serif text-lg font-mono">3:00 PM</p>
+                                    <p className="text-[#8db56d] font-bold serif text-lg font-mono">8:00 AM</p>
                                 </div>
                                 <div className="bg-white p-6 rounded-lg border border-slate-100 text-center sm:text-left">
                                     <div className="text-3xl mb-3">📍</div>
                                     <h4 className="font-bold text-slate-800 text-sm uppercase tracking-wider mb-1">Location</h4>
                                     <p className="text-[#8db56d] font-bold serif text-sm leading-snug">
                                         400 Seaport Court<br />
-                                        Suite 203, Redwood City
+                                        Suite 203, Redwood City, CA
                                     </p>
                                 </div>
-                            </div>
-
-                            {/* Meet the Instructor */}
-                            <div className="bg-white p-8 rounded-lg border border-slate-100 mb-10">
-                                <div className="flex items-center space-x-4 mb-6">
-                                    <div className="w-1.5 h-12 bg-[#d18dbd] rounded-full"></div>
-                                    <div>
-                                        <h3 className="font-bold text-xl text-[#9ba37a] serif">Meet Your Instructor: Stella Lorvan</h3>
-                                        <p className="text-xs text-slate-400 uppercase tracking-widest font-bold mt-1">Certified Pilates Practitioner</p>
-                                    </div>
-                                </div>
-                                <p className="text-slate-600 leading-relaxed text-md font-light">
-                                    Stella Lorvan has been studying and teaching Pilates since 1989. Certified through St. Francis Hospital's Center for Dance Medicine, she has worked with individuals across all mobility profiles — from Olympic-level athletes to stroke survivors — helping them build balanced strength, recover gracefully, and move with ease.
-                                </p>
                             </div>
 
                             {/* RSVP Block */}
@@ -81,15 +67,12 @@ const MemberEventsPage: React.FC<MemberEventsPageProps> = ({ onNavigate }) => {
                                     <div className="space-y-2">
                                         <h3 className="font-bold text-lg text-[#9ba37a] serif">Reserve Your Spot</h3>
                                         <p className="text-slate-600 text-sm max-w-lg leading-relaxed">
-                                            Spots are limited to <strong className="font-semibold text-slate-800">14 participants</strong> to ensure personalized, attentive instruction. Reserve your spot today.
+                                            Please fill out our online RSVP form to register and secure your spot.
                                         </p>
                                     </div>
                                     <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                                        <a href="mailto:care@denisekanmd.com?subject=RSVP for Pilates at the Clinic" className="bg-[#d18dbd] hover:bg-[#d18dbd]/90 text-white font-bold text-xs uppercase tracking-widest px-6 py-4 rounded-sm shadow-md hover:-translate-y-0.5 transition-all text-center">
-                                            RSVP via Email
-                                        </a>
-                                        <a href="tel:650-727-1940" className="bg-white hover:bg-slate-50 text-[#9ba37a] border border-[#9ba37a]/30 font-bold text-xs uppercase tracking-widest px-6 py-4 rounded-sm shadow-sm hover:-translate-y-0.5 transition-all text-center font-mono">
-                                            Call 650-727-1940
+                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScAP5d4tuCXNCP28qn6VPyZM15R9O6U7qeHFSaBtvHWGnL5DQ/viewform?pli=1" target="_blank" rel="noopener noreferrer" className="bg-[#d18dbd] hover:bg-[#d18dbd]/90 text-white font-bold text-xs uppercase tracking-widest px-6 py-4 rounded-sm shadow-md hover:-translate-y-0.5 transition-all text-center">
+                                            RSVP Online Form
                                         </a>
                                     </div>
                                 </div>
@@ -97,19 +80,11 @@ const MemberEventsPage: React.FC<MemberEventsPageProps> = ({ onNavigate }) => {
 
                             {/* What to bring */}
                             <div className="pt-6 border-t border-slate-200/50">
-                                <h4 className="font-bold text-slate-800 text-sm uppercase tracking-wider mb-4 text-[#d18dbd]">What to bring:</h4>
+                                <h4 className="font-bold text-slate-800 text-sm uppercase tracking-wider mb-4 text-[#d18dbd]">Required Items:</h4>
                                 <ul className="grid sm:grid-cols-3 gap-3 text-slate-600 text-sm">
                                     <li className="flex items-center space-x-3">
                                         <span className="text-[#8db56d] text-lg">✓</span>
-                                        <span>A thick yoga mat</span>
-                                    </li>
-                                    <li className="flex items-center space-x-3">
-                                        <span className="text-[#8db56d] text-lg">✓</span>
-                                        <span>Comfortable workout clothes</span>
-                                    </li>
-                                    <li className="flex items-center space-x-3">
-                                        <span className="text-[#8db56d] text-lg">✓</span>
-                                        <span>Water bottle</span>
+                                        <span>Yoga Mat</span>
                                     </li>
                                 </ul>
                             </div>
@@ -122,6 +97,13 @@ const MemberEventsPage: React.FC<MemberEventsPageProps> = ({ onNavigate }) => {
                             </div>
                             <span className="text-[#9ba37a] uppercase tracking-[0.3em] font-bold text-xs block mb-6">Previous Gatherings</span>
                             <div className="space-y-8">
+                                <div className="bg-white p-6 md:p-8 rounded-lg border border-slate-100">
+                                    <span className="text-[#d18dbd] uppercase tracking-[0.3em] font-bold text-xs block mb-2">June 2026</span>
+                                    <h3 className="font-bold text-xl text-[#9ba37a] serif mb-3">Pilates at the Clinic</h3>
+                                    <p className="text-slate-600 leading-relaxed font-light mb-4 text-md">
+                                        We hosted another successful Pilates class on Monday, June 29th. Certified instructor Stella Lorvan guided our members through a warm, small-group session focused on building core strength, posture, and wellness connections.
+                                    </p>
+                                </div>
                                 <div className="bg-white p-6 md:p-8 rounded-lg border border-slate-100">
                                     <span className="text-[#d18dbd] uppercase tracking-[0.3em] font-bold text-xs block mb-2">June 2026</span>
                                     <h3 className="font-bold text-xl text-[#9ba37a] serif mb-3">It's Not Hysteria: Perimenopause and Personalized Women's Care</h3>
